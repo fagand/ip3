@@ -9,14 +9,14 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css\bootstrap.min.css">
-    
-        <!-- jquery,popper,bootstrap -->
+
+    <!-- jquery,popper,bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
     <!-- jquery,popper,bootstrap end -->
-    
-    
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
     <!-- javascript csv parse -->
@@ -83,24 +83,35 @@
         var year_2009_dataset = [];
         var year_2015_dataset = [];
 
+
+
         var countries = [];
+        var countries_data = [];
 
         var mydatasets = [{
                 label: '1999',
                 data: year_1999_dataset,
+                yAxisID: 'y-axis-1',
                 backgroundColor: "red"
-
 
             },
             {
                 label: '2009',
                 data: year_2009_dataset,
+                yAxisID: 'y-axis-1',
                 backgroundColor: "green"
             },
             {
                 label: '2015',
                 data: year_2015_dataset,
+                yAxisID: 'y-axis-1',
                 backgroundColor: "blue"
+            },
+            {
+                label: '2015',
+                data: year_2015_dataset,
+                yAxisID: 'y-axis-2',
+                backgroundColor: "yellow"
             }
         ]
 
@@ -132,18 +143,28 @@
                             }
                         }],
                         yAxes: [{
-                            scaleLabel: {
-                                display: true,
-                                labelString: "Hectares"
+                                id: 'y-axis-1',
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: "Hectares"
+                                },
+                                ticks: {
+                                    beginAtZero: true,
+                                    autoSkip: false
+                                }
                             },
-                            ticks: {
-                                //     min: 800,
-                                //   max: 1420000,
-                                //   stepSize: 100000,
-                                beginAtZero: true,
-                                autoSkip: false
+                            {
+                                id: 'y-axis-2',
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: "2"
+                                },
+                                ticks: {
+                                    beginAtZero: true,
+                                    autoSkip: false
+                                }
                             }
-                        }]
+                        ]
                     },
 
                     //
@@ -221,12 +242,70 @@
                     }
 
                 }
-
+                getISO3();
                 drawChart();
+
             }
 
 
         });
+        //country countrycode year temp 1999 , 2009 , 2015
+        function getISO3() {
+            var url;
+            for (i = 0; i < countries.length; i++) {
+                url = "https://restcountries.eu/rest/v2/name/" + countries[i] + "?fields=alpha3Code;name";
+                $.getJSON(url, function(json) {})
+                    .done(function(json) {
+                        //console.log(json);
+
+
+                        var url2 = "http://climatedataapi.worldbank.org/climateweb/rest/v1/country/cru/tas/year/" +
+                            json[0].alpha3Code + ".json";
+                        $.getJSON(url2, function(json2) {})
+                            .done(function(json2) {
+                                //console.log(json2);
+                                k = 0;
+                                var data = [];
+                                data.push(json[0].name);
+                                data.push(json[0].alpha3Code);
+                                for (k = 0; k < json2.length; k++) {
+                                    var data = [];
+                                    if (json2[k].year == 1999) {
+                                        data.push(json[0].name); //name
+                                        //data.push(json[0].alpha3Code); //iso3
+                                        data.push("1999"); //year
+                                        data.push(json2[k].data); //temp
+                                        countries_data.push(data);
+                                        data = [];
+                                    }
+                                    if (json2[k].year == 2009) {
+                                        data.push(json[0].name); //name
+                                        //data.push(json[0].alpha3Code); //iso3
+                                        data.push("2009"); //year
+                                        data.push(json2[k].data); //temp
+                                        countries_data.push(data);
+                                        data = [];
+                                    }
+                                    if (json2[k].year == 2012) {
+                                        data.push(json[0].name); //name
+                                        //data.push(json[0].alpha3Code); //iso3
+                                        data.push("2015"); //year
+                                        data.push(json2[k].data); //temp
+                                        countries_data.push(data);
+                                        data = [];
+                                    }
+                                }
+                            })
+
+
+                        //countries_iso3.push(data);
+                        //data = [];
+
+                    })
+            }
+            console.log(countries_data);
+        }
+
 
         function removeCommas(str) {
             return (str.replace(/,/g, ''));
