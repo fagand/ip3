@@ -1,72 +1,4 @@
 <!DOCTYPE html>
-<html lang="en-GB">
-
-<head>
-    <title>Quakes</title>
-    <meta charset="UTF-8">
-    <!--We will use JQuery library (https://jquery.com/) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style>
-    /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-
-    #map {
-        height: 100%;
-        width: 100%;
-        position: inherit
-    }
-
-    /* Optional settings. Do as you wish with these*/
-
-    html,
-    body {
-        height: 96%;
-        margin: 1%;
-        padding: 0;
-    }
-
-    #other {
-        height: auto;
-        width: 50%;
-    }
-    </style>
-    <link rel="stylesheet" media="screen and (min-width: 600px)" href="css\main.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href=css\mobile.css">
-</head>
-
-<body>
-    <header>
-        <img src="img\logo.jpg" width="50%" height="50%" />
-
-    </header>
-    <div class="navigation" id="topnav">
-        <!-- BEGIN navigation.php INCLUDE -->
-        <?php include "./navigation.php";?>
-        <!-- EMD navigation.php INCLUDE -->
-    </div>
-    <section class="columns">
-        <div class="column" id="left">
-            <h2>Infomation</h2>
-            <h3>OHLC</h3>
-            <button type="button" onclick="deleteMarkers();">Clear Map</button>
-            <div id="feedSelector"></div>
-
-        </div>
-        <div class="column" id="main">
-            <div id="map"></div>
-
-
-        </div>
-        <div class="column" id="right">
-            <h2>Guide</h2>
-            <a class="twitter-timeline" data-lang="en" data-width="500" data-height="500" data-theme="light"
-                href="https://twitter.com/USGSted?ref_src=twsrc%5Etfw">Tweets by USGSted</a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-    </section>
-
-    </br>
-    <script>
 <html lang="en">
 
 <head>
@@ -83,13 +15,11 @@
     <style>
         /* Always set the map height explicitly to define the size of the div
                * element that contains the map. */
-
         #map {
             height: 100%;
             width: 100%;
             position: inherit
         }
-
         /* Optional settings. Do as you wish with these*/
         /*
             html,
@@ -203,11 +133,9 @@
             "All Earthquakes": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
         }
     };
-
     /* Function to construct a set of web page buttons of class: 'feed-name' where each button has a stored URL property */
     function makeChildProps(obj, currentProp) {
         var childProps = '';
-
         for (var prop in obj[currentProp]) {
             var el = "<div class='child-prop'><button class='feed-name' data-feedurl='" + obj[currentProp][prop] +
                 "'>" + prop + "</button></div>";
@@ -215,7 +143,6 @@
         }
         return childProps;
     }
-
     /* construct the buttons (that include the geojson URL properties) */
     for (var prop in quakeFeeds) {
         if (!quakeFeeds.hasOwnProperty(prop)) {
@@ -224,24 +151,18 @@
         $('#feedSelector').append("<div class='feed-date'>" + prop + "</div>" + makeChildProps(quakeFeeds, prop));
     }
     /* end construction of buttons */
-
     var markers = []; // keep an array of Google Maps markers, to be used by the Google Maps clusterer
-
     /* respond to a button press of any button of 'feed-name' class */
-    $('.feed-name').click(function(e) {
     $('.feed-name').click(function (e) {
         // We fetch the earthquake feed associated with the actual button that has been pressed. 
         $.ajax({
             url: $(e.target).data(
                 'feedurl'
             ), // The GeoJSON URL associated with a specific button was stored in the button's properties when the button was created
-            success: function(data) { // We've received the GeoJSON data
             success: function (data) { // We've received the GeoJSON data
                 i = 0;
-
                 var
                     places = []; // We store the names of earthquake locations in this array                    
-                $.each(data.features, function(key,
                 $.each(data.features, function (key,
                     val) { // Just get a single value ('place') and save it in an array
                     var coords = val.geometry.coordinates;
@@ -249,9 +170,7 @@
                     places.push(val.properties
                         .place); // Add a new earthquake location to the array.
                     places.push(coords); // Add a new earthquake location to the array.
-
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
-
                     if (coords[1] > 0) {
                         rhs = coords[1] + "N";
                     } else {
@@ -265,29 +184,21 @@
                         lhs = lhs + "W";
                     }
                     var coords = lhs + rhs;
-
-
                     function pie() {
                         $.getJSON(
                             "http://api.wolframalpha.com/v2/query?appid=VEUWJE-29Y9QPY4T3&input=" +
                             coords +
                             "&includepodid=CartographicNearestCity&output=json",
-                            function(json) {
                             function (json) {
-
                                 var nearest_city = json.queryresult.pods[0].subpods[0]
                                     .plaintext;
-
                                 document.getElementById('nearest_city_data').innerHTML =
                                     '<br> ' + nearest_city;
                             });
                     }
-
                     var url =
                         "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" +
                         coords;
-
-
                     // Now create a new marker on the map
                     var marker = new google.maps.Marker({
                         position: latLng,
@@ -303,7 +214,6 @@
                             "</h3><p><a href='" + url +
                             "'target='_blank'> WolframAlpha API</a></p>"
                     });
-                    marker.addListener('click', function(data) {
                     marker.addListener('click', function (data) {
                         infowindow.open(map,
                             marker); // Open the Google maps marker infoWindow
@@ -313,7 +223,6 @@
                 var markerCluster = new MarkerClusterer(mymap, markers, {
                     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
                 });
-
                 if (!places || !places.length) { //check if the data is empty
                     alert("No data");
                 }
