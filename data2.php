@@ -8,15 +8,21 @@
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css\bootstrap.min.css">
-        <!--We will use JQuery library (https://jquery.com/) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- jquery,popper,bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <!-- jquery,popper,bootstrap end -->
+
+     
         <script src="..\ip3\chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
         <script src="..\ip3\chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
         <script src="..\ip3\chartjs-chart-financial-master\docs\Chart.Financial.js" type="text/javascript"></script>
         <script src="..\ip3\chartjs-chart-financial-master\docs\utils.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>        
-        <script src="js\bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
+
+
         <!-- javascript csv parse -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script> <!-- js chart -->
 

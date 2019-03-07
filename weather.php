@@ -9,24 +9,26 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css\bootstrap.min.css">
+
+
+    <!-- jquery,popper,bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
-    <!--We will use JQuery library (https://jquery.com/) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jquery,popper,bootstrap end -->
+
     <!-- Need the following code for clustering Google maps markers-->
     <script
         src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
-        <style>
-        /* Always set the map height explicitly to define the size of the div
+    <style>
+    /* Always set the map height explicitly to define the size of the div
                * element that contains the map. */
-        #map {
-            height: 100%;
-            width: 100%;
-            position: inherit
-        }
-       
+    #map {
+        height: 100%;
+        width: 100%;
+        position: inherit
+    }
     </style>
 
 </head>
@@ -83,56 +85,56 @@
     </div>
     <!-- end content-->
 
-<script>
-var mymap;
-// window.location.href;
-var theurl = window.location.toString();
-//initMap()// called when Google Maps API code is loaded - when web page is opened/refreshed 
-image = new Image();
+    <script>
+    var mymap;
+    // window.location.href;
+    var theurl = window.location.toString();
+    //initMap()// called when Google Maps API code is loaded - when web page is opened/refreshed 
+    image = new Image();
 
-function initMap() {
-    mymap = new google.maps.Map(document.getElementById('map'), {
-        zoom: 2,
-        center: new google.maps.LatLng(55.86515, -
-            4.25763), // Center Map. Set this to any location that you like
-        mapTypeId: 'terrain' // can be any valid type
-    });
-    google.maps.event.trigger(mymap, 'resize');
+    function initMap() {
+        mymap = new google.maps.Map(document.getElementById('map'), {
+            zoom: 2,
+            center: new google.maps.LatLng(55.86515, -
+                4.25763), // Center Map. Set this to any location that you like
+            mapTypeId: 'terrain' // can be any valid type
+        });
+        google.maps.event.trigger(mymap, 'resize');
 
-    google.maps.event.addListener(mymap, 'click', function(event) {
-        console.log(event.latLng.lat(), event.latLng.lng());
+        google.maps.event.addListener(mymap, 'click', function(event) {
+            console.log(event.latLng.lat(), event.latLng.lng());
 
-        var searchterm = event.latLng.lat() + "," + event.latLng.lng();
-        pie(searchterm);
-    });
-}
+            var searchterm = event.latLng.lat() + "," + event.latLng.lng();
+            pie(searchterm);
+        });
+    }
 
-function pie(searchterm) {
-    var url = "http://api.apixu.com/v1/current.json?key=3b4f627ba14c47d5a8103303191502&q=";
-    var query_url = url + searchterm;
-    $.getJSON(query_url, function(json) {
-        console.log(json);
-        image.src = "http:" + json.current.condition.icon; // icon is specified within the data
-        $('#weatherInfo').html('<p>Currently: ' + json.current.condition.text +
-            '</p>'); // current weather in text format
-        $('#weatherInfo').append('<p>' + json.location.name + '</p>');
-        $('#weatherInfo').append('<p>' + json.location.region + '</p>');
-        $('#weatherInfo').append('<p>' + json.current.temp_c + '</p>');
-        $('#weatherInfo').append('<p>' + json.current.feelslike_c + '</p>');
-        $('#weatherInfo').append('<p>' + json.current.wind_mph + '</p>');
-        $('#weatherInfo').append('<p>' + json.current.feelslike_c + '</p>');
+    function pie(searchterm) {
+        var url = "http://api.apixu.com/v1/current.json?key=3b4f627ba14c47d5a8103303191502&q=";
+        var query_url = url + searchterm;
+        $.getJSON(query_url, function(json) {
+            console.log(json);
+            image.src = "http:" + json.current.condition.icon; // icon is specified within the data
+            $('#weatherInfo').html('<p>Currently: ' + json.current.condition.text +
+                '</p>'); // current weather in text format
+            $('#weatherInfo').append('<p>' + json.location.name + '</p>');
+            $('#weatherInfo').append('<p>' + json.location.region + '</p>');
+            $('#weatherInfo').append('<p>' + json.current.temp_c + '</p>');
+            $('#weatherInfo').append('<p>' + json.current.feelslike_c + '</p>');
+            $('#weatherInfo').append('<p>' + json.current.wind_mph + '</p>');
+            $('#weatherInfo').append('<p>' + json.current.feelslike_c + '</p>');
 
-        image.onload = function() {
-            $('#weatherImage').empty().append(image);
-        };
+            image.onload = function() {
+                $('#weatherImage').empty().append(image);
+            };
 
-    });
-}
+        });
+    }
 
-function getWeather() {
-    pie(document.getElementById("location").value);
-}
-</script>
+    function getWeather() {
+        pie(document.getElementById("location").value);
+    }
+    </script>
     <!-- Need the following code for Google Maps. PLEASE INSERT YOUR OWN GOOGLE MAPS KEY BELOW -->
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rO-86zPMYGXlsruR9s6kxlFOnIrBORo&callback=initMap">
