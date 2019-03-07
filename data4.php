@@ -106,12 +106,6 @@
                 data: year_2015_dataset,
                 yAxisID: 'y-axis-1',
                 backgroundColor: "blue"
-            },
-            {
-                label: '2015',
-                data: year_2015_dataset,
-                yAxisID: 'y-axis-2',
-                backgroundColor: "yellow"
             }
         ]
 
@@ -147,17 +141,6 @@
                                 scaleLabel: {
                                     display: true,
                                     labelString: "Hectares"
-                                },
-                                ticks: {
-                                    beginAtZero: true,
-                                    autoSkip: false
-                                }
-                            },
-                            {
-                                id: 'y-axis-2',
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: "2"
                                 },
                                 ticks: {
                                     beginAtZero: true,
