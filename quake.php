@@ -20,20 +20,7 @@
             width: 100%;
             position: inherit
         }
-        /* Optional settings. Do as you wish with these*/
-        /*
-            html,
-            body {
-                height: 96%;
-                margin: 1%;
-                padding: 0;
-            }
-        
-            #other {
-                height: auto;
-                width: 50%;
-            }
-            */
+       
     </style>
 </head>
 
