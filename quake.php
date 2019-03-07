@@ -67,6 +67,98 @@
 
     </br>
     <script>
+<html lang="en">
+
+<head>
+    <title>Locate-a-Quake: Earthquakes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+               * element that contains the map. */
+
+        #map {
+            height: 100%;
+            width: 100%;
+            position: inherit
+        }
+
+        /* Optional settings. Do as you wish with these*/
+        /*
+            html,
+            body {
+                height: 96%;
+                margin: 1%;
+                padding: 0;
+            }
+        
+            #other {
+                height: auto;
+                width: 50%;
+            }
+            */
+    </style>
+</head>
+
+<body>
+    <?php include 'includes/navigation.php' ?>
+
+    <!-- content -->
+    <div class="container-fluid body-content">
+
+        <!-- breadcrumb -->
+        <div class="row">
+            <div class="col-sm-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
+                    <li class="breadcrumb-item active">Earthquakes</li>
+                </ol>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+
+        <div class="row">
+            <!-- left sidebar content-->
+            <div class="col-lg-2">
+                <div class="card card-body" style="max-width: 100%;">
+                    <button type="button" onclick="deleteMarkers();">Clear Map</button>
+                    <div style="max-width: 100%" id="feedSelector"></div>
+                </div>
+            </div>
+            <!-- end left sidebar content-->
+
+            <!-- main column content -->
+            <div class="col-lg-7">
+                <div id="map"></div>
+            </div>
+            <!-- end main column content-->
+
+            <!-- sidebar column content-->
+            <div class="col-lg-3">
+
+                <a class="twitter-timeline" data-lang="en" data-width="max-width" data-height="100%" data-theme="light"
+                    href="https://twitter.com/USGSted?ref_src=twsrc%5Etfw">Tweets by USGSted</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            </div>
+            <!-- end sidebar column content -->
+        </div>
+
+        <?php include 'includes/footer.php' ?>
+    </div>
+    <!-- end content-->
+</body>
+
+<!-- map scripts below -->
+
+<script>
     var mymap;
     // window.location.href;
     var theurl = window.location.toString();
@@ -137,17 +229,20 @@
 
     /* respond to a button press of any button of 'feed-name' class */
     $('.feed-name').click(function(e) {
+    $('.feed-name').click(function (e) {
         // We fetch the earthquake feed associated with the actual button that has been pressed. 
         $.ajax({
             url: $(e.target).data(
                 'feedurl'
             ), // The GeoJSON URL associated with a specific button was stored in the button's properties when the button was created
             success: function(data) { // We've received the GeoJSON data
+            success: function (data) { // We've received the GeoJSON data
                 i = 0;
 
                 var
                     places = []; // We store the names of earthquake locations in this array                    
                 $.each(data.features, function(key,
+                $.each(data.features, function (key,
                     val) { // Just get a single value ('place') and save it in an array
                     var coords = val.geometry.coordinates;
                     places.push("\n");
@@ -178,6 +273,7 @@
                             coords +
                             "&includepodid=CartographicNearestCity&output=json",
                             function(json) {
+                            function (json) {
 
                                 var nearest_city = json.queryresult.pods[0].subpods[0]
                                     .plaintext;
@@ -208,6 +304,7 @@
                             "'target='_blank'> WolframAlpha API</a></p>"
                     });
                     marker.addListener('click', function(data) {
+                    marker.addListener('click', function (data) {
                         infowindow.open(map,
                             marker); // Open the Google maps marker infoWindow
                         pie();
@@ -218,22 +315,18 @@
                 });
 
                 if (!places || !places.length) { //check if the data is empty
-                    alert("no data");
+                    alert("No data");
                 }
             }
         });
     });
+</script>
+<!-- Need the following code for clustering Google maps markers-->
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+</script>
+<!-- Need the following code for Google Maps. PLEASE INSERT YOUR OWN GOOGLE MAPS KEY BELOW -->
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rO-86zPMYGXlsruR9s6kxlFOnIrBORo&callback=initMap">
     </script>
-    <!-- Need the following code for clustering Google maps markers-->
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-    </script>
-    <!-- Need the following code for Google Maps. PLEASE INSERT YOUR OWN GOOGLE MAPS KEY BELOW -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rO-86zPMYGXlsruR9s6kxlFOnIrBORo&callback=initMap">
-    </script>
-
-
-</body>
 
 </html>
