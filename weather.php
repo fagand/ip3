@@ -57,25 +57,22 @@
                 Location:<input type="text" id="location" value="Enter Location">
                 <button onclick="getWeather()">Get Weather Data</button>
                 <div id="map"></div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
-                    molestias, minus dolorum obcaecati, quis, laboriosam voluptas rem reiciendis praesentium delectus
-                    corrupti deserunt rerum suscipit non error. Amet, facere.</p>
             </div>
             <!-- end main column content-->
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
-                <h2>Guide</h2>
+                <h2>Weather Data</h2>
                 <div id="weatherImage"></div>
                 <div id="weatherInfo"></div>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum."
+                <h3>UV index info</h3>
+                <p>
+                    Index Exposure
+                    1-2 Low
+                    3-5 Moderate
+                    6-7 High
+                    8-10 Very high
+                    11 Extreme</p>
             </div>
         </div>
         <!-- end sidebar column content -->
@@ -102,8 +99,6 @@
         google.maps.event.trigger(mymap, 'resize');
 
         google.maps.event.addListener(mymap, 'click', function(event) {
-            console.log(event.latLng.lat(), event.latLng.lng());
-
             var searchterm = event.latLng.lat() + "," + event.latLng.lng();
             pie(searchterm);
         });
@@ -113,22 +108,32 @@
         var url = "http://api.apixu.com/v1/current.json?key=3b4f627ba14c47d5a8103303191502&q=";
         var query_url = url + searchterm;
         $.getJSON(query_url, function(json) {
-            console.log(json);
-            image.src = "http:" + json.current.condition.icon; // icon is specified within the data
-            $('#weatherInfo').html('<p>Currently: ' + json.current.condition.text +
-                '</p>'); // current weather in text format
-            $('#weatherInfo').append('<p>' + json.location.name + '</p>');
-            $('#weatherInfo').append('<p>' + json.location.region + '</p>');
-            $('#weatherInfo').append('<p>' + json.current.temp_c + '</p>');
-            $('#weatherInfo').append('<p>' + json.current.feelslike_c + '</p>');
-            $('#weatherInfo').append('<p>' + json.current.wind_mph + '</p>');
-            $('#weatherInfo').append('<p>' + json.current.feelslike_c + '</p>');
 
-            image.onload = function() {
-                $('#weatherImage').empty().append(image);
-            };
 
-        });
+            })
+            .done(function(json) {
+                console.log(json);
+                image.src = "http:" + json.current.condition.icon; // icon is specified within the data
+                $('#weatherInfo').html('<p>Currently: ' + json.current.condition.text +
+                    '</p>'); // current weather in text format
+                $('#weatherInfo').append('<p> name:' + json.location.name + '</p>');
+                $('#weatherInfo').append('<p> region:' + json.location.region + '</p>');
+                $('#weatherInfo').append('<p> current temp:' + json.current.temp_c + ' C</p>');
+                $('#weatherInfo').append('<p> feels like:' + json.current.feelslike_c + ' C</p>');
+                $('#weatherInfo').append('<p> wind speed:' + json.current.wind_mph + ' mph</p>');
+                $('#weatherInfo').append('<p> uv index: ' + json.current.uv + '</p>');
+                $('#weatherInfo').append('<p> humidity: ' + json.current.humidity + '%</p>');
+                $('#weatherInfo').append('<p> Last updated: ' + json.current.last_updated + '</p>');
+                image.onload = function() {
+                    $('#weatherImage').empty().append(image);
+                };
+            })
+            .fail(function() {
+                alert('getJSON request failed! ');
+                $('#weatherInfo').html('<p>no data</p>');
+                $('#weatherImage').empty()
+
+            })
     }
 
     function getWeather() {
