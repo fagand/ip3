@@ -35,53 +35,55 @@
             <!-- main column content -->
             <div class="col-sm-8">
                 <h1>Authors...</h1>
-                <small class="text-muted">Click each member's name in the sidebar to view his profile.</small>
+                <small class="text-muted">Click each team member's name in the sidebar to view his profile.</small>
                     <div class="collapse" id="andrewInfo">
                     <div class="card card-body">
-                        <h3>Andrew McAvoy <img src="img\andrew.png" width="100px" height="100px" alt=""></h3>
+                        <h2>Andrew McAvoy <img src="img\andrew.png" width="100px" height="100px" alt=""></h2>
                         <h6 class="card-subtitle mb-2 text-muted">S1316078 | AMCAVO201@caledonian.ac.uk</h6>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>
+                        <p>Project roles: <b>Frontend Developer</b> & <b>UML Designer.<b></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque cupiditate aut totam ducimus minima veritatis.</p>
                     </div>
                     </div>
 
                     <div class="collapse" id="alexInfo">
                     <div class="card card-body">
-                        <h3>Alex Carruthers <img src="img\alex.png" width="100px" height="100px" alt=""></h3>
+                        <h2>Alex Carruthers <img src="img\alex.png" width="100px" height="100px" alt=""></h2>
                         <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | ACARRU203@caledonian.ac.uk</h6>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>
+                        <p>Project roles: <b>Backend Developer</b> & <b>Risk Manager.<b></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque cupiditate aut totam ducimus minima veritatis.</p>
                     </div>
                     </div>
 
                     <div class="collapse" id="davidInfo">
                     <div class="card card-body">
-                        <h3>David Fagan <img src="img\david.png" width="100px" height="100px" alt=""></h3>
+                        <h2>David Fagan <img src="img\david.png" width="100px" height="100px" alt=""></h2>
                         <h6 class="card-subtitle mb-2 text-muted">S1825830 | DFAGAN200@caledonian.ac.uk</h6>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>                    
-                    </div>
+                        <p>Project roles: <b>UI Designer</b> & <b>Frontend Developer.<b></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque cupiditate aut totam ducimus minima veritatis.</p>                    </div>
                     </div>
 
                     <div class="collapse" id="mattInfo">
                     <div class="card card-body">
-                        <h3>Matt Alston <img src="img\matt.png" width="100px" height="100px" alt=""></h3>
+                        <h2>Matt Alston <img src="img\matt.png" width="100px" height="100px" alt=""></h2>
                         <h6 class="card-subtitle mb-2 text-muted">S1824614 | MALSTO200@caledonian.ac.uk</h6>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>                    
-                    </div>
+                        <p>Project roles: <b>Project Manager</b> & <b>Software Tester.<b></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque cupiditate aut totam ducimus minima veritatis.</p>                    </div>
                     </div>
 
                     <div class="collapse" id="afaqInfo">
                     <div class="card card-body">
-                        <h3>Afaq Ahmad</h3>
+                        <h2>Afaq Ahmad</h2>
                         <h6 class="card-subtitle mb-2 text-muted">S1625481 | AAHMAD204@caledonian.ac.uk</h6>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>                    
-                    </div>
+                        <p>Project roles: <b>Software Architect</b> & <b>Backend Developer.<b></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque cupiditate aut totam ducimus minima veritatis.</p>                    </div>
                     </div>
 
                     <div class="collapse" id="jackInfo">
                     <div class="card card-body">
-                        <h3>Jack Moore</h3>
+                        <h2>Jack Moore</h2>
                         <h6 class="card-subtitle mb-2 text-muted">S1628300 | JMOORE200@caledonian.ac.uk</h6>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>                    
-                    </div>
+                        <p>Project roles: <b>Backend Developer</b> & <b>Software Tester.<b></p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque cupiditate aut totam ducimus minima veritatis.</p>                    </div>
                     </div>
             </div>
             <!-- end main column content-->
