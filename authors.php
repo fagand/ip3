@@ -38,7 +38,7 @@
                 <small class="text-muted">Click each member's name in the sidebar to view his profile.</small>
                     <div class="collapse" id="andrewInfo">
                     <div class="card card-body">
-                        <h3>Andrew McAvoy</h3>
+                        <h3>Andrew McAvoy</h3><img src="img\andrew.png" width="50px" height="50px" alt="">
                         <h6 class="card-subtitle mb-2 text-muted">S1316078 | AMCAVO201@caledonian.ac.uk</h6>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>
                     </div>
@@ -46,21 +46,21 @@
 
                     <div class="collapse" id="alexInfo">
                     <div class="card card-body">
-                        <h3>Alex Carruthers</h3>
+                        <h3>Alex Carruthers</h3><img src="img\alex.png" width="50px" height="50px" alt="">
                         <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | x@caledonian.ac.uk</h6>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>                    </div>
                     </div>
 
                     <div class="collapse" id="davidInfo">
                     <div class="card card-body">
-                        <h3>David Fagan</h3>
+                        <h3>David Fagan</h3><img src="img\david.png" width="50px" height="50px" alt="">
                         <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | x@caledonian.ac.uk</h6>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>                    </div>
                     </div>
 
                     <div class="collapse" id="mattInfo">
                     <div class="card card-body">
-                        <h3>Matt Alston</h3>
+                        <h3>Matt Alston</h3><img src="img\matt.png" width="50px" height="50px" alt="">
                         <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | x@caledonian.ac.uk</h6>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quibusdam suscipit</p>                    </div>
                     </div>
