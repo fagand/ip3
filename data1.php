@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Locate-a-Quake: Tutorial</title>
+    <title>Locate-a-Quake: Stocks</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -15,13 +15,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
-    <!-- jquery,popper,bootstrap end -->
-   <!-- charting functions -->
-       <script src="..\ip3\chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
+    <!-- charting functions -->
+    <script src="..\ip3\chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
     <script src="..\ip3\chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
     <script src="..\ip3\chartjs-chart-financial-master\docs\Chart.Financial.js" type="text/javascript"></script>
     <script src="..\ip3\chartjs-chart-financial-master\docs\utils.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.2.0/json2html.min.js"></script> <!--builds html table from json (https://jquery.com/) -->
+    <!--builds html table from json (https://jquery.com/) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.2.0/json2html.min.js"></script>
+    <!--builds html table from json (https://jquery.com/) -->
 
 </head>
 
@@ -36,7 +38,7 @@
             <div class="col-sm-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
-                    <li class="breadcrumb-item active">Tutorial</li>
+                    <li class="breadcrumb-item active">Stocks</li>
                 </ol>
             </div>
         </div>
@@ -45,7 +47,7 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Tutorial...</h1>
+                <h1>Stocks...</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
                     <canvas id="myChart" width="800" height="400"></canvas>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
@@ -53,23 +55,24 @@
                         delectus
                         corrupti deserunt rerum suscipit non error. Amet, facere.</p>
                 </div>
-                <!-- end main column content-->
-
-                <!-- sidebar column content-->
-                <div class="col-sm-4">
-                <input type="text" id="stockname"><button onclick="getStocks()">Get Stock Data</button>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor dolore
-                        minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
-                        rerum,
-                        atque sunt vero?</p>
-                </div>
-                <!-- end sidebar column content -->
             </div>
+            <!-- end main column content-->
 
-            <?php include 'includes/footer.php' ?>
+            <!-- sidebar column content-->
+            <div class="col-sm-4">
+                <input type="text" id="stockname"><button onclick="getStocks()">Get Stock Data</button>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor dolore
+                    minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
+                    rerum,
+                    atque sunt vero?</p>
+            </div>
+            <!-- end sidebar column content -->
         </div>
-        <!-- end content-->
-        <script>
+
+        <?php include 'includes/footer.php' ?>
+    </div>
+    <!-- end content-->
+    <script>
         var Gjson;
         var data_points_arr = [];
         var dates = [];
@@ -82,7 +85,7 @@
                 "&apikey=" +
                 apikey;
 
-            $.getJSON(query_url, function(json) {
+            $.getJSON(query_url, function (json) {
                 console.log(json);
 
                 var transform = {
@@ -92,34 +95,34 @@
                         "children": [{
                             "tag": "tr",
                             "children": [{
-                                    "tag": "td",
-                                    "html": "${}"
-                                },
-                                {
-                                    "tag": "td",
-                                    "html": "${age}"
-                                }
+                                "tag": "td",
+                                "html": "${}"
+                            },
+                            {
+                                "tag": "td",
+                                "html": "${age}"
+                            }
                             ]
                         }]
                     }]
                 };
 
                 var data = [{
-                        'name': 'Bob',
-                        'age': 40
-                    },
-                    {
-                        'name': 'Frank',
-                        'age': 15
-                    },
-                    {
-                        'name': 'Bill',
-                        'age': 65
-                    },
-                    {
-                        'name': 'Robert',
-                        'age': 24
-                    }
+                    'name': 'Bob',
+                    'age': 40
+                },
+                {
+                    'name': 'Frank',
+                    'age': 15
+                },
+                {
+                    'name': 'Bill',
+                    'age': 65
+                },
+                {
+                    'name': 'Robert',
+                    'age': 24
+                }
                 ];
 
                 $('#right').html(json2html.transform(data, transform));
@@ -131,7 +134,7 @@
             var query_url =
                 "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=GOOG&apikey=0F1ISWGUHZYUTIRI&datatype=json";
 
-            $.getJSON(query_url, function(json) {
+            $.getJSON(query_url, function (json) {
                 console.log(json);
                 Gjson = json;
                 createDataPoints();
@@ -148,7 +151,7 @@
         function createDataPoints() {
             //o, h, l, c, timestamp
             var dateFormat = 'YYYY MM DD';
-            Object.keys(Gjson["Time Series (Daily)"]).forEach(function(key, index) {
+            Object.keys(Gjson["Time Series (Daily)"]).forEach(function (key, index) {
                 var date = moment(key, dateFormat);
                 var point = {
                     o: parseFloat(Gjson["Time Series (Daily)"][key]["1. open"]),
@@ -196,7 +199,7 @@
                 },
             });
         }
-        </script>
+    </script>
 </body>
 
 </html>

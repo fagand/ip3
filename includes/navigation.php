@@ -1,6 +1,6 @@
  <!-- navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.php">
         <img src="img/vectorpaint.svg" width="30px" height="30px" class="d-inline-block align-top" alt="">
             Locate-a-Quake
         </a>
