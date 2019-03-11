@@ -36,9 +36,9 @@
 
         <div class="row">
             <!-- main column content -->
-            <div class="col-sm-5">
+            <div class="col-sm-3">
                 <h1>Authors...</h1>
-                <small class="text-muted">Click each team member's name in the sidebar to view his profile.</small>
+                <small class="text-muted">Click each team member's name to view his profile.</small>
                 <p>
                     <div class="btn-group-horizont">
                         <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#andrewInfo" aria-expanded="false" aria-controls="andrewInfo">
@@ -66,7 +66,7 @@
             <!-- end main column content-->
 
             <!-- sidebar column content-->
-            <div class="col-sm-7">
+            <div class="col-sm-9">
             <div class="collapse" id="andrewInfo">
                     <div class="card card-body">
                         <h2>Andrew McAvoy <img src="img\andrew.png" width="100px" height="100px" alt=""></h2>
@@ -117,6 +117,7 @@
                     <div class="collapse" id="jackInfo">
                     <div class="card card-body">
                         <h2>Jack Moore</h2>
+                        <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1628300 | JMOORE200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Backend Developer</b> & <b>Software Tester.</b></p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque cupiditate aut totam ducimus minima veritatis.</p>                    </div>
