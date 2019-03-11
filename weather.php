@@ -56,7 +56,7 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Weather...</h1>
+                <h1>Weather</h1>
 
                 <input class="form-control mr-sm-2" type="text" id="location" placeholder="enter location">
                 <button class="btn btn-secondary my-2 my-sm-0" onclick="getWeather()">Get Weather Data</button>

@@ -17,10 +17,10 @@
     <script src="js\bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
     <!-- charting functions -->
-    <script src="..\ip3\chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
-    <script src="..\ip3\chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
-    <script src="..\ip3\chartjs-chart-financial-master\docs\Chart.Financial.js" type="text/javascript"></script>
-    <script src="..\ip3\chartjs-chart-financial-master\docs\utils.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master\docs\Chart.Financial.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master\docs\utils.js" type="text/javascript"></script>
     <!--builds html table from json (https://jquery.com/) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.2.0/json2html.min.js"></script>
     <!--builds html table from json (https://jquery.com/) -->
@@ -47,7 +47,7 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Stocks...</h1>
+                <h1>Stocks</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
                     <canvas id="myChart" width="800" height="400"></canvas>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur

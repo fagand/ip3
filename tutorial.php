@@ -39,7 +39,7 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Tutorial...</h1>
+                <h1>Tutorials</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
                     molestias, minus dolorum obcaecati, quis, laboriosam voluptas rem reiciendis praesentium delectus
                     corrupti deserunt rerum suscipit non error. Amet, facere.</p>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Locate-a-Quake: Data 4</title>
+    <title>Locate-a-Quake: Wine Production</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,7 +22,7 @@
     <!-- javascript csv parse -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
     <!-- js chart -->
-    <script src="..\ip3\hammer\hammer.js"></script><!-- hammer js -->
+    <script src="hammer\hammer.js"></script><!-- hammer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/0.6.6/chartjs-plugin-zoom.js">
     </script>
     <!-- js chart zoom -->
@@ -31,7 +31,7 @@
             position: relative;
             margin: auto;
             height: 80vh;
-            width: 80vw;
+            width: 100%;
         }
     </style>
 
@@ -48,7 +48,7 @@
             <div class="col-sm-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
-                    <li class="breadcrumb-item active">Data 4</li>
+                    <li class="breadcrumb-item active">Wine Production</li>
                 </ol>
             </div>
         </div>
@@ -57,7 +57,7 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Data 4...</h1>
+                <h1>Wine Production</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
                     <canvas id="myChart" width="800" height="400"></canvas>
 
@@ -177,7 +177,7 @@
 
         $.ajax({
             type: "GET",
-            url: "./data/winedata.csv",
+            url: "data/winedata.csv",
             dataType: "text",
             success: function (response) {
                 mydata = $.csv.toArrays(response);

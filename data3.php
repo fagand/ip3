@@ -23,7 +23,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script> <!-- js chart -->
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.5.0"></script>
     <!-- js chart data label plugin -->
-    <script src="..\ip3\hammer\hammer.js"></script><!-- hammer js -->
+    <script src="hammer\hammer.js"></script><!-- hammer js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/0.6.6/chartjs-plugin-zoom.js"></script>
     <!-- js chart zoom -->
     <style>
@@ -32,10 +32,8 @@
         }
 
         .chart-container {
-            width: 800px;
+            width: 100%;
             height: 800px;
-
-
         }
     </style>
 </head>
@@ -51,7 +49,7 @@
             <div class="col-sm-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
-                    <li class="breadcrumb-item active">Data 3</li>
+                    <li class="breadcrumb-item active">Air Traffic Visualisation</li>
                 </ol>
             </div>
         </div>
@@ -60,7 +58,7 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Data 3...</h1>
+                <h1>Air Traffic Visualisation</h1>
                 <div class="chart-container">
                     <canvas id="myChart" width="400" height="400"></canvas>
 
@@ -276,8 +274,8 @@
 
 
         function getJSON() {
-            var flights_url = "..\\ip3\\data\\flights.txt";
-            var airports_url = "..\\ip3\\data\\airports.txt";
+            var flights_url = "data/flights.txt";
+            var airports_url = "data/airports.txt";
             $.when($.getJSON(flights_url), $.getJSON(airports_url)).then(function (flights, airports) {
                 json_flights = flights[0];
                 json_airports = airports[0];

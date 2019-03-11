@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <title>Locate-a-Quake: Data 2</title>
+    <title>Locate-a-Quake: Oil Valve Data</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,16 +16,24 @@
     <!-- jquery,popper,bootstrap end -->
 
 
-    <script src="..\ip3\chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
-    <script src="..\ip3\chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
-    <script src="..\ip3\chartjs-chart-financial-master\docs\Chart.Financial.js" type="text/javascript"></script>
-    <script src="..\ip3\chartjs-chart-financial-master\docs\utils.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master\docs\Chart.Financial.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master\docs\utils.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
 
 
     <!-- javascript csv parse -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script> <!-- js chart -->
 
+    <style>
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 80vh;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,7 +47,7 @@
             <div class="col-sm-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
-                    <li class="breadcrumb-item active">Data 2</li>
+                    <li class="breadcrumb-item active">Oil Valve Data</li>
                 </ol>
             </div>
         </div>
@@ -48,7 +56,7 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Data 2...</h1>
+                <h1>Oil Valve Data</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
                     <canvas id="myChart" width="800" height="400"></canvas>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
@@ -63,8 +71,9 @@
             <div class="col-sm-4">
                 <h2>Information</h2>
                 <h3>Valhall</h3>
-                <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and following commissioning of the new PH platform in 2013 the field now has the potential to
-                continue producing for several decades.</p>
+                <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and
+                    following commissioning of the new PH platform in 2013 the field now has the potential to
+                    continue producing for several decades.</p>
             </div>
             <!-- end sidebar column content -->
         </div>
