@@ -27,12 +27,12 @@
     </script>
     <!-- js chart zoom -->
     <style>
-    .chart-container {
-        position: relative;
-        margin: auto;
-        height: 80vh;
-        width: 80vw;
-    }
+        .chart-container {
+            position: relative;
+            margin: auto;
+            height: 80vh;
+            width: 80vw;
+        }
     </style>
 
 </head>
@@ -62,21 +62,22 @@
                     <canvas id="myChart" width="800" height="400"></canvas>
 
                 </div>
-                <!-- end main column content-->
-
-                <!-- sidebar column content-->
-                <div class="col-sm-4">
-                    <h2>Infomation</h2>
-                    <h3>EU Wine Grouping Countries</h3>
-                    Wine-grower holdings by degree of specialisation
-                </div>
-                <!-- end sidebar column content -->
             </div>
+            <!-- end main column content-->
 
-            <?php include 'includes/footer.php' ?>
+            <!-- sidebar column content-->
+            <div class="col-sm-4">
+                <h2>Infomation</h2>
+                <h3>EU Wine Grouping Countries</h3>
+                Wine-grower holdings by degree of specialisation
+            </div>
+            <!-- end sidebar column content -->
         </div>
-        <!-- end content-->
-        <script>
+
+        <?php include 'includes/footer.php' ?>
+    </div>
+    <!-- end content-->
+    <script>
         var mydata;
 
         var year_1999_dataset = [];
@@ -89,24 +90,24 @@
         var countries_data = [];
 
         var mydatasets = [{
-                label: '1999',
-                data: year_1999_dataset,
-                yAxisID: 'y-axis-1',
-                backgroundColor: "red"
+            label: '1999',
+            data: year_1999_dataset,
+            yAxisID: 'y-axis-1',
+            backgroundColor: "red"
 
-            },
-            {
-                label: '2009',
-                data: year_2009_dataset,
-                yAxisID: 'y-axis-1',
-                backgroundColor: "green"
-            },
-            {
-                label: '2015',
-                data: year_2015_dataset,
-                yAxisID: 'y-axis-1',
-                backgroundColor: "blue"
-            }
+        },
+        {
+            label: '2009',
+            data: year_2009_dataset,
+            yAxisID: 'y-axis-1',
+            backgroundColor: "green"
+        },
+        {
+            label: '2015',
+            data: year_2015_dataset,
+            yAxisID: 'y-axis-1',
+            backgroundColor: "blue"
+        }
         ]
 
 
@@ -137,16 +138,16 @@
                             }
                         }],
                         yAxes: [{
-                                id: 'y-axis-1',
-                                scaleLabel: {
-                                    display: true,
-                                    labelString: "Hectares"
-                                },
-                                ticks: {
-                                    beginAtZero: true,
-                                    autoSkip: false
-                                }
+                            id: 'y-axis-1',
+                            scaleLabel: {
+                                display: true,
+                                labelString: "Hectares"
+                            },
+                            ticks: {
+                                beginAtZero: true,
+                                autoSkip: false
                             }
+                        }
                         ]
                     },
 
@@ -178,7 +179,7 @@
             type: "GET",
             url: "./data/winedata.csv",
             dataType: "text",
-            success: function(response) {
+            success: function (response) {
                 mydata = $.csv.toArrays(response);
 
                 console.log(mydata);
@@ -237,15 +238,15 @@
             var url;
             for (i = 0; i < countries.length; i++) {
                 url = "https://restcountries.eu/rest/v2/name/" + countries[i] + "?fields=alpha3Code;name";
-                $.getJSON(url, function(json) {})
-                    .done(function(json) {
+                $.getJSON(url, function (json) { })
+                    .done(function (json) {
                         //console.log(json);
 
 
                         var url2 = "http://climatedataapi.worldbank.org/climateweb/rest/v1/country/cru/tas/year/" +
                             json[0].alpha3Code + ".json";
-                        $.getJSON(url2, function(json2) {})
-                            .done(function(json2) {
+                        $.getJSON(url2, function (json2) { })
+                            .done(function (json2) {
                                 //console.log(json2);
                                 k = 0;
                                 var data = [];
@@ -293,7 +294,7 @@
         function removeCommas(str) {
             return (str.replace(/,/g, ''));
         }
-        </script>
+    </script>
 </body>
 
 </html>

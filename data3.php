@@ -27,16 +27,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/0.6.6/chartjs-plugin-zoom.js"></script>
     <!-- js chart zoom -->
     <style>
-    canvas {
-        background-color: rgba(0, 0, 0, 1);
-    }
+        canvas {
+            background-color: rgba(0, 0, 0, 1);
+        }
 
-    .chart-container {
-        width: 800px;
-        height: 800px;
+        .chart-container {
+            width: 800px;
+            height: 800px;
 
 
-    }
+        }
     </style>
 </head>
 
@@ -65,28 +65,29 @@
                     <canvas id="myChart" width="400" height="400"></canvas>
 
                 </div>
-                <!-- end main column content-->
-
-                <!-- sidebar column content-->
-                <div class="col-sm-4">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor
-                        dolore
-                        minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
-                        rerum,
-                        atque sunt vero?</p>
-                </div>
-                <!-- end sidebar column content -->
             </div>
+            <!-- end main column content-->
 
-            <?php include 'includes/footer.php' ?>
+            <!-- sidebar column content-->
+            <div class="col-sm-4">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor
+                    dolore
+                    minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
+                    rerum,
+                    atque sunt vero?</p>
+            </div>
+            <!-- end sidebar column content -->
         </div>
-        <!-- end content-->
-        <script>
+
+        <?php include 'includes/footer.php' ?>
+    </div>
+    <!-- end content-->
+    <script>
         // Extend Number object with methods to convert between degrees & radians
-        Number.prototype.toRadians = function() {
+        Number.prototype.toRadians = function () {
             return this * Math.PI / 180;
         };
-        Number.prototype.toDegrees = function() {
+        Number.prototype.toDegrees = function () {
             return this * 180 / Math.PI;
         };
         var glasgow_airport_lat = 55.8691; //lat1
@@ -113,7 +114,7 @@
                 options: {
                     tooltips: {
                         callbacks: {
-                            label: function(tooltipItem, data) {
+                            label: function (tooltipItem, data) {
                                 var dataset = data.datasets[tooltipItem.datasetIndex];
                                 var index = tooltipItem.index;
                                 return dataset.labels[index] + ': ' + dataset.data[index];
@@ -135,7 +136,7 @@
                             }
                         }],
                         xAxes: [{
-                                    precision: 1,
+                            precision: 1,
                             ticks: {
                                 min: -12,
                                 max: 3,
@@ -209,13 +210,13 @@
         function create_titles_points() {
             for (i = 0; i < json_flights.length; i++) {
                 names.push("\n\n" + json_flights[i]["aircraft"]["regNumber"] + " " + json_flights[i]["aircraft"][
-                        "icaoCode"
-                    ] +
+                    "icaoCode"
+                ] +
                     " " + json_flights[i]["geography"]["altitude"].toFixed(0) + "ft " + json_flights[i]["speed"]
                     [
                         "horizontal"
                     ]
-                    .toFixed(0) + "kts " + distances_from_GLA[i] + "km")
+                        .toFixed(0) + "kts " + distances_from_GLA[i] + "km")
                 points.push({
                     x: json_flights[i]["geography"]["longitude"],
                     y: json_flights[i]["geography"]["latitude"]
@@ -228,7 +229,7 @@
 
             for (i = 0; i < json_airports.length; i++) {
                 if (json_airports[i].nameAirport.includes("Bus") === false && json_airports[i].nameAirport.includes(
-                        "train") === false && json_airports[i].nameAirport.includes("Railway") === false) {
+                    "train") === false && json_airports[i].nameAirport.includes("Railway") === false) {
                     airport_latlongs.push({
                         x: json_airports[i].longitudeAirport,
                         y: json_airports[i].latitudeAirport
@@ -245,29 +246,29 @@
         var data = {
 
             datasets: [{
-                    label: 'Glasgow Airport Inbound Flights',
-                    labels: names,
-                    backgroundColor: 'rgba(60, 179, 113, 1)',
-                    data: points,
-                    datalabels: {
-                        color: '#36A2EB', //color of flight text
-                        formatter: function(value, context) {
-                            return names[context.dataIndex];
-                        }
-                    }
-                },
-                {
-                    labels: airport_names,
-                    label: 'Airports',
-                    backgroundColor: 'rgba(255, 179, 113, 1)', //orange
-                    data: airport_latlongs,
-                    datalabels: {
-                        color: '#36A2EB', //color of flight text
-                        formatter: function(value, context) {
-                            return airport_names[context.dataIndex];
-                        }
+                label: 'Glasgow Airport Inbound Flights',
+                labels: names,
+                backgroundColor: 'rgba(60, 179, 113, 1)',
+                data: points,
+                datalabels: {
+                    color: '#36A2EB', //color of flight text
+                    formatter: function (value, context) {
+                        return names[context.dataIndex];
                     }
                 }
+            },
+            {
+                labels: airport_names,
+                label: 'Airports',
+                backgroundColor: 'rgba(255, 179, 113, 1)', //orange
+                data: airport_latlongs,
+                datalabels: {
+                    color: '#36A2EB', //color of flight text
+                    formatter: function (value, context) {
+                        return airport_names[context.dataIndex];
+                    }
+                }
+            }
             ]
         };
 
@@ -277,7 +278,7 @@
         function getJSON() {
             var flights_url = "..\\ip3\\data\\flights.txt";
             var airports_url = "..\\ip3\\data\\airports.txt";
-            $.when($.getJSON(flights_url), $.getJSON(airports_url)).then(function(flights, airports) {
+            $.when($.getJSON(flights_url), $.getJSON(airports_url)).then(function (flights, airports) {
                 json_flights = flights[0];
                 json_airports = airports[0];
                 console.log(json_flights);
@@ -285,7 +286,7 @@
                 run();
             });
         }
-        </script>
+    </script>
 </body>
 
 </html>
