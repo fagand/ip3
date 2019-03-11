@@ -21,7 +21,7 @@
         /* Always set the map height explicitly to define the size of the div
                * element that contains the map. */
         #map {
-            height: 600px;
+            height: 800px;
             width: 100%;
             position: inherit
         }
@@ -50,7 +50,7 @@
             <!-- left sidebar content-->
             <div class="col-lg-2">
                 <div class="card card-body" style="max-width: 100%;">
-                    <button type="button" onclick="deleteMarkers();">Clear Map</button>
+                    <button type="button" class="btn btn-success btn-md" onclick="deleteMarkers()">Clear Map</button>
                     <div style="max-width: 100%" id="feedSelector"></div>
                 </div>
             </div>
@@ -129,7 +129,7 @@
     function makeChildProps(obj, currentProp) {
         var childProps = '';
         for (var prop in obj[currentProp]) {
-            var el = "<div class='child-prop'><button class='feed-name' data-feedurl='" + obj[currentProp][prop] +
+            var el = "<div class='child-prop'><button style='width: 100%;' class='btn btn-info btn-sm feed-name' data-feedurl='" + obj[currentProp][prop] +
                 "'>" + prop + "</button></div>";
             childProps += el;
         }
@@ -140,7 +140,7 @@
         if (!quakeFeeds.hasOwnProperty(prop)) {
             continue;
         }
-        $('#feedSelector').append("<div class='feed-date'>" + prop + "</div>" + makeChildProps(quakeFeeds, prop));
+        $('#feedSelector').append("<br><div class='feed-date'>" + prop + "</div>" + makeChildProps(quakeFeeds, prop));
     }
     /* end construction of buttons */
     var markers = []; // keep an array of Google Maps markers, to be used by the Google Maps clusterer
