@@ -116,7 +116,7 @@
 
                     <div class="collapse" id="jackInfo">
                     <div class="card card-body">
-                        <h2>Jack Moore</h2>
+                        <h2>Jack Moore <img src="img\profile.png" width="100px" height="100px" alt=""></h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1628300 | JMOORE200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Backend Developer</b> & <b>Software Tester.</b></p>
