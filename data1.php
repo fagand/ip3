@@ -93,7 +93,7 @@
                     "children": [{
                         "tag": "tbody",
                         "children": [{
-                            "tag": "tr",
+                            "tag": "tbody",
                             "children": [{
                                 "tag": "td",
                                 "html": "${}"
@@ -104,8 +104,7 @@
                             }
                             ]
                         }]
-                    }]
-                };
+                    };
 
                 var data = [{
                     'name': 'Bob',
