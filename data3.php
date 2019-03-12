@@ -11,7 +11,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css\bootstrap.min.css">
-
+    <!-- external js-->
 
     <!-- jquery,popper,bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -34,6 +34,15 @@
         .chart-container {
             width: 100%;
             height: 800px;
+        }
+    </style>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+                       * element that contains the map. */
+        #map {
+            height: 600px;
+            width: 100%;
+            position: inherit
         }
     </style>
 </head>
@@ -61,7 +70,8 @@
                 <h1>Air Traffic Visualisation</h1>
                 <div class="chart-container">
                     <canvas id="myChart" width="400" height="400"></canvas>
-
+                    <div id="map"></div>
+                    <div style="max-width: 100%" id="feedSelector"></div>
                 </div>
             </div>
             <!-- end main column content-->
@@ -80,7 +90,105 @@
         <?php include 'includes/footer.php' ?>
     </div>
     <!-- end content-->
+    <!-- gmaps script-->
+    <!-- map scripts below -->
+
+    <!-- Need the following code for clustering Google maps markers-->
+    <script
+        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+        </script>
+    <!-- Need the following code for Google Maps. PLEASE INSERT YOUR OWN GOOGLE MAPS KEY BELOW -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0rO-86zPMYGXlsruR9s6kxlFOnIrBORo&callback=initMap">
+        </script>
+    <!-- end gmaps-->
     <script>
+        var mymap;
+        // window.location.href;
+        var theurl = window.location.toString();
+        //initMap() called when Google Maps API code is loaded - when web page is opened/refreshed 
+        function initMap() {
+            mymap = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: new google.maps.LatLng(55.86515, -
+                    4.25763), // Center Map. Set this to any location that you like
+                mapTypeId: 'terrain' // can be any valid type
+            });
+            google.maps.event.trigger(mymap, 'resize');
+        }
+
+
+
+
+        function plotAirports() {
+            var infoWindow = new google.maps.InfoWindow(), marker, i;
+            var image = "img/airport.png";
+            for (i = 0; i < json_airports.length; i++) {
+                if (json_airports[i].nameAirport.includes("Bus") === false && json_airports[i].nameAirport.includes(
+                    "train") === false && json_airports[i].nameAirport.includes("Railway") === false) {
+
+                    var position = new google.maps.LatLng(parseFloat(json_airports[i].latitudeAirport), parseFloat(json_airports[i].longitudeAirport));
+
+                    marker = new google.maps.Marker({
+                        position: position,
+                        map: mymap,
+                        icon: image,
+                        title: json_airports[i].nameAirport
+                    });
+
+                    // Add info window to marker    
+                    google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                        return function () {
+                            infoWindow.setContent(json_airports[i].nameAirport);
+                            infoWindow.open(map, marker);
+                        }
+                    })(marker, i));
+                }
+            }
+        }
+
+
+        function plotFlights() {
+            var infoWindow = new google.maps.InfoWindow(), marker, i;
+            var image = "img/plane.png";
+            var title = "";
+            //plane image from
+            //https://www.shareicon.net/airline-plane-fly-airplane-882177
+            for (i = 0; i < json_flights.length; i++) {
+
+       
+
+
+                var position = new google.maps.LatLng(parseFloat(json_flights[i]["geography"]["latitude"]), parseFloat(json_flights[i]["geography"]["longitude"]));
+
+                marker = new google.maps.Marker({
+                    position: position,
+                    map: mymap,
+                    icon: image,
+                    title: title
+                });
+
+                // Add info window to marker    
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infoWindow.setContent(json_flights[i]["aircraft"]["regNumber"] + " " + json_flights[i]["aircraft"][
+                            "icaoCode"
+                        ] +
+                            " " + json_flights[i]["geography"]["altitude"].toFixed(0) + "ft " + json_flights[i]["speed"]
+                            [
+                                "horizontal"
+                            ]
+                                .toFixed(0) + "kts " + distances_from_GLA[i] + "km");
+                        infoWindow.open(map, marker);
+                    }
+                })(marker, i));
+
+              
+            }
+        }
+
+
+
         // Extend Number object with methods to convert between degrees & radians
         Number.prototype.toRadians = function () {
             return this * Math.PI / 180;
@@ -89,12 +197,12 @@
             return this * 180 / Math.PI;
         };
         var glasgow_airport_lat = 55.8691; //lat1
-        var glasgow_airport_long = -4.4351; //long1 
+        var glasgow_airport_long = -4.4351; //long1
 
         var distances_from_GLA = [];
-        var json_flights = []; //global var banter 
-        var json_airports = []; //global var banter 
-        var airport_names = []; //global var banter 
+        var json_flights = []; //global var banter
+        var json_airports = []; //global var banter
+        var airport_names = []; //global var banter
 
         var ctx = document.getElementById("myChart").getContext('2d');
 
@@ -103,6 +211,8 @@
             create_titles_points();
             getAirportLatLong();
             drawChart();
+            plotAirports();
+            plotFlights();
         }
 
         function drawChart() {
@@ -156,7 +266,7 @@
                         // Boolean to enable panning
                         enabled: true,
 
-                        // Panning directions. Remove the appropriate direction to disable 
+                        // Panning directions. Remove the appropriate direction to disable
                         // Eg. 'y' would only allow panning in the y direction
                         mode: 'xy'
                     },
@@ -166,7 +276,7 @@
                         // Boolean to enable zooming
                         enabled: true,
 
-                        // Zooming directions. Remove the appropriate direction to disable 
+                        // Zooming directions. Remove the appropriate direction to disable
                         // Eg. 'y' would only allow zooming in the y direction
                         mode: 'xy',
                     }
@@ -279,7 +389,7 @@
             $.when($.getJSON(flights_url), $.getJSON(airports_url)).then(function (flights, airports) {
                 json_flights = flights[0];
                 json_airports = airports[0];
-                console.log(json_flights);
+                // console.log(json_flights);
                 console.log(json_airports);
                 run();
             });
