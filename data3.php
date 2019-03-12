@@ -126,7 +126,7 @@
             for (i = 0; i < json_airports.length; i++) {
                 if (json_airports[i].nameAirport.includes("Bus") === false && json_airports[i].nameAirport.includes(
                     "train") === false && json_airports[i].nameAirport.includes("Railway") === false) {
-                    
+
                     var position = new google.maps.LatLng(parseFloat(json_airports[i].latitudeAirport), parseFloat(json_airports[i].longitudeAirport));
 
                     marker = new google.maps.Marker({
@@ -139,7 +139,7 @@
                     // Add info window to marker    
                     google.maps.event.addListener(marker, 'click', (function (marker, i) {
                         return function () {
-                            infoWindow.setContent(json_airports[i].nameAirport + " pie");
+                            infoWindow.setContent(json_airports[i].nameAirport);
                             infoWindow.open(map, marker);
                         }
                     })(marker, i));
@@ -147,6 +147,45 @@
             }
         }
 
+
+        function plotFlights() {
+            var infoWindow = new google.maps.InfoWindow(), marker, i;
+            var image = "img/plane.png";
+            var title = "";
+            //plane image from
+            //https://www.shareicon.net/airline-plane-fly-airplane-882177
+            for (i = 0; i < json_flights.length; i++) {
+
+       
+
+
+                var position = new google.maps.LatLng(parseFloat(json_flights[i]["geography"]["latitude"]), parseFloat(json_flights[i]["geography"]["longitude"]));
+
+                marker = new google.maps.Marker({
+                    position: position,
+                    map: mymap,
+                    icon: image,
+                    title: title
+                });
+
+                // Add info window to marker    
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infoWindow.setContent(json_flights[i]["aircraft"]["regNumber"] + " " + json_flights[i]["aircraft"][
+                            "icaoCode"
+                        ] +
+                            " " + json_flights[i]["geography"]["altitude"].toFixed(0) + "ft " + json_flights[i]["speed"]
+                            [
+                                "horizontal"
+                            ]
+                                .toFixed(0) + "kts " + distances_from_GLA[i] + "km");
+                        infoWindow.open(map, marker);
+                    }
+                })(marker, i));
+
+              
+            }
+        }
 
 
 
@@ -172,7 +211,8 @@
             create_titles_points();
             getAirportLatLong();
             drawChart();
-            plotAirports()
+            plotAirports();
+            plotFlights();
         }
 
         function drawChart() {
