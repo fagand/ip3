@@ -171,6 +171,7 @@
                 // Add info window to marker    
                 google.maps.event.addListener(marker, 'click', (function (marker, i) {
                     return function () {
+                        
                         infoWindow.setContent(json_flights[i]["aircraft"]["regNumber"] + " " + json_flights[i]["aircraft"][
                             "icaoCode"
                         ] +
