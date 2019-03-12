@@ -146,7 +146,23 @@
                 }
             }
         }
+        function flightPlan() {
+            var flightPlanCoordinates = [
+                { lat: 37.772, lng: -122.214 },
+                { lat: 21.291, lng: -157.821 },
+                { lat: -18.142, lng: 178.431 },
+                { lat: -27.467, lng: 153.027 }
+            ];
+            var flightPath = new google.maps.Polyline({
+                path: flightPlanCoordinates,
+                geodesic: true,
+                strokeColor: '#FF0000',
+                strokeOpacity: 1.0,
+                strokeWeight: 2
+            });
 
+            flightPath.setMap(mymap);
+        }
 
         function plotFlights() {
             var infoWindow = new google.maps.InfoWindow(), marker, i;
@@ -156,7 +172,7 @@
             //https://www.shareicon.net/airline-plane-fly-airplane-882177
             for (i = 0; i < json_flights.length; i++) {
 
-       
+
 
 
                 var position = new google.maps.LatLng(parseFloat(json_flights[i]["geography"]["latitude"]), parseFloat(json_flights[i]["geography"]["longitude"]));
@@ -181,10 +197,11 @@
                             ]
                                 .toFixed(0) + "kts " + distances_from_GLA[i] + "km");
                         infoWindow.open(map, marker);
+                        flightPlan()
                     }
                 })(marker, i));
 
-              
+
             }
         }
 
