@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>Locate-a-Quake: Data 3</title>
+    <title>Locate-a-Quake: Air Traffic</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

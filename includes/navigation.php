@@ -24,17 +24,18 @@
                 <li class="nav-item">
                     <a class="nav-link" href="weather.php">Weather</a>
                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="tutorial.php">Tutorial</a>
+                    <a class="nav-link" href="tutorial.php">Tutorials</a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data</a>
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="data1.php">Data 1</a>
-                        <a class="dropdown-item" href="data2.php">Data 2</a>
-                        <a class="dropdown-item" href="data3.php">Data 3</a>
-                        <a class="dropdown-item" href="data4.php">Data 4</a>
+                        <a class="dropdown-item" href="data1.php">Stocks</a>
+                        <a class="dropdown-item" href="data2.php">Oil Rig Valve</a>
+                        <a class="dropdown-item" href="data3.php">Live Air Traffic</a>
+                        <a class="dropdown-item" href="data4.php">Wine Production</a>
                     </div>
                 </li>
 

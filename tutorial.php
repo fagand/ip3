@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Locate-a-Quake: Tutorial</title>
+    <title>Locate-a-Quake: Tutorials</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -30,7 +30,7 @@
             <div class="col-sm-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
-                    <li class="breadcrumb-item active">Tutorial</li>
+                    <li class="breadcrumb-item active">Tutorials</li>
                 </ol>
             </div>
         </div>

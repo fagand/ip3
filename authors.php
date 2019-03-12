@@ -37,10 +37,10 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-3">
-                <h1>Authors...</h1>
+                <h1>Authors</h1>
                 <small class="text-muted">Click each team member's name to view his profile.</small>
                 <p>
-                    <div class="btn-group-horizont">
+                    <div class="btn-group-horizontal">
                         <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#andrewInfo" aria-expanded="false" aria-controls="andrewInfo">
                             Andrew
                         </button>

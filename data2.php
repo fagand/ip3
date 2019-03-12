@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <title>Locate-a-Quake: Oil Valve Data</title>
+    <title>Locate-a-Quake: Oil Rig Valve Data</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -56,7 +56,7 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Oil Valve Data</h1>
+                <h1>Oil Rig Valve Data</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
                     <canvas id="myChart" width="800" height="400"></canvas>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
