@@ -37,22 +37,56 @@
         <!-- breadcrumb end -->
 
         <div class="row">
-            <!-- main column content -->
-            <div class="col-sm-8">
+            <!-- sidebar column content -->
+            <div class="col-sm-3">
                 <h1>Tutorials</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
-                    molestias, minus dolorum obcaecati, quis, laboriosam voluptas rem reiciendis praesentium delectus
-                    corrupti deserunt rerum suscipit non error. Amet, facere.</p>
+                <small class="text-muted">Click on a button below to learn more.</small>
+                <div class="btn-group-horizontal btn-block">
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#geoJson"
+                        aria-expanded="false" aria-controls="geoJson">
+                        GeoJSON
+                    </button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#javaScript"
+                        aria-expanded="false" aria-controls="javaScript">
+                        JavaScript
+                    </button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#earthQuakes"
+                        aria-expanded="false" aria-controls="earthQuakes">
+                        Earthquakes
+                    </button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#weather"
+                        aria-expanded="false" aria-controls="weather">
+                        Weather
+                    </button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#stocks"
+                        aria-expanded="false" aria-controls="stocks">
+                        Stocks
+                    </button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#oilRigValve"
+                        aria-expanded="false" aria-controls="oilRigValve">
+                        Oil Rig Valve
+                    </button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#stocks"
+                        aria-expanded="false" aria-controls="stocks">
+                        Live Air Traffic
+                    </button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#oilRigValve"
+                        aria-expanded="false" aria-controls="oilRigValve">
+                        Wine Production
+                    </button>
+                </div>
             </div>
-            <!-- end main column content-->
+            <!-- end sidebar column content-->
 
-            <!-- sidebar column content-->
-            <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor dolore
-                    minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque rerum,
-                    atque sunt vero?</p>
+            <!-- main column content-->
+            <div class="col-sm-9">
+                <div class="jumbotron">
+                    <p class="lead">In this section of the website you will find information and guidance on the data and technologies we used throughout the development of the Locate-a-Quake project. Clicking each button will reveal details on that particular technology or page.</p>
+                    <hr class="my-4">
+                    <p>Also included will be links to APIs used and data sources accessed in the creation of the website, as well as links to official documentation on the technologies implemented.</p>
+                </div>
             </div>
-            <!-- end sidebar column content -->
+            <!-- end main column content -->
         </div>
 
         <?php include 'includes/footer.php' ?>

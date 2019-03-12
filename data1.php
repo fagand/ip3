@@ -48,20 +48,21 @@
             <!-- main column content -->
             <div class="col-sm-8">
                 <h1>Stocks</h1>
-                <div class="chart-container" style="max-width:8000px; max-height:400px">
-                    <canvas id="myChart" width="800" height="400"></canvas>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
-                        molestias, minus dolorum obcaecati, quis, laboriosam voluptas rem reiciendis praesentium
-                        delectus
-                        corrupti deserunt rerum suscipit non error. Amet, facere.</p>
+                <div class="chart-container" style="max-width:8000px; max-height:600px">
+                    <canvas id="myChart" width="800" height="600"></canvas>
                 </div>
             </div>
             <!-- end main column content-->
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
-                <input type="text" id="stockname"><button onclick="getStocks()">Get Stock Data</button>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor dolore
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" id="stockname" placeholder="enter stock name">
+                    <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getStocks()">Get Stock
+                        Data</button>
+                </form>
+                <br>
+                <p>(enter guide on how to use page here). Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor dolore
                     minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
                     rerum,
                     atque sunt vero?</p>
@@ -101,10 +102,10 @@
                             {
                                 "tag": "td",
                                 "html": "${age}"
-                            }
-                            ]
+                            }]
                         }]
-                    };
+                    }]
+                };
 
                 var data = [{
                     'name': 'Bob',
@@ -180,7 +181,7 @@
             // OHLC
             var ctx1 = document.getElementById("myChart").getContext("2d");
             ctx1.canvas.width = 1000;
-            ctx1.canvas.height = 250;
+            ctx1.canvas.height = 600;
             new Chart(ctx1, {
                 type: 'ohlc',
                 data: {
