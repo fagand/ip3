@@ -147,6 +147,17 @@
             })
                 .done(function (json) {
                     console.log(json);
+                    
+                    
+                    //get lat long from json return
+                    //create new event lat lng
+                    var myLatLng = new google.maps.LatLng({ lat: json.location.lat, lng: json.location.lon }); 
+                    //clear any existing markers
+                    deleteMarkers();
+                    //add marker at that loc
+                    addMarker(myLatLng);
+
+
                     $('#uvInfo').html(''); // remove previous UV index info card
                     image.src = "http:" + json.current.condition.icon; // icon is specified within the data
                     $('#weatherInfo').html('<p>Currently: ' + json.current.condition.text +
@@ -167,7 +178,7 @@
 
                 })
                 .fail(function () {
-                    alert('getJSON request failed!');
+                   // alert('getJSON request failed!');
                     $('#weatherInfo').html('<p>No weather data to display.</p>');
                     $('#weatherImage').empty();
                     $('#uvInfo').empty()
