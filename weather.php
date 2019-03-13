@@ -142,16 +142,14 @@
             var url = "http://api.apixu.com/v1/current.json?key=3b4f627ba14c47d5a8103303191502&q=";
             var query_url = url + searchterm;
             $.getJSON(query_url, function (json) {
-
-
             })
                 .done(function (json) {
                     console.log(json);
-                    
-                    
+
+
                     //get lat long from json return
                     //create new event lat lng
-                    var myLatLng = new google.maps.LatLng({ lat: json.location.lat, lng: json.location.lon }); 
+                    var myLatLng = new google.maps.LatLng({ lat: json.location.lat, lng: json.location.lon });
                     //clear any existing markers
                     deleteMarkers();
                     //add marker at that loc
@@ -178,7 +176,7 @@
 
                 })
                 .fail(function () {
-                   // alert('getJSON request failed!');
+                    // alert('getJSON request failed!');
                     $('#weatherInfo').html('<p>No weather data to display.</p>');
                     $('#weatherImage').empty();
                     $('#uvInfo').empty()
