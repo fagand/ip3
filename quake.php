@@ -21,7 +21,7 @@
         /* Always set the map height explicitly to define the size of the div
                * element that contains the map. */
         #map {
-            height: 800px;
+            height: 100%;
             width: 100%;
             position: inherit
         }
