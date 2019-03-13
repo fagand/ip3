@@ -59,7 +59,8 @@
                 <h1>Weather</h1>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" id="location" placeholder="enter place or lat/long">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="button" onclick="getWeather()">Get Weather Data</button>
+                    <button class="btn btn-secondary my-2 my-sm-0" type="button" onclick="getWeather()">Get Weather
+                        Data</button>
                 </form>
 
                 <br>
@@ -86,6 +87,7 @@
     <!-- end content-->
 
     <script>
+        var markers = []; //holds all placed markers
         var mymap;
         // window.location.href;
         var theurl = window.location.toString();
@@ -101,20 +103,49 @@
             });
             google.maps.event.trigger(mymap, 'resize');
 
-            google.maps.event.addListener(mymap, 'click', function(event) {
+            google.maps.event.addListener(mymap, 'click', function (event) {
                 var searchterm = event.latLng.lat() + "," + event.latLng.lng();
                 pie(searchterm);
+                deleteMarkers();
+                addMarker(event.latLng);
+
             });
         }
+        // Removes the markers from the map, but keeps them in the array.
+        function clearMarkers() {
+            setMapOnAll(null);
+        }
+
+        // Sets the map on all markers in the array.
+        function setMapOnAll(map) {
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(map);
+            }
+        }
+
+        // Deletes all markers in the array by removing references to them.
+        function deleteMarkers() {
+            clearMarkers();
+            markers = [];
+        }
+        // Adds a marker to the map and push to the array.
+        function addMarker(location) {
+            var marker = new google.maps.Marker({
+                position: location,
+                map: mymap
+            });
+            markers.push(marker);
+        }
+
 
         function pie(searchterm) {
             var url = "http://api.apixu.com/v1/current.json?key=3b4f627ba14c47d5a8103303191502&q=";
             var query_url = url + searchterm;
-            $.getJSON(query_url, function(json) {
+            $.getJSON(query_url, function (json) {
 
 
             })
-                .done(function(json) {
+                .done(function (json) {
                     console.log(json);
                     $('#uvInfo').html(''); // remove previous UV index info card
                     image.src = "http:" + json.current.condition.icon; // icon is specified within the data
@@ -128,14 +159,14 @@
                     $('#weatherInfo').append('<p>UV index: ' + json.current.uv + '</p>');
                     $('#weatherInfo').append('<p>Humidity: ' + json.current.humidity + '%</p>');
                     $('#weatherInfo').append('<p>Last updated: ' + json.current.last_updated + '</p>');
-                    image.onload = function() {
+                    image.onload = function () {
                         $('#weatherImage').empty().append(image);
                     };
 
                     uvCard(json.current.uv); // call method which displays UV index info cards, passing in the UV value
 
                 })
-                .fail(function() {
+                .fail(function () {
                     alert('getJSON request failed!');
                     $('#weatherInfo').html('<p>No weather data to display.</p>');
                     $('#weatherImage').empty();
@@ -145,7 +176,7 @@
         }
 
         // dynamically displays a card below the weather info with UV index information relating to the area selected on the map
-        function uvCard(uv){
+        function uvCard(uv) {
             var lowUV = $('<div class="card bg-light mb-3" style="max-width: 100%;"><div class="card-header">UV Index Information</div><div class="card-body"><h4 class="card-title">0-2: Low</h4><p class="card-text"><ul><li>Sunscreen SPF 30+</li><li>Sunglasses</li></ul></p></div></div>');
 
             var moderateUV = $('<div class="card text-white bg-success mb-3" style="max-width: 100%;"><div class="card-header">UV Index Information</div><div class="card-body"><h4 class="card-title">3-5: Moderate</h4><p class="card-text"><ul><li>Sunscreen SPF 30+</li><li>Sunglasses</li><li>Hat</li><li>Seek shade (midday)</li></ul></p></div></div>');
@@ -155,25 +186,25 @@
             var veryHighUV = $('<div class="card text-white bg-danger mb-3" style="max-width: 100%;"><div class="card-header">UV Index Information</div><div class="card-body"><h4 class="card-title">8-10: Very High</h4><p class="card-text"><ul><li>Sunscreen SPF 30+</li><li>Sunglasses</li><li>Hat</li><li>Seek shade</li><li>Avoid sun from 11am-5pm</li></ul></p></div></div>');
 
             var extremeUV = $('<div class="card text-white bg-dark mb-3" style="max-width: 100%;"><div class="card-header">UV Index Information</div><div class="card-body"><h4 class="card-title">11+: Extreme</h4><p class="card-text"><ul><li>Sunscreen SPF 30+</li><li>Sunglasses</li><li>Hat</li><li>Seek shade</li><li>Avoid sun from 11am-5pm</li></ul></p></div></div>');
-            
-            
-            if(uv >= 0 && uv <= 2){
+
+
+            if (uv >= 0 && uv <= 2) {
                 $('#uvInfo').append(lowUV);
             }
 
-            if(uv >= 3 && uv <= 5){
+            if (uv >= 3 && uv <= 5) {
                 $('#uvInfo').append(moderateUV);
             }
 
-            if(uv >= 6 && uv <= 7){
+            if (uv >= 6 && uv <= 7) {
                 $('#uvInfo').append(highUV);
             }
 
-            if(uv >= 8 && uv <= 10){
+            if (uv >= 8 && uv <= 10) {
                 $('#uvInfo').append(veryHighUV);
             }
 
-            if(uv >= 11){
+            if (uv >= 11) {
                 $('#uvInfo').append(extremeUV);
             }
         }
