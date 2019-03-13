@@ -1,0 +1,52 @@
+data1
+alpha vantage           0F1ISWGUHZYUTIRI
+
+
+
+
+
+data2
+openindustrial data ZDE5OWY1YzUtYzA4MS00MDFiLWE2MjYtNzFjNzgyYWEyOTAx
+https://opint.cogniteapp.com/publicdata/charts/-LRxPkhnT4WkBN5L6iuf
+
+inlet cooler temperature controll
+
+ph 1st stg suct cool gas out output
+VAL_23-LIC-92521:Z.Y.Value
+
+
+ph 1st stg suct cool gas out measured value
+VAL_23-LIC-92521:Z.X.Value
+
+VAL_23-LIC-92521:Control Module:YR
+PH 1stStgSuctScrubber Level Working Setpoint
+35
+
+
+
+
+
+
+data from 2018-7-1 2300 to 2018 07 02 1320
+1 second granularity
+comma delimited
+
+
+
+
+https://aviation-edge.com/subscribe/profile.php
+API Key: c1ead8-26c2c3
+
+
+how atc works
+https://i.stack.imgur.com/1zaQU.gif
+
+
+http://https//studentpilotnews.com/files/2017/04/ATC-Radar-airplane-data-block.jpg
+
+
+
+
+Wine-grower holdings by degree of specialisation
+
+https://ec.europa.eu/eurostat/web/agriculture/data/database#

@@ -1,0 +1,8972 @@
+[
+
+{
+
+
+"airportId": "50",
+
+
+"nameAirport": "Dyce",
+
+
+"codeIataAirport": "ABZ",
+
+
+"codeIcaoAirport": "EGPD",
+
+
+"nameTranslations": "Aberdeen,Dyce,Dyce,Dyce,Dyce,????????????????,?????",
+
+
+"latitudeAirport": "57.200253",
+
+
+"longitudeAirport": "-2.204186",
+
+
+"geonameId": "6296624",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ABZ"
+
+},
+
+{
+
+
+"airportId": "94",
+
+
+"nameAirport": "Leuchars",
+
+
+"codeIataAirport": "ADX",
+
+
+"codeIcaoAirport": "EGQL",
+
+
+"nameTranslations": "Leuchars,Leuchars Havaliman?",
+
+
+"latitudeAirport": "56.36667",
+
+
+"longitudeAirport": "-2.866667",
+
+
+"geonameId": "6296639",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ADX"
+
+},
+
+{
+
+
+"airportId": "557",
+
+
+"nameAirport": "Bembridge",
+
+
+"codeIataAirport": "BBP",
+
+
+"codeIcaoAirport": "EGHJ",
+
+
+"nameTranslations": "Bembridge,????",
+
+
+"latitudeAirport": "50.683334",
+
+
+"longitudeAirport": "-1.083333",
+
+
+"geonameId": "7668206",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BBP"
+
+},
+
+{
+
+
+"airportId": "560",
+
+
+"nameAirport": "Blackbushe",
+
+
+"codeIataAirport": "BBS",
+
+
+"codeIcaoAirport": "EGLK",
+
+
+"nameTranslations": "Blackbushe,Blackbush",
+
+
+"latitudeAirport": "51.333332",
+
+
+"longitudeAirport": "-0.85",
+
+
+"geonameId": "7668210",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BBS"
+
+},
+
+{
+
+
+"airportId": "619",
+
+
+"nameAirport": "Benbecula",
+
+
+"codeIataAirport": "BEB",
+
+
+"codeIcaoAirport": "EGPL",
+
+
+"nameTranslations": "Benbecula,Benbecula,Benbecula,Benbecula,Benbecula,?????????????????,??????",
+
+
+"latitudeAirport": "57.473415",
+
+
+"longitudeAirport": "-7.376028",
+
+
+"geonameId": "6296630",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BEB"
+
+},
+
+{
+
+
+"airportId": "633",
+
+
+"nameAirport": "Honington",
+
+
+"codeIataAirport": "BEQ",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Honington,Honington,???????",
+
+
+"latitudeAirport": "52.35",
+
+
+"longitudeAirport": "0.766667",
+
+
+"geonameId": "2654186",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BEQ"
+
+},
+
+{
+
+
+"airportId": "639",
+
+
+"nameAirport": "Benson (RAF Station)",
+
+
+"codeIataAirport": "BEX",
+
+
+"codeIcaoAirport": "EGUB",
+
+
+"nameTranslations": "Luftwaffenstützpunkt,Benson (RAF Station),????",
+
+
+"latitudeAirport": "51.63333",
+
+
+"longitudeAirport": "-1.083333",
+
+
+"geonameId": "6296651",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BEX"
+
+},
+
+{
+
+
+"airportId": "659",
+
+
+"nameAirport": "Aldergrove International Airport",
+
+
+"codeIataAirport": "BFS",
+
+
+"codeIcaoAirport": "EGAA",
+
+
+"nameTranslations": "Belfast Intl,Aldergrove International Airport,Belfast Intl Arpt,Belfast Intl Arpt,Belfast Intl Arpt,???????????????????????,Belfast-International,????",
+
+
+"latitudeAirport": "54.662395",
+
+
+"longitudeAirport": "-6.217616",
+
+
+"geonameId": "6296569",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BFS"
+
+},
+
+{
+
+
+"airportId": "693",
+
+
+"nameAirport": "George Best Belfast City",
+
+
+"codeIataAirport": "BHD",
+
+
+"codeIcaoAirport": "EGAC",
+
+
+"nameTranslations": "Belfast City,George Best Belfast City,Belfast City Airport,Belfast City Airport,Belfast City Airport,?????????????????????????????,George Best City Ap",
+
+
+"latitudeAirport": "54.61452",
+
+
+"longitudeAirport": "-5.870215",
+
+
+"geonameId": "6296570",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BFS"
+
+},
+
+{
+
+
+"airportId": "713",
+
+
+"nameAirport": "Birmingham International Airport",
+
+
+"codeIataAirport": "BHX",
+
+
+"codeIcaoAirport": "EGBB",
+
+
+"nameTranslations": "Birmingham,Birmingham International Airport,Birmingham,Birmingham,Birmingham,??????????????????,Birmingham Int. Apt.,?????",
+
+
+"latitudeAirport": "52.45252",
+
+
+"longitudeAirport": "-1.733256",
+
+
+"geonameId": "6296572",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "+44 (0) 844 5",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BHX"
+
+},
+
+{
+
+
+"airportId": "797",
+
+
+"nameAirport": "Blackpool Airport",
+
+
+"codeIataAirport": "BLK",
+
+
+"codeIcaoAirport": "EGNH",
+
+
+"nameTranslations": "Blackpool,Blackpool Airport,Blackpool,Blackpool,Blackpool,???????????????,Blackpool Int. Apt.,???????",
+
+
+"latitudeAirport": "53.778385",
+
+
+"longitudeAirport": "-3.041985",
+
+
+"geonameId": "6296605",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BLK"
+
+},
+
+{
+
+
+"airportId": "867",
+
+
+"nameAirport": "Bournemouth International",
+
+
+"codeIataAirport": "BOH",
+
+
+"codeIcaoAirport": "EGHH",
+
+
+"nameTranslations": "Bournemouth,Bournemouth International,Bournemouth,Bournemouth,Bournemouth,??????????????????,??????",
+
+
+"latitudeAirport": "50.77827",
+
+
+"longitudeAirport": "-1.832476",
+
+
+"geonameId": "6296591",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BOH"
+
+},
+
+{
+
+
+"airportId": "871",
+
+
+"nameAirport": "Ballykelly",
+
+
+"codeIataAirport": "BOL",
+
+
+"codeIcaoAirport": "EGQB",
+
+
+"nameTranslations": "Ballykelly,Bally Kelly",
+
+
+"latitudeAirport": "55",
+
+
+"longitudeAirport": "-7",
+
+
+"geonameId": "7730474",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BOL"
+
+},
+
+{
+
+
+"airportId": "905",
+
+
+"nameAirport": "Biggin Hill",
+
+
+"codeIataAirport": "BQH",
+
+
+"codeIcaoAirport": "EGKB",
+
+
+"nameTranslations": "Biggin Hill,Biggin Hill",
+
+
+"latitudeAirport": "51.333332",
+
+
+"longitudeAirport": "0.033333",
+
+
+"geonameId": "6296597",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "923",
+
+
+"nameAirport": "Bradford",
+
+
+"codeIataAirport": "BRF",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Bradford,???????",
+
+
+"latitudeAirport": "53.8",
+
+
+"longitudeAirport": "-1.75",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LBA"
+
+},
+
+{
+
+
+"airportId": "934",
+
+
+"nameAirport": "North Bay",
+
+
+"codeIataAirport": "BRR",
+
+
+"codeIcaoAirport": "EGPR",
+
+
+"nameTranslations": "Barra GB,North Bay,North Bay,North Bay,North Bay,???? ???,?????????????,????",
+
+
+"latitudeAirport": "57.023335",
+
+
+"longitudeAirport": "-7.440278",
+
+
+"geonameId": "7670761",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BRR"
+
+},
+
+{
+
+
+"airportId": "935",
+
+
+"nameAirport": "Bristol",
+
+
+"codeIataAirport": "BRS",
+
+
+"codeIcaoAirport": "EGGD",
+
+
+"nameTranslations": "Bristol,Bristol,Bristol,Bristol,Bristol,??????????????,BristolBristol Int. Apt,??????",
+
+
+"latitudeAirport": "51.386757",
+
+
+"longitudeAirport": "-2.710659",
+
+
+"geonameId": "6296587",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BRS"
+
+},
+
+{
+
+
+"airportId": "950",
+
+
+"nameAirport": "Brighton",
+
+
+"codeIataAirport": "BSH",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Brighton,?????",
+
+
+"latitudeAirport": "50.816666",
+
+
+"longitudeAirport": "-0.116667",
+
+
+"geonameId": "2654710",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BSH"
+
+},
+
+{
+
+
+"airportId": "1040",
+
+
+"nameAirport": "Walney Island",
+
+
+"codeIataAirport": "BWF",
+
+
+"codeIcaoAirport": "EGNL",
+
+
+"nameTranslations": "Walney Island,Walney Adas? Havaliman?,??????",
+
+
+"latitudeAirport": "54.11667",
+
+
+"longitudeAirport": "-3.233333",
+
+
+"geonameId": "6296607",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BWF"
+
+},
+
+{
+
+
+"airportId": "1121",
+
+
+"nameAirport": "Raf Brize Norton",
+
+
+"codeIataAirport": "BZZ",
+
+
+"codeIcaoAirport": "EGVN",
+
+
+"nameTranslations": "Brize Norton,Raf Brize Norton,Brize Norton,Brize Norton,Brize Norton,Brize Norton Raf Station Havaliman?,?????????",
+
+
+"latitudeAirport": "51.75",
+
+
+"longitudeAirport": "-1.587093",
+
+
+"geonameId": "6296660",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BZZ"
+
+},
+
+{
+
+
+"airportId": "1133",
+
+
+"nameAirport": "Machrihanish",
+
+
+"codeIataAirport": "CAL",
+
+
+"codeIcaoAirport": "EGEC",
+
+
+"nameTranslations": "Campbeltown,Machrihanish,Machrihanish,Machrihanish,Machrihanish,????????????????????",
+
+
+"latitudeAirport": "55.43639",
+
+
+"longitudeAirport": "-5.686667",
+
+
+"geonameId": "6296585",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "CAL"
+
+},
+
+{
+
+
+"airportId": "1145",
+
+
+"nameAirport": "Carlisle",
+
+
+"codeIataAirport": "CAX",
+
+
+"codeIcaoAirport": "EGNC",
+
+
+"nameTranslations": "Carlisle,???????,Carlisle Havaliman?,?????",
+
+
+"latitudeAirport": "54.93667",
+
+
+"longitudeAirport": "-2.809444",
+
+
+"geonameId": "6296604",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "CAX"
+
+},
+
+{
+
+
+"airportId": "1154",
+
+
+"nameAirport": "Cambridge",
+
+
+"codeIataAirport": "CBG",
+
+
+"codeIcaoAirport": "EGSC",
+
+
+"nameTranslations": "Cambridge,Cambridge,Cambridge,Cambridge,Cambridge,????????,????????????????,Cambridge City Apt,????",
+
+
+"latitudeAirport": "52.2",
+
+
+"longitudeAirport": "0.183333",
+
+
+"geonameId": "6296643",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "CBG"
+
+},
+
+{
+
+
+"airportId": "1227",
+
+
+"nameAirport": "Chester",
+
+
+"codeIataAirport": "CEG",
+
+
+"codeIcaoAirport": "EGNR",
+
+
+"nameTranslations": "Chester,??????,????????,?????",
+
+
+"latitudeAirport": "53.166668",
+
+
+"longitudeAirport": "-2.916667",
+
+
+"geonameId": "6296609",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "CEG"
+
+},
+
+{
+
+
+"airportId": "1457",
+
+
+"nameAirport": "Isle Of Coll",
+
+
+"codeIataAirport": "COL",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Isle Of Coll,???????????? / ?????????,????",
+
+
+"latitudeAirport": "56.61667",
+
+
+"longitudeAirport": "-6.616667",
+
+
+"geonameId": "7670762",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "COL"
+
+},
+
+{
+
+
+"airportId": "1523",
+
+
+"nameAirport": "Isle Of Colonsay",
+
+
+"codeIataAirport": "CSA",
+
+
+"codeIcaoAirport": "EGEY",
+
+
+"nameTranslations": "Isle Of Colonsay,???????????????? / ?????????????,Colonsay Island",
+
+
+"latitudeAirport": "56.083332",
+
+
+"longitudeAirport": "-6.2",
+
+
+"geonameId": "7668203",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "CSA"
+
+},
+
+{
+
+
+"airportId": "1614",
+
+
+"nameAirport": "West Midlands International",
+
+
+"codeIataAirport": "CVT",
+
+
+"codeIcaoAirport": "EGBE",
+
+
+"nameTranslations": "Baginton,West Midlands International,Baginton Airport,?????",
+
+
+"latitudeAirport": "52.369167",
+
+
+"longitudeAirport": "-1.478611",
+
+
+"geonameId": "6296573",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "CVT"
+
+},
+
+{
+
+
+"airportId": "1622",
+
+
+"nameAirport": "Cardiff",
+
+
+"codeIataAirport": "CWL",
+
+
+"codeIcaoAirport": "EGFF",
+
+
+"nameTranslations": "Cardiff,Cardiff,Cardiff-Wales Arpt,Cardiff-Wales Arpt,Cardiff-Wales Arpt,????????????????,Cardiff Int. Apt,?????",
+
+
+"latitudeAirport": "51.39877",
+
+
+"longitudeAirport": "-3.339075",
+
+
+"geonameId": "3345295",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "CWL"
+
+},
+
+{
+
+
+"airportId": "1848",
+
+
+"nameAirport": "Dundee",
+
+
+"codeIataAirport": "DND",
+
+
+"codeIcaoAirport": "EGPN",
+
+
+"nameTranslations": "Dundee,Dundee,Dundee,Dundee,Dundee,?????,????????????,????",
+
+
+"latitudeAirport": "56.45409",
+
+
+"longitudeAirport": "-3.014531",
+
+
+"geonameId": "6296632",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "DND"
+
+},
+
+{
+
+
+"airportId": "1870",
+
+
+"nameAirport": "Dornoch",
+
+
+"codeIataAirport": "DOC",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Dornoch,??????,Dornoch Havaliman?,?????",
+
+
+"latitudeAirport": "57.86667",
+
+
+"longitudeAirport": "-4.033333",
+
+
+"geonameId": "7730984",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "DOC"
+
+},
+
+{
+
+
+"airportId": "1916",
+
+
+"nameAirport": "Robin Hood",
+
+
+"codeIataAirport": "DSA",
+
+
+"codeIcaoAirport": "EGCN",
+
+
+"nameTranslations": "Doncaster Sheffield,Robin Hood,Doncaster Sheffield,Doncaster Sheffield,Doncaster Sheffield,??????????????? ??????????? ????????,Robin Hood Airport",
+
+
+"latitudeAirport": "53.481003",
+
+
+"longitudeAirport": "-1.01155",
+
+
+"geonameId": "6940270",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "DSA"
+
+},
+
+{
+
+
+"airportId": "2020",
+
+
+"nameAirport": "Edinburgh",
+
+
+"codeIataAirport": "EDI",
+
+
+"codeIcaoAirport": "EGPH",
+
+
+"nameTranslations": "Edinburgh,Edinburgh,Turnhouse,Turnhouse,Turnhouse,????????????????,Edinburg Apt,?????",
+
+
+"latitudeAirport": "55.948143",
+
+
+"longitudeAirport": "-3.364177",
+
+
+"geonameId": "6296627",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "EDI"
+
+},
+
+{
+
+
+"airportId": "2105",
+
+
+"nameAirport": "East Midlands",
+
+
+"codeIataAirport": "EMA",
+
+
+"codeIcaoAirport": "EGNX",
+
+
+"nameTranslations": "Nottingham,East Midlands,East Midlands,East Midlands,East Midlands,????????????????????,East Midlands Apt,?????",
+
+
+"latitudeAirport": "52.82587",
+
+
+"longitudeAirport": "-1.330595",
+
+
+"geonameId": "6296613",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NQT"
+
+},
+
+{
+
+
+"airportId": "2130",
+
+
+"nameAirport": "Enniskillen St. Angelo",
+
+
+"codeIataAirport": "ENK",
+
+
+"codeIcaoAirport": "EGAB",
+
+
+"nameTranslations": "Enniskillen St. Angelo,St Angelo Havaliman?",
+
+
+"latitudeAirport": "54.35",
+
+
+"longitudeAirport": "-7.633333",
+
+
+"geonameId": "8256212",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ENK"
+
+},
+
+{
+
+
+"airportId": "2142",
+
+
+"nameAirport": "Eday",
+
+
+"codeIataAirport": "EOI",
+
+
+"codeIcaoAirport": "EGED",
+
+
+"nameTranslations": "Eday,Eday,Eday,Eday,????,?????????????,?????",
+
+
+"latitudeAirport": "59.183334",
+
+
+"longitudeAirport": "-2.783333",
+
+
+"geonameId": "7668196",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "EOI"
+
+},
+
+{
+
+
+"airportId": "2185",
+
+
+"nameAirport": "Shoreham",
+
+
+"codeIataAirport": "ESH",
+
+
+"codeIcaoAirport": "EGKA",
+
+
+"nameTranslations": "Shoreham,?????-???-??,?????",
+
+
+"latitudeAirport": "50.833332",
+
+
+"longitudeAirport": "-0.3",
+
+
+"geonameId": "6296596",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ESH"
+
+},
+
+{
+
+
+"airportId": "2235",
+
+
+"nameAirport": "Exeter",
+
+
+"codeIataAirport": "EXT",
+
+
+"codeIcaoAirport": "EGTE",
+
+
+"nameTranslations": "Exeter,Exeter,Exeter,Exeter,Exeter,???????,??????????????????????????,??????",
+
+
+"latitudeAirport": "50.73111",
+
+
+"longitudeAirport": "-3.410968",
+
+
+"geonameId": "6296648",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "EXT"
+
+},
+
+{
+
+
+"airportId": "2246",
+
+
+"nameAirport": "Farnborough",
+
+
+"codeIataAirport": "FAB",
+
+
+"codeIcaoAirport": "EGLF",
+
+
+"nameTranslations": "Farnborough,Farnborough Havaliman?,????",
+
+
+"latitudeAirport": "51.283333",
+
+
+"longitudeAirport": "-0.766667",
+
+
+"geonameId": "6296600",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "FAB"
+
+},
+
+{
+
+
+"airportId": "2291",
+
+
+"nameAirport": "Fetlar",
+
+
+"codeIataAirport": "FEA",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Fetlar,?????",
+
+
+"latitudeAirport": "60.583332",
+
+
+"longitudeAirport": "-0.966667",
+
+
+"geonameId": "7670886",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "FEA"
+
+},
+
+{
+
+
+"airportId": "2304",
+
+
+"nameAirport": "RAF Station",
+
+
+"codeIataAirport": "FFD",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "RAF Station,???????",
+
+
+"latitudeAirport": "51.733334",
+
+
+"longitudeAirport": "-1.783333",
+
+
+"geonameId": "2649741",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "FFD"
+
+},
+
+{
+
+
+"airportId": "2319",
+
+
+"nameAirport": "Fair Isle",
+
+
+"codeIataAirport": "FIE",
+
+
+"codeIcaoAirport": "EGEF",
+
+
+"nameTranslations": "Fair Isle,????-????,????????,?????",
+
+
+"latitudeAirport": "59.5",
+
+
+"longitudeAirport": "-1.666667",
+
+
+"geonameId": "7668197",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "FIE"
+
+},
+
+{
+
+
+"airportId": "2341",
+
+
+"nameAirport": "Flotta",
+
+
+"codeIataAirport": "FLH",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Flotta,??????",
+
+
+"latitudeAirport": "58.5",
+
+
+"longitudeAirport": "-3",
+
+
+"geonameId": "7731028",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "FLH"
+
+},
+
+{
+
+
+"airportId": "2381",
+
+
+"nameAirport": "Foula",
+
+
+"codeIataAirport": "FOA",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Foula,?????,????",
+
+
+"latitudeAirport": "60.166668",
+
+
+"longitudeAirport": "-2.083333",
+
+
+"geonameId": "7670763",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "FOA"
+
+},
+
+{
+
+
+"airportId": "2431",
+
+
+"nameAirport": "Kinloss",
+
+
+"codeIataAirport": "FSS",
+
+
+"codeIcaoAirport": "EGQK",
+
+
+"nameTranslations": "Kinloss,?????",
+
+
+"latitudeAirport": "57.65",
+
+
+"longitudeAirport": "-3.566667",
+
+
+"geonameId": "6296638",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "FSS"
+
+},
+
+{
+
+
+"airportId": "2460",
+
+
+"nameAirport": "Heliport",
+
+
+"codeIataAirport": "FWM",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Heliport,?????",
+
+
+"latitudeAirport": "56.816666",
+
+
+"longitudeAirport": "-5.116667",
+
+
+"geonameId": "2649169",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "FWM"
+
+},
+
+{
+
+
+"airportId": "2627",
+
+
+"nameAirport": "Glasgow International",
+
+
+"codeIataAirport": "GLA",
+
+
+"codeIcaoAirport": "EGPF",
+
+
+"nameTranslations": "Glasgow Intl,Glasgow International,Glasgow Intl,Glasgow Intl,Glasgow Intl,???????????????,Glasgow International,??????",
+
+
+"latitudeAirport": "55.864212",
+
+
+"longitudeAirport": "-4.431782",
+
+
+"geonameId": "6296626",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "GLA"
+
+},
+
+{
+
+
+"airportId": "2640",
+
+
+"nameAirport": "Gloucestershire",
+
+
+"codeIataAirport": "GLO",
+
+
+"codeIcaoAirport": "EGBJ",
+
+
+"nameTranslations": "Gloucestershire,Gloucestershire,Gloucestershire,Gloucestershire,Gloucestershire,????????????????,Gloucestershire Havaliman?,??????",
+
+
+"latitudeAirport": "51.88333",
+
+
+"longitudeAirport": "-2.233333",
+
+
+"geonameId": "6296574",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "GLO"
+
+},
+
+{
+
+
+"airportId": "2860",
+
+
+"nameAirport": "Haverfordwest",
+
+
+"codeIataAirport": "HAW",
+
+
+"codeIcaoAirport": "EGFE",
+
+
+"nameTranslations": "Haverfordwest",
+
+
+"latitudeAirport": "51.8",
+
+
+"longitudeAirport": "-4.966667",
+
+
+"geonameId": "7668204",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "HAW"
+
+},
+
+{
+
+
+"airportId": "2992",
+
+
+"nameAirport": "Anglesey Airport",
+
+
+"codeIataAirport": "HLY",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Anglesey Airport,Valley",
+
+
+"latitudeAirport": "53.3",
+
+
+"longitudeAirport": "-4.633333",
+
+
+"geonameId": "2646686",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "HLY"
+
+},
+
+{
+
+
+"airportId": "3043",
+
+
+"nameAirport": "Hoy Island",
+
+
+"codeIataAirport": "HOY",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Hoy Island,???-??????,?????",
+
+
+"latitudeAirport": "58.833332",
+
+
+"longitudeAirport": "-3.3",
+
+
+"geonameId": "8299173",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "HOY"
+
+},
+
+{
+
+
+"airportId": "3067",
+
+
+"nameAirport": "Linton-On-Ouse",
+
+
+"codeIataAirport": "HRT",
+
+
+"codeIcaoAirport": "KHRT",
+
+
+"nameTranslations": "Linton on Ouse RAF,Linton-On-Ouse,Linton On Ouse Havaliman?",
+
+
+"latitudeAirport": "54",
+
+
+"longitudeAirport": "-1.55",
+
+
+"geonameId": "6296673",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "HRT"
+
+},
+
+{
+
+
+"airportId": "3121",
+
+
+"nameAirport": "Humberside International",
+
+
+"codeIataAirport": "HUY",
+
+
+"codeIcaoAirport": "EGNJ",
+
+
+"nameTranslations": "Humberside,Humberside International,Humberside Airport,Humberside Airport,Humberside Airport,???????????????????,?????",
+
+
+"latitudeAirport": "53.583378",
+
+
+"longitudeAirport": "-0.34851",
+
+
+"geonameId": "6296606",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "HUY"
+
+},
+
+{
+
+
+"airportId": "3141",
+
+
+"nameAirport": "High Wycombe",
+
+
+"codeIataAirport": "HYC",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "High Wycombe,???-???????,??????",
+
+
+"latitudeAirport": "51.61667",
+
+
+"longitudeAirport": "-0.75",
+
+
+"geonameId": "2646914",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "HYC"
+
+},
+
+{
+
+
+"airportId": "3267",
+
+
+"nameAirport": "Glenegedale",
+
+
+"codeIataAirport": "ILY",
+
+
+"codeIcaoAirport": "EGPI",
+
+
+"nameTranslations": "Islay,Glenegedale,Glenegedale,Glenegedale,Glenegedale,?????????????,Glenegedale,????",
+
+
+"latitudeAirport": "55.681946",
+
+
+"longitudeAirport": "-6.254167",
+
+
+"geonameId": "6296628",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ILY"
+
+},
+
+{
+
+
+"airportId": "3304",
+
+
+"nameAirport": "Inverness",
+
+
+"codeIataAirport": "INV",
+
+
+"codeIcaoAirport": "EGPE",
+
+
+"nameTranslations": "Inverness,Inverness,Inverness,Inverness,Inverness,????????????????????,??????",
+
+
+"latitudeAirport": "57.539345",
+
+
+"longitudeAirport": "-4.063738",
+
+
+"geonameId": "6296625",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "INV"
+
+},
+
+{
+
+
+"airportId": "3329",
+
+
+"nameAirport": "Ipswich",
+
+
+"codeIataAirport": "IPW",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Ipswich,???????",
+
+
+"latitudeAirport": "52.066666",
+
+
+"longitudeAirport": "1.166667",
+
+
+"geonameId": "2646057",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "IPW"
+
+},
+
+{
+
+
+"airportId": "3355",
+
+
+"nameAirport": "St Marys",
+
+
+"codeIataAirport": "ISC",
+
+
+"codeIcaoAirport": "EGHE",
+
+
+"nameTranslations": "St Marys,St Marys,Islas Sorlingas-St. Mary's,Îles de Scilly St. Mary's,Isole di Scilly St. Mary's,??????????????????????,St Marys",
+
+
+"latitudeAirport": "49.913334",
+
+
+"longitudeAirport": "-6.291667",
+
+
+"geonameId": "6296590",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ISC"
+
+},
+
+{
+
+
+"airportId": "3938",
+
+
+"nameAirport": "Marham RAF",
+
+
+"codeIataAirport": "KNF",
+
+
+"codeIcaoAirport": "EGYM",
+
+
+"nameTranslations": "Marham RAF",
+
+
+"latitudeAirport": "52.75",
+
+
+"longitudeAirport": "0.4",
+
+
+"geonameId": "6301529",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "KNF"
+
+},
+
+{
+
+
+"airportId": "3965",
+
+
+"nameAirport": "Orkney Island",
+
+
+"codeIataAirport": "KOI",
+
+
+"codeIcaoAirport": "EGPA",
+
+
+"nameTranslations": "Kirkwall,Orkney Island,Kirkwall Arpt,Kirkwall Arpt,Kirkwall Arpt,????????????????,Kirkwall Airport,??????",
+
+
+"latitudeAirport": "58.958057",
+
+
+"longitudeAirport": "-2.900556",
+
+
+"geonameId": "6296621",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "KOI"
+
+},
+
+{
+
+
+"airportId": "4146",
+
+
+"nameAirport": "Milton Keynes",
+
+
+"codeIataAirport": "KYN",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Milton Keynes,??????-??????,???-?????",
+
+
+"latitudeAirport": "52.03428",
+
+
+"longitudeAirport": "-0.774107",
+
+
+"geonameId": "2642465",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "KYN"
+
+},
+
+{
+
+
+"airportId": "4192",
+
+
+"nameAirport": "Leeds/bradford",
+
+
+"codeIataAirport": "LBA",
+
+
+"codeIcaoAirport": "EGNM",
+
+
+"nameTranslations": "Leeds Bradford,Leeds/bradford,Leeds/Bradford,Leeds/Bradford,Leeds/Bradford,????,?????????????????????????????,Leeds Bradford Int. Apt,????",
+
+
+"latitudeAirport": "53.86934",
+
+
+"longitudeAirport": "-1.659985",
+
+
+"geonameId": "6296608",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LBA"
+
+},
+
+{
+
+
+"airportId": "4239",
+
+
+"nameAirport": "London City Airport",
+
+
+"codeIataAirport": "LCY",
+
+
+"codeIcaoAirport": "EGLC",
+
+
+"nameTranslations": "London City,London City Airport,London City Airport,London City Airport,London City Airport,?????????????????,City Airport,??????",
+
+
+"latitudeAirport": "51.5",
+
+
+"longitudeAirport": "0.05",
+
+
+"geonameId": "6296599",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "4259",
+
+
+"nameAirport": "Eglinton (City of Derry)",
+
+
+"codeIataAirport": "LDY",
+
+
+"codeIcaoAirport": "EGAE",
+
+
+"nameTranslations": "Londonderry,Eglinton (City of Derry),Eglinton,Eglinton,Eglinton,???????????????,Eglinton Apt,??????",
+
+
+"latitudeAirport": "55.039566",
+
+
+"longitudeAirport": "-7.155835",
+
+
+"geonameId": "6296571",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LDY"
+
+},
+
+{
+
+
+"airportId": "4277",
+
+
+"nameAirport": "Lands End",
+
+
+"codeIataAirport": "LEQ",
+
+
+"codeIcaoAirport": "EGHC",
+
+
+"nameTranslations": "Lands End,Lands End,Lands End,Lands End,??????????????????",
+
+
+"latitudeAirport": "50.05",
+
+
+"longitudeAirport": "-5.733333",
+
+
+"geonameId": "7668205",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LEQ"
+
+},
+
+{
+
+
+"airportId": "4317",
+
+
+"nameAirport": "Gatwick",
+
+
+"codeIataAirport": "LGW",
+
+
+"codeIcaoAirport": "EGKK",
+
+
+"nameTranslations": "London Gatwick,Gatwick,Gatwick,Gatwick,Gatwick,??????,???????????????????,Gatwick,????????",
+
+
+"latitudeAirport": "51.156807",
+
+
+"longitudeAirport": "-0.161863",
+
+
+"geonameId": "6296598",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "+44 (0) 844 8",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "4329",
+
+
+"nameAirport": "Heathrow",
+
+
+"codeIataAirport": "LHR",
+
+
+"codeIcaoAirport": "EGLL",
+
+
+"nameTranslations": "London Heathrow,Heathrow,Heathrow,Heathrow,Londres-Heathrow,??????,?????????????????????,Heathrow,???????",
+
+
+"latitudeAirport": "51.469604",
+
+
+"longitudeAirport": "-0.453566",
+
+
+"geonameId": "2647216",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "0844 335 1801",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "4381",
+
+
+"nameAirport": "RAF Lakenheath",
+
+
+"codeIataAirport": "LKZ",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Lakenheath RAF,RAF Lakenheath,?????",
+
+
+"latitudeAirport": "52.49167",
+
+
+"longitudeAirport": "0.67609",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LKZ"
+
+},
+
+{
+
+
+"airportId": "4412",
+
+
+"nameAirport": "RAF Station",
+
+
+"codeIataAirport": "LMO",
+
+
+"codeIcaoAirport": "EGQS",
+
+
+"nameTranslations": "RAF Station",
+
+
+"latitudeAirport": "57.716667",
+
+
+"longitudeAirport": "-3.333333",
+
+
+"geonameId": "6296641",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LMO"
+
+},
+
+{
+
+
+"airportId": "4475",
+
+
+"nameAirport": "Liverpool John Lennon",
+
+
+"codeIataAirport": "LPL",
+
+
+"codeIcaoAirport": "EGGP",
+
+
+"nameTranslations": "Liverpool,Liverpool John Lennon,Liverpool J. Lennon,Liverpool J. Lennon,Liverpool J. Lennon,????????????????????????????,Liverpool-John Lennon,???????",
+
+
+"latitudeAirport": "53.337616",
+
+
+"longitudeAirport": "-2.854905",
+
+
+"geonameId": "6296588",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LPL"
+
+},
+
+{
+
+
+"airportId": "4517",
+
+
+"nameAirport": "Sumburgh",
+
+
+"codeIataAirport": "LSI",
+
+
+"codeIcaoAirport": "EGPB",
+
+
+"nameTranslations": "Lerwick,Sumburgh,Sumburgh,Sumburgh,Sumburgh,????????? ??????????,Sumburgh",
+
+
+"latitudeAirport": "59.877888",
+
+
+"longitudeAirport": "-1.287111",
+
+
+"geonameId": "6296622",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SDZ"
+
+},
+
+{
+
+
+"airportId": "4545",
+
+
+"nameAirport": "Luton Airport",
+
+
+"codeIataAirport": "LTN",
+
+
+"codeIcaoAirport": "EGGW",
+
+
+"nameTranslations": "London Luton,Luton Airport,Luton Airport,Luton Airport,Luton Airport,??????????????????,Luton,????",
+
+
+"latitudeAirport": "51.87977",
+
+
+"longitudeAirport": "-0.376232",
+
+
+"geonameId": "6296589",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "+44(0) 1582 4",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "4598",
+
+
+"nameAirport": "Lerwick/Tingwall",
+
+
+"codeIataAirport": "LWK",
+
+
+"codeIcaoAirport": "EGET",
+
+
+"nameTranslations": "Lerwick\\/ Tingwall,Lerwick/Tingwall,????????? ???????? ????????,Lerwick\\/Tingwall",
+
+
+"latitudeAirport": "60.15",
+
+
+"longitudeAirport": "-1.15",
+
+
+"geonameId": "7668202",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SDZ"
+
+},
+
+{
+
+
+"airportId": "4618",
+
+
+"nameAirport": "RAF Station",
+
+
+"codeIataAirport": "LYE",
+
+
+"codeIcaoAirport": "EGDL",
+
+
+"nameTranslations": "RAF Station,???????????",
+
+
+"latitudeAirport": "51.516666",
+
+
+"longitudeAirport": "-1.966667",
+
+
+"geonameId": "6296580",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LYE"
+
+},
+
+{
+
+
+"airportId": "4630",
+
+
+"nameAirport": "London Ashford International (Ferryfield)",
+
+
+"codeIataAirport": "LYX",
+
+
+"codeIcaoAirport": "EGMD",
+
+
+"nameTranslations": "London Ashford International (Ferryfield),?????,Lydd Uluslararas? Havaliman?,????",
+
+
+"latitudeAirport": "50.95",
+
+
+"longitudeAirport": "0.933333",
+
+
+"geonameId": "6296602",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LYX"
+
+},
+
+{
+
+
+"airportId": "4654",
+
+
+"nameAirport": "Manchester Airport",
+
+
+"codeIataAirport": "MAN",
+
+
+"codeIcaoAirport": "EGCC",
+
+
+"nameTranslations": "Manchester,Ringway International Airport,Manchester,Manchester,Manchester,?????????,??????????????????,??????",
+
+
+"latitudeAirport": "53.362907",
+
+
+"longitudeAirport": "-2.273354",
+
+
+"geonameId": "6296575",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "+44 (0) 8712",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "MAN"
+
+},
+
+{
+
+
+"airportId": "4844",
+
+
+"nameAirport": "Mildenhall Airport",
+
+
+"codeIataAirport": "MHZ",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Mildenhall Airport,Mildenhall Havaliman?",
+
+
+"latitudeAirport": "52.36667",
+
+
+"longitudeAirport": "0.483333",
+
+
+"geonameId": "2642543",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "MHZ"
+
+},
+
+{
+
+
+"airportId": "4948",
+
+
+"nameAirport": "Tees Valley",
+
+
+"codeIataAirport": "MME",
+
+
+"codeIcaoAirport": "EGNV",
+
+
+"nameTranslations": "Durham Tees Valley,Tees Valley,Durham Tees Valley,Durham Tees Valley,Durham Tees Valley,?????????????,????",
+
+
+"latitudeAirport": "54.512226",
+
+
+"longitudeAirport": "-1.434013",
+
+
+"geonameId": "6296612",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "MME"
+
+},
+
+{
+
+
+"airportId": "5337",
+
+
+"nameAirport": "Newcastle Airport",
+
+
+"codeIataAirport": "NCL",
+
+
+"codeIcaoAirport": "EGNT",
+
+
+"nameTranslations": "Newcastle,Newcastle Airport,Newcastle Airport,Newcastle Airport,Newcastle Airport,?????????????????????????,Newcastle Int.Apt,??????",
+
+
+"latitudeAirport": "55.037064",
+
+
+"longitudeAirport": "-1.710629",
+
+
+"geonameId": "6296611",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NCL"
+
+},
+
+{
+
+
+"airportId": "5367",
+
+
+"nameAirport": "Sanday",
+
+
+"codeIataAirport": "NDY",
+
+
+"codeIcaoAirport": "EGES",
+
+
+"nameTranslations": "Sanday,Sanday,Sanday,Sanday,??????????????,Sanday,????",
+
+
+"latitudeAirport": "59.25",
+
+
+"longitudeAirport": "-2.583333",
+
+
+"geonameId": "7668201",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NDY"
+
+},
+
+{
+
+
+"airportId": "5410",
+
+
+"nameAirport": "Northolt",
+
+
+"codeIataAirport": "NHT",
+
+
+"codeIcaoAirport": "EGWU",
+
+
+"nameTranslations": "Northolt,??????",
+
+
+"latitudeAirport": "51.533333",
+
+
+"longitudeAirport": "-0.366667",
+
+
+"geonameId": "6301524",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NHT"
+
+},
+
+{
+
+
+"airportId": "5521",
+
+
+"nameAirport": "Nottingham Airport",
+
+
+"codeIataAirport": "NQT",
+
+
+"codeIcaoAirport": "EGBN",
+
+
+"nameTranslations": "Nottingham Airport,tüm havaalanlar?",
+
+
+"latitudeAirport": "52.966667",
+
+
+"longitudeAirport": "-1.166667",
+
+
+"geonameId": "7668195",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NQT"
+
+},
+
+{
+
+
+"airportId": "5524",
+
+
+"nameAirport": "Newquay Cornwall Airport",
+
+
+"codeIataAirport": "NQY",
+
+
+"codeIcaoAirport": "EGDG",
+
+
+"nameTranslations": "Newquay,Newquay Cornwall Airport,St Mawgan,St Mawgan,St Mawgan,???????????????,Newquay Int. Apt,??",
+
+
+"latitudeAirport": "50.43745",
+
+
+"longitudeAirport": "-4.997922",
+
+
+"geonameId": "6296578",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NQY"
+
+},
+
+{
+
+
+"airportId": "5532",
+
+
+"nameAirport": "North Ronaldsay",
+
+
+"codeIataAirport": "NRL",
+
+
+"codeIcaoAirport": "EGEN",
+
+
+"nameTranslations": "North Ronaldsay,North Ronaldsay,North Ronaldsay,North Ronaldsay,???????????????????????,???????",
+
+
+"latitudeAirport": "59.370277",
+
+
+"longitudeAirport": "-2.433333",
+
+
+"geonameId": "7668198",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NRL"
+
+},
+
+{
+
+
+"airportId": "5605",
+
+
+"nameAirport": "Norwich International Airport",
+
+
+"codeIataAirport": "NWI",
+
+
+"codeIcaoAirport": "EGSH",
+
+
+"nameTranslations": "Norwich,Norwich International Airport,Norwich Arpt,Norwich Arpt,Norwich Arpt,??????????????????????,Norwich Int. Apt,?????",
+
+
+"latitudeAirport": "52.669533",
+
+
+"longitudeAirport": "1.276782",
+
+
+"geonameId": "6296644",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NWI"
+
+},
+
+{
+
+
+"airportId": "5647",
+
+
+"nameAirport": "Oban Airport",
+
+
+"codeIataAirport": "OBN",
+
+
+"codeIcaoAirport": "EGEO",
+
+
+"nameTranslations": "Oban Airport,?????,????",
+
+
+"latitudeAirport": "56.465275",
+
+
+"longitudeAirport": "-5.396494",
+
+
+"geonameId": "7668199",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "OBN"
+
+},
+
+{
+
+
+"airportId": "5670",
+
+
+"nameAirport": "RAF Station",
+
+
+"codeIataAirport": "ODH",
+
+
+"codeIcaoAirport": "EGVO",
+
+
+"nameTranslations": "RAF Station,???????????",
+
+
+"latitudeAirport": "51.25",
+
+
+"longitudeAirport": "-0.95",
+
+
+"geonameId": "6296661",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ODH"
+
+},
+
+{
+
+
+"airportId": "5727",
+
+
+"nameAirport": "Cottesmor RAF",
+
+
+"codeIataAirport": "OKH",
+
+
+"codeIcaoAirport": "EGXJ",
+
+
+"nameTranslations": "Cottesmor RAF,???????",
+
+
+"latitudeAirport": "52.666668",
+
+
+"longitudeAirport": "-0.716667",
+
+
+"geonameId": "6301526",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "OKH"
+
+},
+
+{
+
+
+"airportId": "5827",
+
+
+"nameAirport": "Northampton",
+
+
+"codeIataAirport": "ORM",
+
+
+"codeIcaoAirport": "EGBK",
+
+
+"nameTranslations": "Northampton,Northampton Tren ?stasyonu Havaliman?,??????",
+
+
+"latitudeAirport": "52.233334",
+
+
+"longitudeAirport": "-0.9",
+
+
+"geonameId": "7668194",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ORM"
+
+},
+
+{
+
+
+"airportId": "5886",
+
+
+"nameAirport": "Outer Skerries",
+
+
+"codeIataAirport": "OUK",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Outer Skerries,??????????????????,Outer Skerries??",
+
+
+"latitudeAirport": "60.416668",
+
+
+"longitudeAirport": "-0.75",
+
+
+"geonameId": "7670764",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "OUK"
+
+},
+
+{
+
+
+"airportId": "5911",
+
+
+"nameAirport": "Oxford (Kidlington)",
+
+
+"codeIataAirport": "OXF",
+
+
+"codeIcaoAirport": "EGTK",
+
+
+"nameTranslations": "Oxford,Oxford (Kidlington),Kidlington,Kidlington,Kidlington,??????????????????,tüm havaalanlar?,???????",
+
+
+"latitudeAirport": "51.766666",
+
+
+"longitudeAirport": "-1.25",
+
+
+"geonameId": "6453432",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "OXF"
+
+},
+
+{
+
+
+"airportId": "6111",
+
+
+"nameAirport": "Prestwick",
+
+
+"codeIataAirport": "PIK",
+
+
+"codeIcaoAirport": "EGPK",
+
+
+"nameTranslations": "Glasgow Prestwick,Prestwick,Prestwick,Prestwick,Prestwick,????????????????????????,Prestwick,??????",
+
+
+"latitudeAirport": "55.50843",
+
+
+"longitudeAirport": "-4.611286",
+
+
+"geonameId": "6296629",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "GLA"
+
+},
+
+{
+
+
+"airportId": "6183",
+
+
+"nameAirport": "Portsmouth",
+
+
+"codeIataAirport": "PME",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Portsmouth,Portsmouth Havaliman?,??????",
+
+
+"latitudeAirport": "50.8",
+
+
+"longitudeAirport": "-1.083333",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "PME"
+
+},
+
+{
+
+
+"airportId": "6273",
+
+
+"nameAirport": "Papa Westray",
+
+
+"codeIataAirport": "PPW",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Papa Westray,Papa Westray,Papa Westray,Papa Westray,????-???????,????????????????????,Papa Westray,????????",
+
+
+"latitudeAirport": "59.351265",
+
+
+"longitudeAirport": "-2.898974",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "PPW"
+
+},
+
+{
+
+
+"airportId": "6321",
+
+
+"nameAirport": "Perth",
+
+
+"codeIataAirport": "PSL",
+
+
+"codeIcaoAirport": "EGPT",
+
+
+"nameTranslations": "Perth,????,Perth Havaliman?,????",
+
+
+"latitudeAirport": "56.233334",
+
+
+"longitudeAirport": "-3.566667",
+
+
+"geonameId": "6296634",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "PSL"
+
+},
+
+{
+
+
+"airportId": "6331",
+
+
+"nameAirport": "Papa Stour",
+
+
+"codeIataAirport": "PSV",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Papa Stour,?????????,???????",
+
+
+"latitudeAirport": "60.316666",
+
+
+"longitudeAirport": "-1.7",
+
+
+"geonameId": "7670765",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "PSV"
+
+},
+
+{
+
+
+"airportId": "6453",
+
+
+"nameAirport": "Coningsby RAF Station",
+
+
+"codeIataAirport": "QCY",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Coningsby RAF Station",
+
+
+"latitudeAirport": "53.10598",
+
+
+"longitudeAirport": "-0.17595",
+
+
+"geonameId": "2652461",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QCY"
+
+},
+
+{
+
+
+"airportId": "6454",
+
+
+"nameAirport": "International Rail Station",
+
+
+"codeIataAirport": "QDH",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "International Rail Station",
+
+
+"latitudeAirport": "0",
+
+
+"longitudeAirport": "0",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QDH"
+
+},
+
+{
+
+
+"airportId": "6459",
+
+
+"nameAirport": "Leicester Railway Station",
+
+
+"codeIataAirport": "QEW",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Leicester Railway Station",
+
+
+"latitudeAirport": "52.6386",
+
+
+"longitudeAirport": "-1.13169",
+
+
+"geonameId": "2644668",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QEW"
+
+},
+
+{
+
+
+"airportId": "6507",
+
+
+"nameAirport": "Priory Railway Station",
+
+
+"codeIataAirport": "QQD",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Priory Railway Station",
+
+
+"latitudeAirport": "51.13333",
+
+
+"longitudeAirport": "1.3",
+
+
+"geonameId": "2651048",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QQD"
+
+},
+
+{
+
+
+"airportId": "6508",
+
+
+"nameAirport": "Harwich Town Rail Station",
+
+
+"codeIataAirport": "QQH",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Harwich Town Rail Station",
+
+
+"latitudeAirport": "51.94194",
+
+
+"longitudeAirport": "1.28437",
+
+
+"geonameId": "2647383",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QQH"
+
+},
+
+{
+
+
+"airportId": "6509",
+
+
+"nameAirport": "Kings Cross Rail Station",
+
+
+"codeIataAirport": "QQK",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Kings Cross Rail Station",
+
+
+"latitudeAirport": "51.51",
+
+
+"longitudeAirport": "0.06",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "6510",
+
+
+"nameAirport": "Piccadilly Railway Station",
+
+
+"codeIataAirport": "QQM",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Piccadilly Railway Station",
+
+
+"latitudeAirport": "-1",
+
+
+"longitudeAirport": "-1",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "MAN"
+
+},
+
+{
+
+
+"airportId": "6511",
+
+
+"nameAirport": "New Street Rail Station",
+
+
+"codeIataAirport": "QQN",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "New Street Rail Station",
+
+
+"latitudeAirport": "52.4829614",
+
+
+"longitudeAirport": "-1.893592",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BHX"
+
+},
+
+{
+
+
+"airportId": "6512",
+
+
+"nameAirport": "Paddington Railway Station",
+
+
+"codeIataAirport": "QQP",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Paddington Railway Station",
+
+
+"latitudeAirport": "-1",
+
+
+"longitudeAirport": "-1",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "6513",
+
+
+"nameAirport": "Ramsgate Railway Station",
+
+
+"codeIataAirport": "QQR",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Ramsgate Railway Station",
+
+
+"latitudeAirport": "51.33576",
+
+
+"longitudeAirport": "1.41552",
+
+
+"geonameId": "2639660",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QQR"
+
+},
+
+{
+
+
+"airportId": "6514",
+
+
+"nameAirport": "St Pancras International RailSt",
+
+
+"codeIataAirport": "QQS",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "St. Pancras Station,St Pancras International RailSt,St. Pancras Station,St. Pancras Station,St. Pancras Station",
+
+
+"latitudeAirport": "51.51",
+
+
+"longitudeAirport": "0.06",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "6515",
+
+
+"nameAirport": "Euston Railway Station",
+
+
+"codeIataAirport": "QQU",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Euston Railway Station",
+
+
+"latitudeAirport": "51.51",
+
+
+"longitudeAirport": "0.06",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "6516",
+
+
+"nameAirport": "London-Waterloo",
+
+
+"codeIataAirport": "QQW",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "London-Waterloo",
+
+
+"latitudeAirport": "51.51",
+
+
+"longitudeAirport": "0.06",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "6517",
+
+
+"nameAirport": "Bath Spa Railway Station",
+
+
+"codeIataAirport": "QQX",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Bath Spa Railway Station",
+
+
+"latitudeAirport": "51.37795",
+
+
+"longitudeAirport": "-2.35907",
+
+
+"geonameId": "2656173",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QQX"
+
+},
+
+{
+
+
+"airportId": "6518",
+
+
+"nameAirport": "York Railway Station",
+
+
+"codeIataAirport": "QQY",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "York Railway Station",
+
+
+"latitudeAirport": "53.95763",
+
+
+"longitudeAirport": "-1.08271",
+
+
+"geonameId": "2633352",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QQY"
+
+},
+
+{
+
+
+"airportId": "6531",
+
+
+"nameAirport": "Goodwood",
+
+
+"codeIataAirport": "QUG",
+
+
+"codeIcaoAirport": "EGHR",
+
+
+"nameTranslations": "Goodwood",
+
+
+"latitudeAirport": "50.941666",
+
+
+"longitudeAirport": "-0.842248",
+
+
+"geonameId": "7730473",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QUG"
+
+},
+
+{
+
+
+"airportId": "6535",
+
+
+"nameAirport": "Wyton RAF Station",
+
+
+"codeIataAirport": "QUY",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Wyton RAF Station",
+
+
+"latitudeAirport": "0",
+
+
+"longitudeAirport": "0",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "QUY"
+
+},
+
+{
+
+
+"airportId": "6634",
+
+
+"nameAirport": "Rochester",
+
+
+"codeIataAirport": "RCS",
+
+
+"codeIcaoAirport": "EGTO",
+
+
+"nameTranslations": "Rochester,????????,??????",
+
+
+"latitudeAirport": "51.35",
+
+
+"longitudeAirport": "0.5",
+
+
+"geonameId": "7668212",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "RCS"
+
+},
+
+{
+
+
+"airportId": "6974",
+
+
+"nameAirport": "Scatsta",
+
+
+"codeIataAirport": "SCS",
+
+
+"codeIcaoAirport": "EGPM",
+
+
+"nameTranslations": "Scatsta,Scatsta,Scatsta Havaliman?",
+
+
+"latitudeAirport": "60.436825",
+
+
+"longitudeAirport": "-1.294972",
+
+
+"geonameId": "6296631",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SDZ"
+
+},
+
+{
+
+
+"airportId": "7013",
+
+
+"nameAirport": "Southend",
+
+
+"codeIataAirport": "SEN",
+
+
+"codeIcaoAirport": "EGMC",
+
+
+"nameTranslations": "Southend On Sea,Southend,Southend,Southend,Southend,?????? ???????,???????????????????????,London Southend Airport",
+
+
+"latitudeAirport": "51.572777",
+
+
+"longitudeAirport": "0.701389",
+
+
+"geonameId": "6296601",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "7158",
+
+
+"nameAirport": "Broadford",
+
+
+"codeIataAirport": "SKL",
+
+
+"codeIcaoAirport": "EGEI",
+
+
+"nameTranslations": "Broadford,Broadford,Broadford Havaliman?,?????",
+
+
+"latitudeAirport": "57.333332",
+
+
+"longitudeAirport": "-6.25",
+
+
+"geonameId": "7731496",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SKL"
+
+},
+
+{
+
+
+"airportId": "7269",
+
+
+"nameAirport": "Southampton Airport",
+
+
+"codeIataAirport": "SOU",
+
+
+"codeIcaoAirport": "EGHI",
+
+
+"nameTranslations": "Southampton,Southampton Airport,Eastleigh,Eastleigh,Eastleigh,????????????????????,Southampton  Apt,??????",
+
+
+"latitudeAirport": "50.950726",
+
+
+"longitudeAirport": "-1.361318",
+
+
+"geonameId": "6296592",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SOU"
+
+},
+
+{
+
+
+"airportId": "7273",
+
+
+"nameAirport": "Stronsay",
+
+
+"codeIataAirport": "SOY",
+
+
+"codeIcaoAirport": "EGER",
+
+
+"nameTranslations": "Stronsay,Stronsay,Stronsay,Stronsay,????????,????????????????,??????",
+
+
+"latitudeAirport": "59.154053",
+
+
+"longitudeAirport": "-2.640495",
+
+
+"geonameId": "7670897",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SOY"
+
+},
+
+{
+
+
+"airportId": "7320",
+
+
+"nameAirport": "RAF Station",
+
+
+"codeIataAirport": "SQZ",
+
+
+"codeIcaoAirport": "EGXP",
+
+
+"nameTranslations": "RAF Station,???????????",
+
+
+"latitudeAirport": "53.3",
+
+
+"longitudeAirport": "-0.583333",
+
+
+"geonameId": "6296671",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SQZ"
+
+},
+
+{
+
+
+"airportId": "7380",
+
+
+"nameAirport": "Stansted",
+
+
+"codeIataAirport": "STN",
+
+
+"codeIcaoAirport": "EGSS",
+
+
+"nameTranslations": "London Stansted,Stansted,Stansted,Stansted,Stansted,?????????????????????,Stansted",
+
+
+"latitudeAirport": "51.889267",
+
+
+"longitudeAirport": "0.262703",
+
+
+"geonameId": "6296645",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "7456",
+
+
+"nameAirport": "Fairwood Comm",
+
+
+"codeIataAirport": "SWS",
+
+
+"codeIcaoAirport": "EGFH",
+
+
+"nameTranslations": "Fairwood Common,Fairwood Comm,Fairwood Comm Havaliman?,?????",
+
+
+"latitudeAirport": "51.63333",
+
+
+"longitudeAirport": "-3.95",
+
+
+"geonameId": "6296586",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SWS"
+
+},
+
+{
+
+
+"airportId": "7511",
+
+
+"nameAirport": "Stornoway",
+
+
+"codeIataAirport": "SYY",
+
+
+"codeIcaoAirport": "EGPO",
+
+
+"nameTranslations": "Stornoway,Stornoway,Stornoway,Stornoway,Stornoway,??????????????????,??????",
+
+
+"latitudeAirport": "58.213627",
+
+
+"longitudeAirport": "-6.321995",
+
+
+"geonameId": "6296633",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "SYY"
+
+},
+
+{
+
+
+"airportId": "7894",
+
+
+"nameAirport": "Tiree",
+
+
+"codeIataAirport": "TRE",
+
+
+"codeIcaoAirport": "EGPU",
+
+
+"nameTranslations": "Tiree Island,Tiree,Tiree,Tiree,Tiree,???????????,?????",
+
+
+"latitudeAirport": "56.500557",
+
+
+"longitudeAirport": "-6.871389",
+
+
+"geonameId": "6296635",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "TRE"
+
+},
+
+{
+
+
+"airportId": "7929",
+
+
+"nameAirport": "Tresco",
+
+
+"codeIataAirport": "TSO",
+
+
+"codeIcaoAirport": "EGHT",
+
+
+"nameTranslations": "Tresco,Tresco,Tresco,??????",
+
+
+"latitudeAirport": "49.945557",
+
+
+"longitudeAirport": "-6.331389",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ISC"
+
+},
+
+{
+
+
+"airportId": "7950",
+
+
+"nameAirport": "Hale Railway Station",
+
+
+"codeIataAirport": "TTK",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Hale Railway Station",
+
+
+"latitudeAirport": "51.583332",
+
+
+"longitudeAirport": "-0.083333",
+
+
+"geonameId": "2635608",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "TTK"
+
+},
+
+{
+
+
+"airportId": "8121",
+
+
+"nameAirport": "Mull",
+
+
+"codeIataAirport": "ULL",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Mull,????,Mull??",
+
+
+"latitudeAirport": "56.45",
+
+
+"longitudeAirport": "-6",
+
+
+"geonameId": "7731583",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ULL"
+
+},
+
+{
+
+
+"airportId": "8154",
+
+
+"nameAirport": "Baltasound",
+
+
+"codeIataAirport": "UNT",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Baltasound,Baltasound,Baltasound Havaliman?,???????",
+
+
+"latitudeAirport": "60.766666",
+
+
+"longitudeAirport": "-0.85",
+
+
+"geonameId": "8298959",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "UNT"
+
+},
+
+{
+
+
+"airportId": "8167",
+
+
+"nameAirport": "Upavon",
+
+
+"codeIataAirport": "UPV",
+
+
+"codeIcaoAirport": "EGDJ",
+
+
+"nameTranslations": "Upavon,?????",
+
+
+"latitudeAirport": "51.3",
+
+
+"longitudeAirport": "-1.816667",
+
+
+"geonameId": "2635162",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "UPV"
+
+},
+
+{
+
+
+"airportId": "8347",
+
+
+"nameAirport": "Valley",
+
+
+"codeIataAirport": "VLY",
+
+
+"codeIcaoAirport": "EGOV",
+
+
+"nameTranslations": "Valley,Anglesey,Anglesey,Anglesey,?????????????????,Anglesey Havaliman?",
+
+
+"latitudeAirport": "53.25036",
+
+
+"longitudeAirport": "-4.529017",
+
+
+"geonameId": "6296618",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "VLY"
+
+},
+
+{
+
+
+"airportId": "8484",
+
+
+"nameAirport": "Woodford",
+
+
+"codeIataAirport": "WFD",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Woodford",
+
+
+"latitudeAirport": "53.338055",
+
+
+"longitudeAirport": "-2.148889",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "WFD"
+
+},
+
+{
+
+
+"airportId": "8502",
+
+
+"nameAirport": "Whalsay",
+
+
+"codeIataAirport": "WHS",
+
+
+"codeIcaoAirport": "EGEH",
+
+
+"nameTranslations": "Whalsay,??????,??????",
+
+
+"latitudeAirport": "60.36667",
+
+
+"longitudeAirport": "-0.983333",
+
+
+"geonameId": "7670769",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "WHS"
+
+},
+
+{
+
+
+"airportId": "8506",
+
+
+"nameAirport": "Wick",
+
+
+"codeIataAirport": "WIC",
+
+
+"codeIcaoAirport": "EGPC",
+
+
+"nameTranslations": "Wick,Wick,Wick,Wick,Wick,???,??????????,????",
+
+
+"latitudeAirport": "58.456944",
+
+
+"longitudeAirport": "-3.086667",
+
+
+"geonameId": "6296623",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "WIC"
+
+},
+
+{
+
+
+"airportId": "8597",
+
+
+"nameAirport": "Westray",
+
+
+"codeIataAirport": "WRY",
+
+
+"codeIcaoAirport": "EGEW",
+
+
+"nameTranslations": "Westray,Westray,Westray,Westray,???????,????????????????,??????",
+
+
+"latitudeAirport": "59.35",
+
+
+"longitudeAirport": "-2.95",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "WRY"
+
+},
+
+{
+
+
+"airportId": "8621",
+
+
+"nameAirport": "RAF Station",
+
+
+"codeIataAirport": "WTN",
+
+
+"codeIcaoAirport": "EGXW",
+
+
+"nameTranslations": "RAF Station,????????",
+
+
+"latitudeAirport": "53.166668",
+
+
+"longitudeAirport": "-0.516667",
+
+
+"geonameId": "6296675",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "WTN"
+
+},
+
+{
+
+
+"airportId": "8766",
+
+
+"nameAirport": "Grantham Railway Station",
+
+
+"codeIataAirport": "XGM",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Grantham Railway Station",
+
+
+"latitudeAirport": "52.91149",
+
+
+"longitudeAirport": "-0.64184",
+
+
+"geonameId": "2648208",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XGM"
+
+},
+
+{
+
+
+"airportId": "8794",
+
+
+"nameAirport": "Huntingdon Railway Station",
+
+
+"codeIataAirport": "XHU",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Huntingdon Railway Station",
+
+
+"latitudeAirport": "52.33049",
+
+
+"longitudeAirport": "-0.18651",
+
+
+"geonameId": "2646393",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XHU"
+
+},
+
+{
+
+
+"airportId": "8892",
+
+
+"nameAirport": "Macclesfield Railway Station",
+
+
+"codeIataAirport": "XMZ",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Macclesfield Railway Station",
+
+
+"latitudeAirport": "53.26023",
+
+
+"longitudeAirport": "-2.12564",
+
+
+"geonameId": "2643266",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XMZ"
+
+},
+
+{
+
+
+"airportId": "8897",
+
+
+"nameAirport": "Newport Railway Station",
+
+
+"codeIataAirport": "XNE",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Newport Railway Station",
+
+
+"latitudeAirport": "0",
+
+
+"longitudeAirport": "0",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XNE"
+
+},
+
+{
+
+
+"airportId": "8899",
+
+
+"nameAirport": "Nottingham Railway Station",
+
+
+"codeIataAirport": "XNM",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Nottingham Railway Station",
+
+
+"latitudeAirport": "52.9551147",
+
+
+"longitudeAirport": "-1.1491718",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NQT"
+
+},
+
+{
+
+
+"airportId": "8901",
+
+
+"nameAirport": "Northallerton Railway Station",
+
+
+"codeIataAirport": "XNO",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Northallerton Railway Station",
+
+
+"latitudeAirport": "54.33901",
+
+
+"longitudeAirport": "-1.43243",
+
+
+"geonameId": "2641435",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XNO"
+
+},
+
+{
+
+
+"airportId": "8905",
+
+
+"nameAirport": "Nuneaton Railway Station",
+
+
+"codeIataAirport": "XNV",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Nuneaton Railway Station",
+
+
+"latitudeAirport": "52.52323",
+
+
+"longitudeAirport": "-1.46523",
+
+
+"geonameId": "2641157",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XNV"
+
+},
+
+{
+
+
+"airportId": "8912",
+
+
+"nameAirport": "Stratford International Rail Station",
+
+
+"codeIataAirport": "XOF",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Stratford International Rail Station",
+
+
+"latitudeAirport": "51.51",
+
+
+"longitudeAirport": "0.06",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "8929",
+
+
+"nameAirport": "Penrith Railway Station",
+
+
+"codeIataAirport": "XPF",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Penrith Railway Station",
+
+
+"latitudeAirport": "54.66579",
+
+
+"longitudeAirport": "-2.75757",
+
+
+"geonameId": "2640416",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XPF"
+
+},
+
+{
+
+
+"airportId": "8940",
+
+
+"nameAirport": "Preston Railway Station",
+
+
+"codeIataAirport": "XPT",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Preston Railway Station",
+
+
+"latitudeAirport": "0",
+
+
+"longitudeAirport": "0",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XPT"
+
+},
+
+{
+
+
+"airportId": "8942",
+
+
+"nameAirport": "Parkway Railway Station",
+
+
+"codeIataAirport": "XPW",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Parkway Railway Station",
+
+
+"latitudeAirport": "51.60928",
+
+
+"longitudeAirport": "-1.24214",
+
+
+"geonameId": "2651269",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XPW"
+
+},
+
+{
+
+
+"airportId": "8947",
+
+
+"nameAirport": "Basingstoke Railway Station",
+
+
+"codeIataAirport": "XQB",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Basingstoke Railway Station",
+
+
+"latitudeAirport": "51.26249",
+
+
+"longitudeAirport": "-1.08708",
+
+
+"geonameId": "2656192",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQB"
+
+},
+
+{
+
+
+"airportId": "8948",
+
+
+"nameAirport": "Bedford Railway Station",
+
+
+"codeIataAirport": "XQD",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Bedford Railway Station",
+
+
+"latitudeAirport": "52.13459",
+
+
+"longitudeAirport": "-0.46632",
+
+
+"geonameId": "2656046",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQD"
+
+},
+
+{
+
+
+"airportId": "8949",
+
+
+"nameAirport": "Ebbsfleet International Rail Station",
+
+
+"codeIataAirport": "XQE",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Ebbsfleet Station,Ebbsfleet International Rail Station,Ebbsfleet Station,Ebbsfleet Station,Ebbsfleet Station",
+
+
+"latitudeAirport": "51.51",
+
+
+"longitudeAirport": "0.06",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "8950",
+
+
+"nameAirport": "Berwick-upon-Tweed Railway Station",
+
+
+"codeIataAirport": "XQG",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Berwick-upon-Tweed Railway Station",
+
+
+"latitudeAirport": "0",
+
+
+"longitudeAirport": "0",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQG"
+
+},
+
+{
+
+
+"airportId": "8951",
+
+
+"nameAirport": "Derby Railway Station",
+
+
+"codeIataAirport": "XQH",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Derby Railway Station",
+
+
+"latitudeAirport": "52.92277",
+
+
+"longitudeAirport": "-1.47663",
+
+
+"geonameId": "2651347",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQH"
+
+},
+
+{
+
+
+"airportId": "8952",
+
+
+"nameAirport": "Loughborough Railway Station",
+
+
+"codeIataAirport": "XQI",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Loughborough Railway Station",
+
+
+"latitudeAirport": "52.76667",
+
+
+"longitudeAirport": "-1.2",
+
+
+"geonameId": "2643567",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQI"
+
+},
+
+{
+
+
+"airportId": "8953",
+
+
+"nameAirport": "Lancaster Railway Station",
+
+
+"codeIataAirport": "XQL",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Lancaster Railway Station",
+
+
+"latitudeAirport": "54.06667",
+
+
+"longitudeAirport": "-2.83333",
+
+
+"geonameId": "2644972",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQL"
+
+},
+
+{
+
+
+"airportId": "8954",
+
+
+"nameAirport": "Market Harborough Railway Station",
+
+
+"codeIataAirport": "XQM",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Market Harborough Railway Station",
+
+
+"latitudeAirport": "52.4776",
+
+
+"longitudeAirport": "-0.92053",
+
+
+"geonameId": "2643027",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQM"
+
+},
+
+{
+
+
+"airportId": "8958",
+
+
+"nameAirport": "Trent Valley Rail Station",
+
+
+"codeIataAirport": "XQT",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Trent Valley Rail Station",
+
+
+"latitudeAirport": "52.68154",
+
+
+"longitudeAirport": "-1.82549",
+
+
+"geonameId": "2644531",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQT"
+
+},
+
+{
+
+
+"airportId": "8960",
+
+
+"nameAirport": "Motherwell Railway Station",
+
+
+"codeIataAirport": "XQW",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Motherwell Railway Station",
+
+
+"latitudeAirport": "55.78924",
+
+
+"longitudeAirport": "-3.99187",
+
+
+"geonameId": "2642135",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XQW"
+
+},
+
+{
+
+
+"airportId": "8962",
+
+
+"nameAirport": "Runcorn Railway Station",
+
+
+"codeIataAirport": "XRC",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Runcorn Railway Station",
+
+
+"latitudeAirport": "53.34174",
+
+
+"longitudeAirport": "-2.73124",
+
+
+"geonameId": "2638960",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XRC"
+
+},
+
+{
+
+
+"airportId": "8964",
+
+
+"nameAirport": "Railway Service",
+
+
+"codeIataAirport": "XRE",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Railway Service",
+
+
+"latitudeAirport": "51.45625",
+
+
+"longitudeAirport": "-0.97113",
+
+
+"geonameId": "2639577",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XRE"
+
+},
+
+{
+
+
+"airportId": "8966",
+
+
+"nameAirport": "Trent Valley  Rail Station",
+
+
+"codeIataAirport": "XRG",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Trent Valley  Rail Station",
+
+
+"latitudeAirport": "52.7593",
+
+
+"longitudeAirport": "-1.93694",
+
+
+"geonameId": "2638977",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XRG"
+
+},
+
+{
+
+
+"airportId": "8972",
+
+
+"nameAirport": "Rugby Railway Station",
+
+
+"codeIataAirport": "XRU",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Rugby Railway Station",
+
+
+"latitudeAirport": "52.37092",
+
+
+"longitudeAirport": "-1.26417",
+
+
+"geonameId": "2638978",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XRU"
+
+},
+
+{
+
+
+"airportId": "8982",
+
+
+"nameAirport": "Salisbury Railway Station",
+
+
+"codeIataAirport": "XSR",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Salisbury Railway Station",
+
+
+"latitudeAirport": "51.06931",
+
+
+"longitudeAirport": "-1.79569",
+
+
+"geonameId": "2638664",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XSR"
+
+},
+
+{
+
+
+"airportId": "8986",
+
+
+"nameAirport": "Thirsk Railway Station",
+
+
+"codeIataAirport": "XTK",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Thirsk Railway Station",
+
+
+"latitudeAirport": "54.23298",
+
+
+"longitudeAirport": "-1.34411",
+
+
+"geonameId": "2636021",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XTK"
+
+},
+
+{
+
+
+"airportId": "9015",
+
+
+"nameAirport": "Stockport Railway Station",
+
+
+"codeIataAirport": "XVA",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Stockport Railway Station",
+
+
+"latitudeAirport": "53.40979",
+
+
+"longitudeAirport": "-2.15761",
+
+
+"geonameId": "2636882",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XVA"
+
+},
+
+{
+
+
+"airportId": "9016",
+
+
+"nameAirport": "Stafford Railway Station",
+
+
+"codeIataAirport": "XVB",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Stafford Railway Station",
+
+
+"latitudeAirport": "52.80521",
+
+
+"longitudeAirport": "-2.11636",
+
+
+"geonameId": "2637142",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XVB"
+
+},
+
+{
+
+
+"airportId": "9017",
+
+
+"nameAirport": "Crewe Railway Station",
+
+
+"codeIataAirport": "XVC",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Crewe Railway Station",
+
+
+"latitudeAirport": "53.09787",
+
+
+"longitudeAirport": "-2.44161",
+
+
+"geonameId": "2652002",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XVC"
+
+},
+
+{
+
+
+"airportId": "9018",
+
+
+"nameAirport": "Darlington Railway Station",
+
+
+"codeIataAirport": "XVG",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Darlington Railway Station",
+
+
+"latitudeAirport": "47.05164",
+
+
+"longitudeAirport": "-94.24",
+
+
+"geonameId": "5035674",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XVG"
+
+},
+
+{
+
+
+"airportId": "9019",
+
+
+"nameAirport": "Peterborough Railway Station",
+
+
+"codeIataAirport": "XVH",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Peterborough Railway Station",
+
+
+"latitudeAirport": "52.57364",
+
+
+"longitudeAirport": "-0.24777",
+
+
+"geonameId": "2640354",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XVH"
+
+},
+
+{
+
+
+"airportId": "9020",
+
+
+"nameAirport": "Stevenage Railway Station",
+
+
+"codeIataAirport": "XVJ",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Stevenage Railway Station",
+
+
+"latitudeAirport": "51.90224",
+
+
+"longitudeAirport": "-0.20256",
+
+
+"geonameId": "2636940",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XVJ"
+
+},
+
+{
+
+
+"airportId": "9025",
+
+
+"nameAirport": "Durham Railway Station",
+
+
+"codeIataAirport": "XVU",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Durham Railway Station",
+
+
+"latitudeAirport": "54.51",
+
+
+"longitudeAirport": "-1.43",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "MME"
+
+},
+
+{
+
+
+"airportId": "9027",
+
+
+"nameAirport": "Wolverhampton Railway Station",
+
+
+"codeIataAirport": "XVW",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Wolverhampton Railway Station",
+
+
+"latitudeAirport": "52.58547",
+
+
+"longitudeAirport": "-2.12296",
+
+
+"geonameId": "2633691",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XVW"
+
+},
+
+{
+
+
+"airportId": "9031",
+
+
+"nameAirport": "Stirling Railway Station",
+
+
+"codeIataAirport": "XWB",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Stirling Railway Station",
+
+
+"latitudeAirport": "56.11903",
+
+
+"longitudeAirport": "-3.93682",
+
+
+"geonameId": "2636910",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XWB"
+
+},
+
+{
+
+
+"airportId": "9033",
+
+
+"nameAirport": "Westgate Railway Station",
+
+
+"codeIataAirport": "XWD",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Westgate Railway Station",
+
+
+"latitudeAirport": "53.68331",
+
+
+"longitudeAirport": "-1.49768",
+
+
+"geonameId": "2634910",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XWD"
+
+},
+
+{
+
+
+"airportId": "9034",
+
+
+"nameAirport": "Wellingborough Railway Station",
+
+
+"codeIataAirport": "XWE",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Wellingborough Railway Station",
+
+
+"latitudeAirport": "52.30273",
+
+
+"longitudeAirport": "-0.69446",
+
+
+"geonameId": "2634578",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XWE"
+
+},
+
+{
+
+
+"airportId": "9037",
+
+
+"nameAirport": "Stoke-on-Trent Railway Station",
+
+
+"codeIataAirport": "XWH",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Stoke-on-Trent Railway Station",
+
+
+"latitudeAirport": "53.00415",
+
+
+"longitudeAirport": "-2.18538",
+
+
+"geonameId": "2636841",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XWH"
+
+},
+
+{
+
+
+"airportId": "9038",
+
+
+"nameAirport": "North Wstern Rail Station",
+
+
+"codeIataAirport": "XWI",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "North Wstern Rail Station",
+
+
+"latitudeAirport": "53.53333",
+
+
+"longitudeAirport": "-2.61667",
+
+
+"geonameId": "2633948",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XWI"
+
+},
+
+{
+
+
+"airportId": "9042",
+
+
+"nameAirport": "Bank Quay Rail Station",
+
+
+"codeIataAirport": "XWN",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Bank Quay Rail Station",
+
+
+"latitudeAirport": "0",
+
+
+"longitudeAirport": "0",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XWN"
+
+},
+
+{
+
+
+"airportId": "9043",
+
+
+"nameAirport": "Woking Railway Station",
+
+
+"codeIataAirport": "XWO",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Woking Railway Station",
+
+
+"latitudeAirport": "51.31903",
+
+
+"longitudeAirport": "-0.55893",
+
+
+"geonameId": "2633709",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XWO"
+
+},
+
+{
+
+
+"airportId": "9047",
+
+
+"nameAirport": "Swindon Railway Station",
+
+
+"codeIataAirport": "XWS",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Swindon Railway Station",
+
+
+"latitudeAirport": "51.9333",
+
+
+"longitudeAirport": "-2.1",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "XWS"
+
+},
+
+{
+
+
+"airportId": "9212",
+
+
+"nameAirport": "Yeovilton",
+
+
+"codeIataAirport": "YEO",
+
+
+"codeIcaoAirport": "EGDY",
+
+
+"nameTranslations": "Yeovilton,????????",
+
+
+"latitudeAirport": "51.016666",
+
+
+"longitudeAirport": "-2.55",
+
+
+"geonameId": "6301513",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "YEO"
+
+},
+
+{
+
+
+"airportId": "9630",
+
+
+"nameAirport": "Colmore Row Bus Station",
+
+
+"codeIataAirport": "ZBC",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Colmore Row Bus Station",
+
+
+"latitudeAirport": "42.237392",
+
+
+"longitudeAirport": "118.91089",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "BHX"
+
+},
+
+{
+
+
+"airportId": "9673",
+
+
+"nameAirport": "ScotRailway",
+
+
+"codeIataAirport": "ZDU",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "ScotRailway",
+
+
+"latitudeAirport": "56.4614282",
+
+
+"longitudeAirport": "-2.9681109",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "DND"
+
+},
+
+{
+
+
+"airportId": "9687",
+
+
+"nameAirport": "Victoria Railway",
+
+
+"codeIataAirport": "ZEP",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Victoria Railway",
+
+
+"latitudeAirport": "51.51",
+
+
+"longitudeAirport": "0.06",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "9688",
+
+
+"nameAirport": "Dewsbury Bus Station",
+
+
+"codeIataAirport": "ZEQ",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Dewsbury Bus Station",
+
+
+"latitudeAirport": "53.69076",
+
+
+"longitudeAirport": "-1.62907",
+
+
+"geonameId": "2651286",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ZEQ"
+
+},
+
+{
+
+
+"airportId": "9695",
+
+
+"nameAirport": "Bradford Bus Station",
+
+
+"codeIataAirport": "ZFC",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Bradford Bus Station",
+
+
+"latitudeAirport": "53.8371263",
+
+
+"longitudeAirport": "-1.4722292",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LBA"
+
+},
+
+{
+
+
+"airportId": "9697",
+
+
+"nameAirport": "Sheffield Bus Station",
+
+
+"codeIataAirport": "ZFG",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Sheffield Bus Station",
+
+
+"latitudeAirport": "53.5230412",
+
+
+"longitudeAirport": "-1.1337622",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "DSA"
+
+},
+
+{
+
+
+"airportId": "9698",
+
+
+"nameAirport": "Milton Keynes Bus Station",
+
+
+"codeIataAirport": "ZFH",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Milton Keynes Bus Station",
+
+
+"latitudeAirport": "0",
+
+
+"longitudeAirport": "0",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "KYN"
+
+},
+
+{
+
+
+"airportId": "9699",
+
+
+"nameAirport": "Chesterfield Bus Station",
+
+
+"codeIataAirport": "ZFI",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Chesterfield Bus Station",
+
+
+"latitudeAirport": "53.25",
+
+
+"longitudeAirport": "-1.41667",
+
+
+"geonameId": "2653225",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ZFI"
+
+},
+
+{
+
+
+"airportId": "9715",
+
+
+"nameAirport": "Nottingham Bus Station",
+
+
+"codeIataAirport": "ZGB",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Nottingham Bus Station",
+
+
+"latitudeAirport": "21.540333",
+
+
+"longitudeAirport": "109.28785",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "NQT"
+
+},
+
+{
+
+
+"airportId": "9774",
+
+
+"nameAirport": "ScotRailway",
+
+
+"codeIataAirport": "ZIV",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "ScotRailway",
+
+
+"latitudeAirport": "57.4766949",
+
+
+"longitudeAirport": "-4.2314535",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "INV"
+
+},
+
+{
+
+
+"airportId": "9838",
+
+
+"nameAirport": "Liverpool St Rail Station",
+
+
+"codeIataAirport": "ZLS",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Liverpool St Rail Station",
+
+
+"latitudeAirport": "51.51",
+
+
+"longitudeAirport": "0.06",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LON"
+
+},
+
+{
+
+
+"airportId": "9843",
+
+
+"nameAirport": "Leeds Bus Station",
+
+
+"codeIataAirport": "ZLZ",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Leeds Bus Station",
+
+
+"latitudeAirport": "37.568935",
+
+
+"longitudeAirport": "105.15253",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "LBA"
+
+},
+
+{
+
+
+"airportId": "9844",
+
+
+"nameAirport": "Mansfield Bus Station",
+
+
+"codeIataAirport": "ZMA",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Mansfield Bus Station",
+
+
+"latitudeAirport": "53.13333",
+
+
+"longitudeAirport": "-1.2",
+
+
+"geonameId": "2643097",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ZMA"
+
+},
+
+{
+
+
+"airportId": "9857",
+
+
+"nameAirport": "Manchester Bus Station",
+
+
+"codeIataAirport": "ZMP",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Manchester Bus Station",
+
+
+"latitudeAirport": "53.4807125",
+
+
+"longitudeAirport": "-2.2343765",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "MAN"
+
+},
+
+{
+
+
+"airportId": "10013",
+
+
+"nameAirport": "Aberdeen Railway Station",
+
+
+"codeIataAirport": "ZXA",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Aberdeen Railway Station",
+
+
+"latitudeAirport": "57.1474915",
+
+
+"longitudeAirport": "-2.095397",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "ABZ"
+
+},
+
+{
+
+
+"airportId": "10014",
+
+
+"nameAirport": "Waverley Railway Station",
+
+
+"codeIataAirport": "ZXE",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "Waverley Railway Station",
+
+
+"latitudeAirport": "55.9501755",
+
+
+"longitudeAirport": "-3.1875359",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "EDI"
+
+},
+
+{
+
+
+"airportId": "10017",
+
+
+"nameAirport": "ScotRailway",
+
+
+"codeIataAirport": "ZXP",
+
+
+"codeIcaoAirport": "",
+
+
+"nameTranslations": "ScotRailway",
+
+
+"latitudeAirport": "56.4094132",
+
+
+"longitudeAirport": "-3.447528",
+
+
+"geonameId": "0",
+
+
+"timezone": "Europe/London",
+
+
+"GMT": "0",
+
+
+"phone": "",
+
+
+"nameCountry": "United Kingdom",
+
+
+"codeIso2Country": "GB",
+
+
+"codeIataCity": "PSL"
+
+}
+]
