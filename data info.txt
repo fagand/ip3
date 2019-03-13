@@ -8,7 +8,7 @@ alpha vantage           0F1ISWGUHZYUTIRI
 data2
 openindustrial data ZDE5OWY1YzUtYzA4MS00MDFiLWE2MjYtNzFjNzgyYWEyOTAx
 https://opint.cogniteapp.com/publicdata/charts/-LRxPkhnT4WkBN5L6iuf
-
+https://www.akerbp.com/en/our-assets/production/valhall/
 inlet cooler temperature controll
 
 ph 1st stg suct cool gas out output
