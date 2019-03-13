@@ -94,6 +94,7 @@
             }
         }
 
+        var markers = []; //holds all placed markers
         var mymap;
         // window.location.href;
         var theurl = window.location.toString();
@@ -112,18 +113,57 @@
             google.maps.event.addListener(mymap, 'click', function (event) {
                 var searchterm = event.latLng.lat() + "," + event.latLng.lng();
                 pie(searchterm);
+                deleteMarkers();
+                addMarker(event.latLng);
+
             });
         }
+        // Removes the markers from the map, but keeps them in the array.
+        function clearMarkers() {
+            setMapOnAll(null);
+        }
+
+        // Sets the map on all markers in the array.
+        function setMapOnAll(map) {
+            for (var i = 0; i < markers.length; i++) {
+                markers[i].setMap(map);
+            }
+        }
+
+        // Deletes all markers in the array by removing references to them.
+        function deleteMarkers() {
+            clearMarkers();
+            markers = [];
+        }
+        // Adds a marker to the map and push to the array.
+        function addMarker(location) {
+            var marker = new google.maps.Marker({
+                position: location,
+                map: mymap
+            });
+            markers.push(marker);
+        }
+
 
         function pie(searchterm) {
             var url = "http://api.apixu.com/v1/current.json?key=3b4f627ba14c47d5a8103303191502&q=";
             var query_url = url + searchterm;
             $.getJSON(query_url, function (json) {
 
-
             })
                 .done(function (json) {
                     console.log(json);
+
+
+                    //get lat long from json return
+                    //create new event lat lng
+                    var myLatLng = new google.maps.LatLng({ lat: json.location.lat, lng: json.location.lon });
+                    //clear any existing markers
+                    deleteMarkers();
+                    //add marker at that loc
+                    addMarker(myLatLng);
+
+
                     $('#uvInfo').html(''); // remove previous UV index info card
                     image.src = "http:" + json.current.condition.icon; // icon is specified within the data
                     $('#weatherInfo').html('<p>Currently: ' + json.current.condition.text +
@@ -144,7 +184,7 @@
 
                 })
                 .fail(function () {
-                    alert('getJSON request failed!');
+                    // alert('getJSON request failed!');
                     $('#weatherInfo').html('<p>No weather data to display.</p>');
                     $('#weatherImage').empty();
                     $('#uvInfo').empty()
