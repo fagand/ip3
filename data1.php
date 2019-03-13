@@ -57,12 +57,13 @@
             <!-- sidebar column content-->
             <div class="col-sm-4">
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" id="stockname" placeholder="enter stock name">
+                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)" placeholder="enter stock name">
                     <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getStocks()">Get Stock
                         Data</button>
                 </form>
                 <br>
-                <p>(enter guide on how to use page here). Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor dolore
+                <p>(enter guide on how to use page here). Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ullam tempora vitae magnam dolor dolore
                     minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
                     rerum,
                     atque sunt vero?</p>
@@ -74,6 +75,14 @@
     </div>
     <!-- end content-->
     <script>
+        // executes getStocks function when user clicks enter key on input field
+        function clickEnter(e) {
+            if (e.keyCode === 13) {
+                e.preventDefault();
+                getStocks();
+            }
+        }
+
         var Gjson;
         var data_points_arr = [];
         var dates = [];
