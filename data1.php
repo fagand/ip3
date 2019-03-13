@@ -15,7 +15,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
+    <!-- jquery,popper,bootstrap end -->
+
+
+
     <!-- charting functions -->
     <script src="chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
     <script src="chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
@@ -95,48 +98,7 @@
                 "&apikey=" +
                 apikey;
 
-            $.getJSON(query_url, function (json) {
-                console.log(json);
-
-                var transform = {
-                    "tag": "table",
-                    "children": [{
-                        "tag": "tbody",
-                        "children": [{
-                            "tag": "tbody",
-                            "children": [{
-                                "tag": "td",
-                                "html": "${}"
-                            },
-                            {
-                                "tag": "td",
-                                "html": "${age}"
-                            }]
-                        }]
-                    }]
-                };
-
-                var data = [{
-                    'name': 'Bob',
-                    'age': 40
-                },
-                {
-                    'name': 'Frank',
-                    'age': 15
-                },
-                {
-                    'name': 'Bill',
-                    'age': 65
-                },
-                {
-                    'name': 'Robert',
-                    'age': 24
-                }
-                ];
-
-                $('#right').html(json2html.transform(data, transform));
-            });
-
+         
         }
 
         function getData() {
