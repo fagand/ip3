@@ -58,8 +58,10 @@
             <div class="col-sm-8">
                 <h1>Weather</h1>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" id="location" onkeypress="clickEnter(event)" placeholder="enter place or lat/long">
-                    <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getWeather()">Get Weather Data</button>
+                    <input class="form-control mr-sm-2" type="text" id="location" onkeypress="clickEnter(event)"
+                        placeholder="enter place or lat/long">
+                    <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getWeather()">Get Weather
+                        Data</button>
                 </form>
 
                 <br>
@@ -70,6 +72,10 @@
             <!-- sidebar column content-->
             <div class="col-sm-4">
                 <h2>Weather Data</h2>
+                <div id="defaultText">
+                    <p>Drop a pin on the map to display weather data for that location. <br><br>
+                    Alternatively, input a place name or latitude/longitude and click Get Weather Data.</p>
+                </div>
                 <div id="weatherImage"></div>
                 <div id="weatherInfo"></div>
                 <br>
@@ -163,7 +169,7 @@
                     //add marker at that loc
                     addMarker(myLatLng);
 
-
+                    $('#defaultText').empty(); // remove the info text from sidebar before weather data is displayed
                     $('#uvInfo').html(''); // remove previous UV index info card
                     image.src = "http:" + json.current.condition.icon; // icon is specified within the data
                     $('#weatherInfo').html('<p>Currently: ' + json.current.condition.text +
