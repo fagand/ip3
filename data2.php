@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <title>Locate-a-Quake: Oil Valve Data</title>
+    <title>Locate-a-Quake: Oil Rig Valve Data</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -56,23 +56,23 @@
         <div class="row">
             <!-- main column content -->
             <div class="col-sm-8">
-                <h1>Oil Valve Data</h1>
+                <h1>Oil Rig Valve Data</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
                     <canvas id="myChart" width="800" height="400"></canvas>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
-                        molestias, minus dolorum obcaecati, quis, laboriosam voluptas rem reiciendis praesentium
-                        delectus
-                        corrupti deserunt rerum suscipit non error. Amet, facere.</p>
                 </div>
             </div>
             <!-- end main column content-->
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
-                <h4>Valhall data</h4>
+                <h2>Information</h2>
+                <h3>Valhall</h3>
+                <img src="img\valhall-platform.jpg">
                 <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and
                     following commissioning of the new PH platform in 2013 the field now has the potential to
-                    continue producing for several decades.<br><br>This chart is updated in real time and represents the data in the chart as and when it is received.<br><br>The chart can altered by click either of the data selections at the top to hide them from the chart.</p>
+                    continue producing for several decades.</p>
+                <p>displaying inlet temperature to a 1stage comparessor showing the temperature at the suction side
+                    (38-40) DegC cool and the outlet (cool side 35 DegC)</p>
             </div>
             <!-- end sidebar column content -->
         </div>
@@ -131,7 +131,23 @@
 
         var option = {
             responsive: false,
-            showLines: true
+            showLines: true,
+            scales: {
+                xAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Time (DD/MM/YYYY HH:MM:ss)'
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: 'Celsius (°C)'
+                    }
+                }]
+            }
         };
         var myLineChart = Chart.Line(canvas, {
             data: data,

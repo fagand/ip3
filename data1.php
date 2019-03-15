@@ -15,7 +15,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/popper.min.js"></script>
+    <!-- jquery,popper,bootstrap end -->
+
+
+
     <!-- charting functions -->
     <script src="chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
     <script src="chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
@@ -48,20 +51,25 @@
             <!-- main column content -->
             <div class="col-sm-8">
                 <h1>Stocks</h1>
-                <div class="chart-container" style="max-width:8000px; max-height:400px">
-                    <canvas id="myChart" width="800" height="400"></canvas>
-                    <p>This chart shows the recent trends of stocks.<br><br>Enter your desired company in the above input box and click the 'get stock data' button to have the chart represent the data.</p>
+                <div class="chart-container" style="max-width:8000px; max-height:600px">
+                    <canvas id="myChart" width="800" height="600"></canvas>
                 </div>
             </div>
             <!-- end main column content-->
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
-                <h4>Stock data</h4>
-                <input type="text" id="stockname"><button onclick="getStocks()">Get Stock Data</button>
-                <p>This chart shows the recent trends of stocks.<br><br>Enter your desired company in the above input box and click the 'get stock data' button to have the chart represent the data.
-                
-                <br><br>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. <br>Clicking/highlighting the plottings on the map displays the infomration of the selection.<br>-- Chart not finalized yet --</p>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)" placeholder="enter stock name">
+                    <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getStocks()">Get Stock
+                        Data</button>
+                </form>
+                <br>
+                <p>(enter guide on how to use page here). Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Ullam tempora vitae magnam dolor dolore
+                    minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
+                    rerum,
+                    atque sunt vero?</p>
             </div>
             <!-- end sidebar column content -->
         </div>
@@ -70,6 +78,14 @@
     </div>
     <!-- end content-->
     <script>
+        // executes getStocks function when user clicks enter key on input field
+        function clickEnter(e) {
+            if (e.keyCode === 13) {
+                e.preventDefault();
+                getStocks();
+            }
+        }
+
         var Gjson;
         var data_points_arr = [];
         var dates = [];
@@ -82,48 +98,7 @@
                 "&apikey=" +
                 apikey;
 
-            $.getJSON(query_url, function (json) {
-                console.log(json);
-
-                var transform = {
-                    "tag": "table",
-                    "children": [{
-                        "tag": "tbody",
-                        "children": [{
-                            "tag": "tbody",
-                            "children": [{
-                                "tag": "td",
-                                "html": "${}"
-                            },
-                            {
-                                "tag": "td",
-                                "html": "${age}"
-                            }
-                            ]
-                        }]
-                    };
-
-                var data = [{
-                    'name': 'Bob',
-                    'age': 40
-                },
-                {
-                    'name': 'Frank',
-                    'age': 15
-                },
-                {
-                    'name': 'Bill',
-                    'age': 65
-                },
-                {
-                    'name': 'Robert',
-                    'age': 24
-                }
-                ];
-
-                $('#right').html(json2html.transform(data, transform));
-            });
-
+         
         }
 
         function getData() {
@@ -177,7 +152,7 @@
             // OHLC
             var ctx1 = document.getElementById("myChart").getContext("2d");
             ctx1.canvas.width = 1000;
-            ctx1.canvas.height = 250;
+            ctx1.canvas.height = 600;
             new Chart(ctx1, {
                 type: 'ohlc',
                 data: {
