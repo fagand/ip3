@@ -69,11 +69,10 @@
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
-                <h2>Information</h2>
-                <h3>Valhall</h3>
+                <h4>Valhall data</h4>
                 <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and
                     following commissioning of the new PH platform in 2013 the field now has the potential to
-                    continue producing for several decades.</p>
+                    continue producing for several decades.<br><br>This chart is updated in real time and represents the data in the chart as and when it is received.<br><br>The chart can altered by click either of the data selections at the top to hide them from the chart.</p>
             </div>
             <!-- end sidebar column content -->
         </div>

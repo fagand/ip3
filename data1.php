@@ -50,21 +50,18 @@
                 <h1>Stocks</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
                     <canvas id="myChart" width="800" height="400"></canvas>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, excepturi. Consequuntur
-                        molestias, minus dolorum obcaecati, quis, laboriosam voluptas rem reiciendis praesentium
-                        delectus
-                        corrupti deserunt rerum suscipit non error. Amet, facere.</p>
+                    <p>This chart shows the recent trends of stocks.<br><br>Enter your desired company in the above input box and click the 'get stock data' button to have the chart represent the data.</p>
                 </div>
             </div>
             <!-- end main column content-->
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
+                <h4>Stock data</h4>
                 <input type="text" id="stockname"><button onclick="getStocks()">Get Stock Data</button>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor dolore
-                    minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
-                    rerum,
-                    atque sunt vero?</p>
+                <p>This chart shows the recent trends of stocks.<br><br>Enter your desired company in the above input box and click the 'get stock data' button to have the chart represent the data.
+                
+                <br><br>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. <br>Clicking/highlighting the plottings on the map displays the infomration of the selection.<br>-- Chart not finalized yet --</p>
             </div>
             <!-- end sidebar column content -->
         </div>
