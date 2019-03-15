@@ -78,11 +78,8 @@
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam tempora vitae magnam dolor
-                    dolore
-                    minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
-                    rerum,
-                    atque sunt vero?</p>
+                <h4>Chart showing Air Traffic data</h4>
+                <p>This page shows data regarding flight information of selected flights flying in and around the UK Ilse. <br><br>There are two maps on this page, the top map shows all flights currently in air. <br>The bottom map shows the airports represented as *TBC* and the current flights represented as a small aeroplane.<br><br>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. <br>[Chart 1] Clicking/highlighting the plottings on the map displays the infomration of the selection.<br>[Chart 2] Clicking the plottings on the map displays the infomration of the selection.<br>Clicking the flight icon displays information for that selected flight. </p>
             </div>
             <!-- end sidebar column content -->
         </div>
