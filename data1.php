@@ -60,9 +60,14 @@
             <!-- sidebar column content-->
             <div class="col-sm-4">
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)" placeholder="enter stock name">
+                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)"
+                        placeholder="enter stock name">
                     <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getStocks()">Get Stock
                         Data</button>
+                        <div class="ui-widget">
+                            <label for="birds">Birds: </label>
+                            <input id="birds">
+                        </div>
                 </form>
                 <br>
                 <p>(enter guide on how to use page here). Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -77,7 +82,24 @@
         <?php include 'includes/footer.php' ?>
     </div>
     <!-- end content-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
+        $(function () {
+            function log(message) {
+                $("<div>").text(message).prependTo("#log");
+                $("#log").scrollTop(0);
+            }
+
+            $("#birds").autocomplete({
+                source: "data1-search.php",
+                minLength: 2,
+                select: function (event, ui) {
+                    log("Selected: " + ui.item.value + " aka " + ui.item.id);
+                }
+            });
+        });
+   
         // executes getStocks function when user clicks enter key on input field
         function clickEnter(e) {
             if (e.keyCode === 13) {
@@ -97,8 +119,10 @@
             var query_url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=" + searchterm +
                 "&apikey=" +
                 apikey;
+            $.getJSON(query_url, function (json) {
+                console.log(json);
+            });
 
-         
         }
 
         function getData() {
