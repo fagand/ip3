@@ -58,21 +58,21 @@
             <div class="col-sm-8">
                 <h1>Oil Rig Valve Data</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
-                    <canvas id="myChart" width="800" height="400"></canvas>
+                    <canvas id="myChart" width="600px" height="400"></canvas>
                 </div>
             </div>
             <!-- end main column content-->
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
-                <h2>Information</h2>
-                <h3>Valhall</h3>
-                <img src="img\valhall-platform.jpg">
+                <h4>Valhall</h4>
+                <img src="img\valhall-platform.jpg" width="100%" alt="Valhall Platform photo">
                 <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and
                     following commissioning of the new PH platform in 2013 the field now has the potential to
                     continue producing for several decades.</p>
-                <p>displaying inlet temperature to a 1stage comparessor showing the temperature at the suction side
+                <p>Displaying inlet temperature to a 1stage comparessor showing the temperature at the suction side
                     (38-40) DegC cool and the outlet (cool side 35 DegC)</p>
+                <p>This chart updates in real time representing the data as and when it is received. <br>The chart can be interacted with allowing you to show only one dataset. Clicking the values at the top hides the selected source from the chart. <br>Hovering your cursor over the line will also give more detailed information about that point.</p>
             </div>
             <!-- end sidebar column content -->
         </div>

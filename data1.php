@@ -59,17 +59,14 @@
 
             <!-- sidebar column content-->
             <div class="col-sm-4">
+                <h4>Stock Data</h4>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)" placeholder="enter stock name">
+                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)" placeholder="Enter company name">
                     <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getStocks()">Get Stock
                         Data</button>
                 </form>
                 <br>
-                <p>(enter guide on how to use page here). Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Ullam tempora vitae magnam dolor dolore
-                    minima consectetur nisi laudantium excepturi voluptates in amet possimus non nesciunt cumque
-                    rerum,
-                    atque sunt vero?</p>
+                <p>Enter your desired company in the input field above and click the "Get Stock Data" button to see the companies stocks represented in the chart.</p>
             </div>
             <!-- end sidebar column content -->
         </div>
