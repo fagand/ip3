@@ -11798,3 +11798,7 @@ th {
 {
  background-color: darkgrey;
 }
+[aria-expanded*="true"]:hover
+{
+ background-color: darkgrey;
+}
