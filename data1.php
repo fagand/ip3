@@ -135,8 +135,7 @@
             });
         }
 
-        function getData(clicked_symbol) {
-            
+        function getData(clicked_symbol) {            
             $("#refine").fadeOut();
             var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + clicked_symbol + "&apikey=" + apikey + "&datatype=json";
             $.getJSON(query_url, function (json) {
