@@ -30,7 +30,7 @@
 
 </head>
 
-<body >
+<body>
     <?php include 'includes/navigation.php' ?>
 
     <!-- content -->
@@ -61,20 +61,26 @@
             <div class="col-sm-4">
                 <h4>Stock Data</h4>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)" placeholder="Enter company name">
+                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)"
+                        placeholder="Enter company name">
                     <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getPossibleStocks()">Get Stock
                         Data</button>
                 </form>
                 <br>
-                <p>Enter your desired company in the input field above and click the "Get Stock Data" button to see the companies stocks represented in the chart.</p>
+                <p>Enter your desired company in the input field above and click the "Get Stock Data" button to see the
+                    companies stocks represented in the chart.</p>
                 <table id="myTable">
-                    <thead> <tr> <th>a</th>
-      <th>b</th></tr></thead>
-  <tbody>
-     
-    <tr><td>1</td><td>2</td></tr>
-  </tbody>
-</table>
+                    <thead>
+                        <tr>
+                            <th>Symbol</th>
+                            <th>Company Name</th>
+                            <th>Type</th>
+                            <th>Region</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
             <!-- end sidebar column content -->
         </div>
@@ -97,7 +103,7 @@
         var apikey = "0F1ISWGUHZYUTIRI";
 
         function getStocks() {
-            let searchTerm = document.getElementById("stockname").value;           
+            let searchTerm = document.getElementById("stockname").value;
             let query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + searchTerm + "&apikey=" + apikey + "&datatype=json";
 
             $.getJSON(query_url, function (json) {
@@ -106,24 +112,23 @@
                 createDataPoints();
                 drawChart();
             });
-         
+
         }
 
-        function getPossibleStocks(){
-            let searchTerm = document.getElementById("stockname").value;           
+        function getPossibleStocks() {
+            let searchTerm = document.getElementById("stockname").value;
             let query_url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=" + searchTerm + "&apikey=" + apikey;
-            $.getJSON(query_url, function (json) {
-               // console.log(json.bestMatches);
-                for (let i = 0; i < json.bestMatches.length; i++) { 
-                    console.log(json.bestMatches[i]);
+            $.getJSON(query_url, function (json) {                
+                $('#myTable tbody').empty(); //clear table but leave headers
+                let symbol, company_name, type, region; //table headers              
+                for (let i = 0; i < json.bestMatches.length; i++) {                 
+                    symbol = json.bestMatches[i]["1. symbol"];
+                    company_name = json.bestMatches[i]["2. name"];
+                    type = json.bestMatches[i]["3. type"];
+                    region = json.bestMatches[i]["4. region"];
+                    $('#myTable > tbody:last-child').append('<tr><td>' + symbol + '</td> <td>' + company_name + '</td><td>' + type + '</td><td>' + region + '</td></tr>'); //add new row to table
                 }
-                $('#myTable tbody').empty();
-
-                $('#myTable > tbody:last-child').append('<tr><td>z</td><td>x</td></tr>');
-
-
             });
-
         }
 
         function getData() {
