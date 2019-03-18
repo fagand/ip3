@@ -62,11 +62,19 @@
                 <h4>Stock Data</h4>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)" placeholder="Enter company name">
-                    <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getStocks()">Get Stock
+                    <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getPossibleStocks()">Get Stock
                         Data</button>
                 </form>
                 <br>
                 <p>Enter your desired company in the input field above and click the "Get Stock Data" button to see the companies stocks represented in the chart.</p>
+                <table id="myTable">
+                    <thead> <tr> <th>a</th>
+      <th>b</th></tr></thead>
+  <tbody>
+     
+    <tr><td>1</td><td>2</td></tr>
+  </tbody>
+</table>
             </div>
             <!-- end sidebar column content -->
         </div>
@@ -99,6 +107,23 @@
                 drawChart();
             });
          
+        }
+
+        function getPossibleStocks(){
+            let searchTerm = document.getElementById("stockname").value;           
+            let query_url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=" + searchTerm + "&apikey=" + apikey;
+            $.getJSON(query_url, function (json) {
+               // console.log(json.bestMatches);
+                for (let i = 0; i < json.bestMatches.length; i++) { 
+                    console.log(json.bestMatches[i]);
+                }
+                $('#myTable tbody').empty();
+
+                $('#myTable > tbody:last-child').append('<tr><td>z</td><td>x</td></tr>');
+
+
+            });
+
         }
 
         function getData() {
