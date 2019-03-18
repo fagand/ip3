@@ -30,7 +30,7 @@
 
 </head>
 
-<body onload="getData()">
+<body>
     <?php include 'includes/navigation.php' ?>
 
     <!-- content -->
@@ -49,27 +49,43 @@
 
         <div class="row">
             <!-- main column content -->
-            <div class="col-sm-8">
+            <div class="col-sm-12" id="main">
                 <h1>Stocks</h1>
-                <div class="chart-container" style="max-width:8000px; max-height:600px">
-                    <canvas id="myChart" width="800" height="600"></canvas>
+                <div id="search">
+                    <h4>Search</h4>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)"
+                            placeholder="Enter company name">
+                        <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getPossibleStocks()">Get Stock
+                            Data</button>
+                    </form>
+                    <br>
+                    <p>Enter your desired company in the input field above and click the "Get Stock Data" button to see
+                        the
+                        companies stocks represented in the chart.</p>
+                </div>
+                <div id="refine">
+                    <h4>Refine</h4>
+                    <table id="myTable">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Company Name</th>
+                                <th>Type</th>
+                                <th>Region</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <!-- end main column content-->
-
-            <!-- sidebar column content-->
-            <div class="col-sm-4">
-                <h4>Stock Data</h4>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)" placeholder="Enter company name">
-                    <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getStocks()">Get Stock
-                        Data</button>
-                </form>
-                <br>
-                <p>Enter your desired company in the input field above and click the "Get Stock Data" button to see the companies stocks represented in the chart.</p>
+            <div class="chart-container"  max-height:600px" id="view">
+                <h4>View</h4>
+                <canvas id="myChart" height="600"></canvas>
             </div>
-            <!-- end sidebar column content -->
         </div>
+        <!-- end main column content-->
 
         <?php include 'includes/footer.php' ?>
     </div>
@@ -86,27 +102,49 @@
         var Gjson;
         var data_points_arr = [];
         var dates = [];
+        var apikey = "0F1ISWGUHZYUTIRI";
 
         function getStocks() {
-            var x = document.getElementById("stockname");
-            var apikey = "0F1ISWGUHZYUTIRI";
-            var searchterm = x.value;
-            var query_url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=" + searchterm +
-                "&apikey=" +
-                apikey;
-
-         
-        }
-
-        function getData() {
-            var query_url =
-                "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=GOOG&apikey=0F1ISWGUHZYUTIRI&datatype=json";
+            let searchTerm = document.getElementById("stockname").value;
+            let query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + searchTerm + "&apikey=" + apikey + "&datatype=json";
 
             $.getJSON(query_url, function (json) {
                 console.log(json);
                 Gjson = json;
                 createDataPoints();
                 drawChart();
+            });
+
+        }
+
+        function getPossibleStocks() {
+            $("#search").fadeOut();
+            let searchTerm = document.getElementById("stockname").value;
+            let query_url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=" + searchTerm + "&apikey=" + apikey;
+            $.getJSON(query_url, function (json) {
+                $('#myTable tbody').empty(); //clear table but leave headers
+                let symbol, company_name, type, region; //table headers              
+                for (let i = 0; i < json.bestMatches.length; i++) {
+                    symbol = json.bestMatches[i]["1. symbol"];
+                    company_name = json.bestMatches[i]["2. name"];
+                    type = json.bestMatches[i]["3. type"];
+                    region = json.bestMatches[i]["4. region"];
+                    $('#myTable > tbody:last-child').append('<tr><td><button class="btn btn-info my-2 my-sm-0" id="' + symbol + '"type="button" onclick="getData(this.id)">' + symbol + '</button ></td> <td>' + company_name + '</td><td>' + type + '</td><td>' + region + '</td></tr>'); //add new row to table
+                    $("#refine").fadeIn();
+                }
+            });
+        }
+
+        function getData(clicked_symbol) {
+            $("#refine").fadeOut();
+            var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + clicked_symbol + "&apikey=" + apikey + "&datatype=json";
+            $.getJSON(query_url, function (json) {
+                console.log(json); 
+                $("#view").fadeIn();
+                Gjson = json;
+                createDataPoints();
+                drawChart();
+
             });
         }
 
@@ -128,24 +166,15 @@
                     c: parseFloat(Gjson["Time Series (Daily)"][key]["4. close"]),
                     t: date.valueOf()
                 }
-
-
-
-
-
                 dates.push(key);
                 data_points_arr.push(point)
-
             });
             console.log(data_points_arr);
-
         }
 
 
         function drawChart() {
-            var data = getRandomData('April 01 2017', 20);
-            console.log(data);
-
+          
             // OHLC
             var ctx1 = document.getElementById("myChart").getContext("2d");
             ctx1.canvas.width = 1000;
@@ -155,7 +184,7 @@
                 data: {
                     datasets: [{
                         label: getLabel(),
-                        data: data_points_arr, //data,//,
+                        data: data_points_arr,
                         fractionalDigitsCount: 2,
                     }]
                 },
@@ -167,6 +196,9 @@
                 },
             });
         }
+
+        $("#refine").hide();
+        $("#view").hide();
     </script>
 </body>
 
