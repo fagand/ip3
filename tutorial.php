@@ -43,35 +43,35 @@
                 <small class="text-muted">Click on a button below to learn more.</small>
                 <div class="btn-group-vertical btn-block">
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#geoJson"
-                        aria-expanded="false" aria-controls="geoJson">
+                        aria-expanded="false" aria-controls="geoJson" onclick="clearInfo()">
                         GeoJSON
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#javaScript"
-                        aria-expanded="false" aria-controls="javaScript">
+                        aria-expanded="false" aria-controls="javaScript" onclick="clearInfo()">
                         JavaScript
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#earthQuakes"
-                        aria-expanded="false" aria-controls="earthQuakes">
+                        aria-expanded="false" aria-controls="earthQuakes" onclick="clearInfo()">
                         Earthquakes
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#weather"
-                        aria-expanded="false" aria-controls="weather">
+                        aria-expanded="false" aria-controls="weather" onclick="clearInfo()">
                         Weather
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#stocks"
-                        aria-expanded="false" aria-controls="stocks">
+                        aria-expanded="false" aria-controls="stocks" onclick="clearInfo()">
                         Stocks
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#oilRigValve"
-                        aria-expanded="false" aria-controls="oilRigValve">
+                        aria-expanded="false" aria-controls="oilRigValve" onclick="clearInfo()">
                         Oil Rig Valve
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#stocks"
-                        aria-expanded="false" aria-controls="stocks">
+                        aria-expanded="false" aria-controls="stocks" onclick="clearInfo()">
                         Live Air Traffic
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#wineProduction"
-                        aria-expanded="false" aria-controls="wineProduction">
+                        aria-expanded="false" aria-controls="wineProduction" onclick="clearInfo()">
                         Wine Production
                     </button>
                 </div>
@@ -80,7 +80,7 @@
 
             <!-- main column content-->
             <div class="col-sm-9">
-                <div class="jumbotron">
+                <div id="information" class="jumbotron">
                     <p class="lead">In this section of the website you will find information and guidance on the data and technologies we used throughout the development of the Locate-a-Quake project. Clicking each button will reveal details on that particular technology or page.</p>
                     <hr class="my-4">
                     <p>Also included will be links to APIs used and data sources accessed in the creation of the website, as well as links to official documentation on the technologies implemented.</p>
@@ -105,5 +105,11 @@
     </div>
     <!-- end content-->
 </body>
+
+<script>
+    function clearInfo(){
+        document.getElementById("information").hidden = true;
+    }
+    </script>
 
 </html>
