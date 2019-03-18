@@ -68,7 +68,7 @@
             <!-- sidebar column content-->
             <div class="col-sm-4">
                 <h4>EU Wine Grouping Countries data</h4>
-                This chart show sthe wine-grower holdings by degree of specialisation based on regions across Europe. <br><br>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. <br>Clicking the years at the top hides them from the chart / reclicking them unhides them.<br>Highlighting your cursor over the bar displays the hectares for that country/year.
+                This chart shows the wine-grower holdings by degree of specialisation based on regions across Europe. <br><br>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. <br>Clicking the years at the top hides them from the chart / reclicking them unhides them.<br>Highlighting your cursor over the bar displays the hectares for that country/year.
             </div>
             <!-- end sidebar column content -->
         </div>
