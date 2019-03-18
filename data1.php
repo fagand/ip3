@@ -30,7 +30,7 @@
 
 </head>
 
-<body onload="getData()">
+<body >
     <?php include 'includes/navigation.php' ?>
 
     <!-- content -->
@@ -86,15 +86,18 @@
         var Gjson;
         var data_points_arr = [];
         var dates = [];
+        var apikey = "0F1ISWGUHZYUTIRI";
 
         function getStocks() {
-            var x = document.getElementById("stockname");
-            var apikey = "0F1ISWGUHZYUTIRI";
-            var searchterm = x.value;
-            var query_url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=" + searchterm +
-                "&apikey=" +
-                apikey;
+            let searchTerm = document.getElementById("stockname").value;           
+            let query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + searchTerm + "&apikey=" + apikey + "&datatype=json";
 
+            $.getJSON(query_url, function (json) {
+                console.log(json);
+                Gjson = json;
+                createDataPoints();
+                drawChart();
+            });
          
         }
 
