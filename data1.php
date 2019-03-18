@@ -24,9 +24,7 @@
     <script src="chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
     <script src="chartjs-chart-financial-master\docs\Chart.Financial.js" type="text/javascript"></script>
     <script src="chartjs-chart-financial-master\docs\utils.js" type="text/javascript"></script>
-    <!--builds html table from json (https://jquery.com/) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/1.2.0/json2html.min.js"></script>
-    <!--builds html table from json (https://jquery.com/) -->
+
 
 </head>
 
@@ -79,10 +77,14 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="chart-container" max-height:600px" id="view">
-                    <h4>View</h4>
-                    <canvas id="myChart" height="600"></canvas>
+                <div id="reset">
+                    <button class="btn btn-info my-2 my-sm-0" id="reset" type="button" onclick="start()">Reset</button>
                 </div>
+
+            </div>
+            <div class="chart-container" max-height:"600px" id="view">
+                <h4>View</h4>
+                <canvas id="myChart" height="600"></canvas>
             </div>
         </div>
         <!-- end main column content-->
@@ -99,23 +101,11 @@
             }
         }
 
-        var Gjson;
+
         var data_points_arr = [];
         var dates = [];
         var apikey = "0F1ISWGUHZYUTIRI";
 
-        function getStocks() {
-            let searchTerm = document.getElementById("stockname").value;
-            let query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + searchTerm + "&apikey=" + apikey + "&datatype=json";
-
-            $.getJSON(query_url, function (json) {
-                console.log(json);
-                Gjson = json;
-                createDataPoints();
-                drawChart();
-            });
-
-        }
 
         function getPossibleStocks() {
             $("#search").fadeOut();
@@ -139,42 +129,48 @@
             $("#refine").fadeOut();
             var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + clicked_symbol + "&apikey=" + apikey + "&datatype=json";
             $.getJSON(query_url, function (json) {
-                console.log(json); 
                 $("#view").fadeIn();
-                Gjson = json;
-                createDataPoints();
-                drawChart();
-
+                let chartTitle = getLabel(json["Meta Data"]);
+                createDataPoints(json["Time Series (Daily)"]);
+                drawChart(chartTitle);
+                showResetButton();
             });
         }
 
-        function getLabel() {
-            return Gjson["Meta Data"]["1. Information"] + " Stock:" + Gjson["Meta Data"]["2. Symbol"] +
-                " Last Updated:" +
-                Gjson["Meta Data"]["3. Last Refreshed"] + " Timezone:" + Gjson["Meta Data"]["5. Time Zone"];
+        function getLabel(meta_data) {
+            let string = [];
+            string.push(
+                meta_data["1. Information"],
+                " Stock:",
+                meta_data["2. Symbol"],
+                " Last Updated:",
+                meta_data["3. Last Refreshed"],
+                " Timezone:",
+                meta_data["5. Time Zone"]
+            );
+            return string.join("");
         }
 
-        function createDataPoints() {
-            //o, h, l, c, timestamp
+        function createDataPoints(timeseries) {
+            data_points_arr = [];
+            dates = [];
+            //format is: o, h, l, c, timestamp
             var dateFormat = 'YYYY MM DD';
-            Object.keys(Gjson["Time Series (Daily)"]).forEach(function (key, index) {
+            Object.keys(timeseries).forEach(function (key, index) {
                 var date = moment(key, dateFormat);
                 var point = {
-                    o: parseFloat(Gjson["Time Series (Daily)"][key]["1. open"]),
-                    h: parseFloat(Gjson["Time Series (Daily)"][key]["2. high"]),
-                    l: parseFloat(Gjson["Time Series (Daily)"][key]["3. low"]),
-                    c: parseFloat(Gjson["Time Series (Daily)"][key]["4. close"]),
+                    o: parseFloat(timeseries[key]["1. open"]),
+                    h: parseFloat(timeseries[key]["2. high"]),
+                    l: parseFloat(timeseries[key]["3. low"]),
+                    c: parseFloat(timeseries[key]["4. close"]),
                     t: date.valueOf()
                 }
                 dates.push(key);
                 data_points_arr.push(point)
             });
-            console.log(data_points_arr);
         }
 
-
-        function drawChart() {
-          
+        function drawChart(chartTitle) {
             // OHLC
             var ctx1 = document.getElementById("myChart").getContext("2d");
             ctx1.canvas.width = 1000;
@@ -183,7 +179,7 @@
                 type: 'ohlc',
                 data: {
                     datasets: [{
-                        label: getLabel(),
+                        label: chartTitle,
                         data: data_points_arr,
                         fractionalDigitsCount: 2,
                     }]
@@ -197,8 +193,27 @@
             });
         }
 
-        $("#refine").hide();
-        $("#view").hide();
+        function showResetButton() {
+            $("#reset").show();
+        }
+        
+        var first_launch = false; //global flag
+        function start() {            
+            if (first_launch == false) {
+                first_launch = true;
+                $("#view").hide();
+            } else {
+                $("#view").fadeOut();
+            }
+            //always
+            $("#stockname").prop('value', ''); //remove previous text
+            $("#search").show();
+            $("#refine").hide();
+            $("#reset").hide();
+        }
+
+        start();
+
     </script>
 </body>
 
