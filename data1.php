@@ -79,10 +79,10 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
-            <div class="chart-container"  max-height:600px" id="view">
-                <h4>View</h4>
-                <canvas id="myChart" height="600"></canvas>
+                <div class="chart-container" max-height:600px" id="view">
+                    <h4>View</h4>
+                    <canvas id="myChart" height="600"></canvas>
+                </div>
             </div>
         </div>
         <!-- end main column content-->
@@ -95,7 +95,7 @@
         function clickEnter(e) {
             if (e.keyCode === 13) {
                 e.preventDefault();
-                getStocks();
+                getPossibleStocks();
             }
         }
 

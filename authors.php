@@ -87,8 +87,9 @@
                             deliverables are fit for purpose and meet the project specifications.</p>
                         <br>
                         <span style="font-size: 2em;">
-                            <a href="https://linkedin.com/in/andmca"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/andmca" target=""><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/andmca" target="blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/andmca" target="blank"><i class="fab fa-github"></i></a>
                         </span>
                     </div>
                 </div>
@@ -106,8 +107,10 @@
                         </p>
                         <br>
                         <span style="font-size: 2em;">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/alexcarruthers"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/alexander-carruthers-2018/" target="blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/alexandercarruthers" target="blank"><i
+                                    class="fab fa-github"></i></a>
                         </span>
                     </div>
                 </div>
@@ -129,8 +132,8 @@
                             above. </p>
                         <br>
                         <span style="font-size: 2em;">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/fagand"><i class="fab fa-github"></i></a>
+                            <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/fagand" target="blank"><i class="fab fa-github"></i></a>
                         </span>
                     </div>
                 </div>
@@ -146,8 +149,8 @@
                             cupiditate aut totam ducimus minima veritatis.</p>
                         <br>
                         <span style="font-size: 2em;">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" target="blank"><i class="fab fa-github"></i></a>
                         </span>
                     </div>
                 </div>
@@ -161,6 +164,11 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero
                             suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque
                             cupiditate aut totam ducimus minima veritatis.</p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" target="blank"><i class="fab fa-github"></i></a>
+                        </span>
                     </div>
                 </div>
 
