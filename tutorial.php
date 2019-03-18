@@ -85,15 +85,18 @@
                     <div class="card card-body">
                         <h2>GeoJSON</h2>
                         <br>
-                        <h6 class="card-subtitle mb-2 text-muted">tutorial on GeoJSON Tutorial</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">tutorial on GeoJSON</h6>
                         <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to return to find out more info about GeoJSON" class="img-fluid"></a></div>
-                        <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and following commissioning of the new PH platform in 2013 the field now has the potential to continue producing for several decades.
+                        <p>GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes. It is based on JSON, the JavaScript Object Notation.
 
-                            Displaying inlet temperature to a 1stage comparessor showing the temperature at the suction side (38-40) DegC cool and the outlet (cool side 35 DegC)
+                            The features include points (therefore addresses and locations), line strings (therefore streets, highways and boundaries), polygons (countries, provinces, tracts of land), and multi-part collections of these types. GeoJSON features need not represent entities of the physical world only; mobile routing and navigation apps, for example, might describe their service coverage using GeoJSON.
 
-                            This chart updates in real time representing the data as and when it is received.
-                            The chart can be interacted with allowing you to show only one dataset. Clicking the values at the top hides the selected source from the chart.
-                            Hovering your cursor over the line will also give more detailed information about that point.</p>
+                            The GeoJSON format differs from other GIS standards in that it was written and is maintained not by a formal standards organization, but by an Internet working group of developers.
+
+                            A notable offspring of GeoJSON is TopoJSON, an extension of GeoJSON that encodes geospatial topology and that typically provides smaller file sizes.</p>
+                        <p>Source: <a href="https://en.wikipedia.org/wiki/GeoJSON" target="_blank">Wikipedia</a><br>More detailed information: <a href="https://macwright.org/2015/03/23/geojson-second-bite.html" target="_blank">Via MarcWright.org</a>
+                        </p>
+                        <p>Locate-A-Quake has used GeoJSON within our site to plot the location of earthquakes and represent them using the data within a map provided by Google.</p>
                     </div>
                 </div>
 
@@ -187,12 +190,21 @@
     function clearInfo() {
         document.getElementById("information").hidden = true;
     }
+
 </script>
-<script>    
-    function clearButtons(){
+<script>
+    function clearButtons() {
         document.getElementById("information").hidden = false;
-//        document.getElementById("buttons").getElementsByClassName("btn btn-secondary")["aria-expanded"] = "false";
-        document.getElementsByTagName("aria-expanded").setAttribute("false");
+        /*        Doesn't work...
+
+        document.getElementById("buttons").getElementsByClassName("btn btn-secondary")["aria-expanded"] = "false";
+                //document.getElementsByTagName("aria-expanded").innerHTML = "false";
+                $('.btn.btn-secondary').attr('aria-expanded', 'false');
+                $('.btn.btn-secondary').attr('class', 'btn btn-secondary collapsed');
+                
+        */
     }
-    </script>
+
+</script>
+
 </html>
