@@ -38,7 +38,7 @@
 
         <div class="row">
             <!-- sidebar column content -->
-            <div class="col-sm-3">
+            <div class="col-sm-3" id="buttons">
                 <h1>Tutorials</h1>
                 <small class="text-muted">Click on a button below to learn more.</small>
                 <div class="btn-group-vertical btn-block">
@@ -65,6 +65,9 @@
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#wineProduction" aria-expanded="false" aria-controls="wineProduction" onclick="clearInfo()">
                         Wine Production
+                    </button>
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="#" onclick="clearButtons()">
+                        Close all tutorials
                     </button>
                 </div>
             </div>
@@ -184,7 +187,12 @@
     function clearInfo() {
         document.getElementById("information").hidden = true;
     }
-
 </script>
-
+<script>    
+    function clearButtons(){
+        document.getElementById("information").hidden = false;
+//        document.getElementById("buttons").getElementsByClassName("btn btn-secondary")["aria-expanded"] = "false";
+        document.getElementsByTagName("aria-expanded").setAttribute("false");
+    }
+    </script>
 </html>
