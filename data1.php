@@ -58,7 +58,7 @@
             <!-- end main column content-->
 
             <!-- sidebar column content-->
-            <div class="col-sm-4">
+            <div class="col-sm-4" id="sidebar">
                 <h4>Stock Data</h4>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" id="stockname" onkeypress="clickEnter(event)"
@@ -114,7 +114,7 @@
             });
 
         }
-
+        
         function getPossibleStocks() {
             let searchTerm = document.getElementById("stockname").value;
             let query_url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=" + searchTerm + "&apikey=" + apikey;
@@ -126,15 +126,16 @@
                     company_name = json.bestMatches[i]["2. name"];
                     type = json.bestMatches[i]["3. type"];
                     region = json.bestMatches[i]["4. region"];
-                    $('#myTable > tbody:last-child').append('<tr><td>' + symbol + '</td> <td>' + company_name + '</td><td>' + type + '</td><td>' + region + '</td></tr>'); //add new row to table
+                    $('#myTable > tbody:last-child').append('<tr><td><button class="btn btn-info my-2 my-sm-0" id="' + symbol + '"type="button" onclick="getData(this.id)">' + symbol +'</button ></td> <td>' + company_name + '</td><td>' + type + '</td><td>' + region + '</td></tr>'); //add new row to table
                 }
             });
         }
 
-        function getData() {
-            var query_url =
-                "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=GOOG&apikey=0F1ISWGUHZYUTIRI&datatype=json";
-
+        function getData(clicked_symbol) {
+            var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + clicked_symbol +"&apikey=" + apikey +"&datatype=json";
+           
+                $("#sidebar").fadeOut();
+           
             $.getJSON(query_url, function (json) {
                 console.log(json);
                 Gjson = json;
@@ -161,24 +162,14 @@
                     c: parseFloat(Gjson["Time Series (Daily)"][key]["4. close"]),
                     t: date.valueOf()
                 }
-
-
-
-
-
                 dates.push(key);
                 data_points_arr.push(point)
-
             });
             console.log(data_points_arr);
-
         }
 
 
         function drawChart() {
-            var data = getRandomData('April 01 2017', 20);
-            console.log(data);
-
             // OHLC
             var ctx1 = document.getElementById("myChart").getContext("2d");
             ctx1.canvas.width = 1000;
@@ -188,7 +179,7 @@
                 data: {
                     datasets: [{
                         label: getLabel(),
-                        data: data_points_arr, //data,//,
+                        data: data_points_arr,
                         fractionalDigitsCount: 2,
                     }]
                 },
