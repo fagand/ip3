@@ -46,7 +46,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
+                    <li class="breadcrumb-item"><a href="index.php">Locate-a-Quake</a></li>
                     <li class="breadcrumb-item active">Oil Valve Data</li>
                 </ol>
             </div>

@@ -18,9 +18,8 @@
     <!-- jquery,popper,bootstrap end -->
 
     <!-- Need the following code for clustering Google maps markers-->
-    <script
-        src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-        </script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
     <style>
         /* Always set the map height explicitly to define the size of the div
                * element that contains the map.
@@ -33,7 +32,6 @@
             position: inherit
         }
     </style>
-
 </head>
 
 <body>
@@ -46,7 +44,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
+                    <li class="breadcrumb-item"><a href="index.php">Locate-a-Quake</a></li>
                     <li class="breadcrumb-item active">Weather</li>
                 </ol>
             </div>

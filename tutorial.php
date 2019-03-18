@@ -29,7 +29,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Locate-a-Quake</a></li>
+                    <li class="breadcrumb-item"><a href="index.php">Locate-a-Quake</a></li>
                     <li class="breadcrumb-item active">Tutorials</li>
                 </ol>
             </div>
@@ -88,7 +88,7 @@
                 
                 <div class="collapse" id="oilRigValve">
                     <div class="card card-body">
-                        <h2>Andrew McAvoy <img src="authorimg\andrew.png" width="100px" height="100px" alt=""></h2>
+                        <h2>Oil Rig Valve</h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1316078 | AMCAVO201@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Frontend Developer</b> & <b>Tester</b></p>
