@@ -83,9 +83,9 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | ACARRU203@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Backend Developer</b> & <b>Data Engineer</b></p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero
-                            suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque
-                            cupiditate aut totam ducimus minima veritatis.</p>
+                        <p>As a back end developer I am responsible for the server, application and database.
+                         I build and maintain the technology that enables all those components to come together. 
+                        As a back end developer I will meet with the business stakeholders then translate those into technical requirements and come up with the best solutions for architecting the technology.</p>
                     </div>
                 </div>
 
