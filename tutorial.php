@@ -41,37 +41,37 @@
             <div class="col-sm-3">
                 <h1>Tutorials</h1>
                 <small class="text-muted">Click on a button below to learn more.</small>
-                <div class="btn-group-horizontal btn-block">
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#geoJson"
+                <div class="btn-group-vertical btn-block">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#geoJson"
                         aria-expanded="false" aria-controls="geoJson">
                         GeoJSON
                     </button>
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#javaScript"
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#javaScript"
                         aria-expanded="false" aria-controls="javaScript">
                         JavaScript
                     </button>
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#earthQuakes"
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#earthQuakes"
                         aria-expanded="false" aria-controls="earthQuakes">
                         Earthquakes
                     </button>
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#weather"
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#weather"
                         aria-expanded="false" aria-controls="weather">
                         Weather
                     </button>
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#stocks"
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#stocks"
                         aria-expanded="false" aria-controls="stocks">
                         Stocks
                     </button>
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#oilRigValve"
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#oilRigValve"
                         aria-expanded="false" aria-controls="oilRigValve">
                         Oil Rig Valve
                     </button>
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#stocks"
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#stocks"
                         aria-expanded="false" aria-controls="stocks">
                         Live Air Traffic
                     </button>
-                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#oilRigValve"
-                        aria-expanded="false" aria-controls="oilRigValve">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#wineProduction"
+                        aria-expanded="false" aria-controls="wineProduction">
                         Wine Production
                     </button>
                 </div>
@@ -85,6 +85,18 @@
                     <hr class="my-4">
                     <p>Also included will be links to APIs used and data sources accessed in the creation of the website, as well as links to official documentation on the technologies implemented.</p>
                 </div>
+                
+                <div class="collapse" id="oilRigValve">
+                    <div class="card card-body">
+                        <h2>Andrew McAvoy <img src="authorimg\andrew.png" width="100px" height="100px" alt=""></h2>
+                        <br>
+                        <h6 class="card-subtitle mb-2 text-muted">S1316078 | AMCAVO201@caledonian.ac.uk</h6>
+                        <p>Project roles: <b>Frontend Developer</b> & <b>Tester</b></p>
+                        <p>As a front-end developer I am responsible for implementing the visual elements that users see when they interact with the web application. This involves coding the CSS stylesheets and utilising frameworks. Also, there is some JavaScript scripting involved, to manipulate some of the elements on the webpage.</p>
+                        <p>As tester, it is my role to design testing scenarios for usability, acceptance, and unit tests. I also interact with all developers throughout the implementation stage to ensure all deliverables are fit for purpose and meet the project specifications.</p>
+                    </div>
+                </div>
+
             </div>
             <!-- end main column content -->
         </div>

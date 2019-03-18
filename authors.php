@@ -9,6 +9,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- jquery,popper,bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -39,23 +41,29 @@
             <div class="col-sm-3">
                 <h1>Authors</h1>
                 <small class="text-muted">Click each team member's name to view his profile.</small>
-                <div class="btn-group-horizontal btn-block">
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#andrewInfo" aria-expanded="false" aria-controls="andrewInfo">
+                <div class="btn-group-vertical btn-block">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#andrewInfo"
+                        aria-expanded="false" aria-controls="andrewInfo">
                         Andrew
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#alexInfo" aria-expanded="false" aria-controls="alexInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#alexInfo"
+                        aria-expanded="false" aria-controls="alexInfo">
                         Alex
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#davidInfo" aria-expanded="false" aria-controls="davidInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#davidInfo"
+                        aria-expanded="false" aria-controls="davidInfo">
                         David
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#mattInfo" aria-expanded="false" aria-controls="mattInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#mattInfo"
+                        aria-expanded="false" aria-controls="mattInfo">
                         Matt
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#afaqInfo" aria-expanded="false" aria-controls="afaqInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#afaqInfo"
+                        aria-expanded="false" aria-controls="afaqInfo">
                         Afaq
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#jackInfo" aria-expanded="false" aria-controls="jackInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#jackInfo"
+                        aria-expanded="false" aria-controls="jackInfo">
                         Jack
                     </button>
                 </div>
@@ -70,8 +78,18 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1316078 | AMCAVO201@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Frontend Developer</b> & <b>Tester</b></p>
-                        <p>As a front-end developer I am responsible for implementing the visual elements that users see when they interact with the web application. This involves coding the CSS stylesheets and utilising frameworks. Also, there is some JavaScript scripting involved, to manipulate some of the elements on the webpage.</p>
-                        <p>As tester, it is my role to design testing scenarios for usability, acceptance, and unit tests. I also interact with all developers throughout the implementation stage to ensure all deliverables are fit for purpose and meet the project specifications.</p>
+                        <p>As a front-end developer I am responsible for implementing the visual elements that users see
+                            when they interact with the web application. This involves coding the CSS stylesheets and
+                            utilising frameworks. Also, there is some JavaScript scripting involved, to manipulate some
+                            of the elements on the webpage.</p>
+                        <p>As tester, it is my role to design testing scenarios for usability, acceptance, and unit
+                            tests. I also interact with all developers throughout the implementation stage to ensure all
+                            deliverables are fit for purpose and meet the project specifications.</p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <a href="https://linkedin.com/in/andmca"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/andmca" target=""><i class="fab fa-github"></i></a>
+                        </span>
                     </div>
                 </div>
 
@@ -82,8 +100,15 @@
                         <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | ACARRU203@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Backend Developer</b> & <b>Data Engineer</b></p>
                         <p>As a back end developer I am responsible for the server, application and database.
-                         I build and maintain the technology that enables all those components to come together. 
-                        As a back end developer I will meet with the business stakeholders then translate those into technical requirements and come up with the best solutions for architecting the technology.</p>
+                            I build and maintain the technology that enables all those components to come together.
+                            As a back end developer I will meet with the business stakeholders then translate those into
+                            technical requirements and come up with the best solutions for architecting the technology.
+                        </p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/alexcarruthers"><i class="fab fa-github"></i></a>
+                        </span>
                     </div>
                 </div>
 
@@ -93,7 +118,20 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1825830 | DFAGAN200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>UI Designer</b> & <b>Frontend Developer.</b></p>
-                        <p>Owing to my previous experience, my roles in this project will be to play my part as UI Developer and Front-End Developer. <br>As UI developer I am responsible for the look and feel of the Locate-A-Quake website. I will use my previous web development experience to create an intuitive and user-friendly interface that allows users to navigate the site and access the information easily.</p> <p>As front-end developer I along with other team members will collaborate toe ensure that the site performs as expected. As part of the development team I am responsible for fixing any bugs found, if you find any bugs during your experience please contact me via the email above. </p>
+                        <p>Owing to my previous experience, my roles in this project will be to play my part as UI
+                            Developer and Front-End Developer. <br>As UI developer I am responsible for the look and
+                            feel of the Locate-A-Quake website. I will use my previous web development experience to
+                            create an intuitive and user-friendly interface that allows users to navigate the site and
+                            access the information easily.</p>
+                        <p>As front-end developer I along with other team members will collaborate toe ensure that the
+                            site performs as expected. As part of the development team I am responsible for fixing any
+                            bugs found, if you find any bugs during your experience please contact me via the email
+                            above. </p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/fagand"><i class="fab fa-github"></i></a>
+                        </span>
                     </div>
                 </div>
 
@@ -106,6 +144,11 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero
                             suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque
                             cupiditate aut totam ducimus minima veritatis.</p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </span>
                     </div>
                 </div>
 
@@ -130,6 +173,11 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero
                             suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque
                             cupiditate aut totam ducimus minima veritatis.</p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </span>
                     </div>
                 </div>
             </div>
