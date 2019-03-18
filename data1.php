@@ -30,10 +30,10 @@
 
 </head>
 
-<body onload="getData()">
+<body  onload="drawChart()">
     <?php include 'includes/navigation.php' ?>
 
-    <!-- content -->
+    <!-- onload="getData()"content -->
     <div class="container-fluid body-content">
 
         <!-- breadcrumb -->
@@ -91,24 +91,16 @@
             var x = document.getElementById("stockname");
             var apikey = "0F1ISWGUHZYUTIRI";
             var searchterm = x.value;
-            var query_url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=" + searchterm +
-                "&apikey=" +
-                apikey;
-
-         
-        }
-
-        function getData() {
-            var query_url =
-                "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=GOOG&apikey=0F1ISWGUHZYUTIRI&datatype=json";
-
+            var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + searchterm  + "&apikey=0F1ISWGUHZYUTIRI&datatype=json"
             $.getJSON(query_url, function (json) {
                 console.log(json);
                 Gjson = json;
                 createDataPoints();
                 drawChart();
             });
+         
         }
+
 
         function getLabel() {
             return Gjson["Meta Data"]["1. Information"] + " Stock:" + Gjson["Meta Data"]["2. Symbol"] +
@@ -128,11 +120,6 @@
                     c: parseFloat(Gjson["Time Series (Daily)"][key]["4. close"]),
                     t: date.valueOf()
                 }
-
-
-
-
-
                 dates.push(key);
                 data_points_arr.push(point)
 
@@ -143,9 +130,6 @@
 
 
         function drawChart() {
-            var data = getRandomData('April 01 2017', 20);
-            console.log(data);
-
             // OHLC
             var ctx1 = document.getElementById("myChart").getContext("2d");
             ctx1.canvas.width = 1000;
@@ -155,7 +139,7 @@
                 data: {
                     datasets: [{
                         label: getLabel(),
-                        data: data_points_arr, //data,//,
+                        data: data_points_arr,
                         fractionalDigitsCount: 2,
                     }]
                 },
