@@ -126,8 +126,6 @@
         }
     };
 
-
-
     /* Function to construct a set of web page buttons of class: 'feed-name' where each button has a stored URL property */
     function makeChildProps(obj, currentProp) {
         var childProps = '';
@@ -178,26 +176,26 @@
                     }
                     var coords = lhs + rhs;
 
-                    var url = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + coords;
+                    let InforWindowURL = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + coords;
+                    let InfoWindowString = " <h3>" + val.properties.title + "</h3><p><a href='" + InforWindowURL + "'target='_blank'> WolframAlpha API</a></p>";
+                    var infowindow = new google.maps.InfoWindow({
+                        // Form a string that holds desired marker infoWindow content. The infoWindow will pop up when you click on a marker on the map                                                            
+                        content: InfoWindowString
+                    });
+
                     // Now create a new marker on the map
-                    var marker = new google.maps.Marker({
+                    let marker = new google.maps.Marker({
                         position: latLng,
                         map: mymap,
-                        label: val.properties.mag
-                            .toString() // Whatever label you like. This one is the magnitude of the earthquake
+                        label: val.properties.mag.toString() // Whatever label you like. This one is the magnitude of the earthquake
+                    });
+
+                    marker.addListener('click', function (data) {
+                        infowindow.open(map, marker); // Open the Google maps marker infoWindow
+
                     });
                     // Add the marker to array to be used by clusterer
                     markers.push(marker);
-                    var infowindow = new google.maps.InfoWindow({
-                        // Form a string that holds desired marker infoWindow content. The infoWindow will pop up when you click on a marker on the map                                                            
-                        content: " <h3>" + val.properties.title +
-                            "</h3><p><a href='" + url +
-                            "'target='_blank'> WolframAlpha API</a></p>"
-                    });
-                    marker.addListener('click', function (data) {
-                        infowindow.open(map, marker); // Open the Google maps marker infoWindow
-                        
-                    });
                 });
                 var markerCluster = new MarkerClusterer(mymap, markers, {
                     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
