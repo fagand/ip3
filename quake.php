@@ -174,9 +174,9 @@
                         lhs = coords[0] * -1;
                         lhs = lhs + "W";
                     }
-                    var coords = lhs + rhs;
+                    var wolframcoords = lhs + rhs;
 
-                    let InforWindowURL = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + coords;
+                    let InforWindowURL = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + wolframcoords;
                     let InfoWindowString = " <h3>" + val.properties.title + "</h3><p><a href='" + InforWindowURL + "'target='_blank'> WolframAlpha API</a></p>";
                     var infowindow = new google.maps.InfoWindow({
                         // Form a string that holds desired marker infoWindow content. The infoWindow will pop up when you click on a marker on the map                                                            
@@ -192,11 +192,12 @@
 
                     marker.addListener('click', function (data) {
                         infowindow.open(map, marker); // Open the Google maps marker infoWindow
-
                     });
+
                     // Add the marker to array to be used by clusterer
                     markers.push(marker);
                 });
+
                 var markerCluster = new MarkerClusterer(mymap, markers, {
                     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
                 });
