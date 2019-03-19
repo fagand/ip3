@@ -16,12 +16,13 @@
     <script src="js\bootstrap.min.js"></script>
     <!-- jquery,popper,bootstrap end -->
 
-    
+
     <style>
         /* Always set the map height explicitly to define the size of the div
                * element that contains the map. */
         #map {
-            height: 864px; /* setting this in px as 100% height map disappears when resized */
+            height: 864px;
+            /* setting this in px as 100% height map disappears when resized */
             width: 100%;
             position: inherit
         }
@@ -124,6 +125,9 @@
             "All Earthquakes": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson"
         }
     };
+
+
+
     /* Function to construct a set of web page buttons of class: 'feed-name' where each button has a stored URL property */
     function makeChildProps(obj, currentProp) {
         var childProps = '';
@@ -152,14 +156,12 @@
             ), // The GeoJSON URL associated with a specific button was stored in the button's properties when the button was created
             success: function (data) { // We've received the GeoJSON data
                 i = 0;
-                var
-                    places = []; // We store the names of earthquake locations in this array                    
-                $.each(data.features, function (key,
-                    val) { // Just get a single value ('place') and save it in an array
+                var places = []; // We store the names of earthquake locations in this array
+                //iterate over each key value pair                     
+                $.each(data.features, function (key, val) { // Just get a single value ('place') and save it in an array
                     var coords = val.geometry.coordinates;
                     places.push("\n");
-                    places.push(val.properties
-                        .place); // Add a new earthquake location to the array.
+                    places.push(val.properties.place); // Add a new earthquake location to the array.
                     places.push(coords); // Add a new earthquake location to the array.
                     var latLng = new google.maps.LatLng(coords[1], coords[0]);
                     if (coords[1] > 0) {
@@ -175,21 +177,8 @@
                         lhs = lhs + "W";
                     }
                     var coords = lhs + rhs;
-                    function pie() {
-                        $.getJSON(
-                            "http://api.wolframalpha.com/v2/query?appid=VEUWJE-29Y9QPY4T3&input=" +
-                            coords +
-                            "&includepodid=CartographicNearestCity&output=json",
-                            function (json) {
-                                var nearest_city = json.queryresult.pods[0].subpods[0]
-                                    .plaintext;
-                                document.getElementById('nearest_city_data').innerHTML =
-                                    '<br> ' + nearest_city;
-                            });
-                    }
-                    var url =
-                        "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" +
-                        coords;
+
+                    var url = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + coords;
                     // Now create a new marker on the map
                     var marker = new google.maps.Marker({
                         position: latLng,
@@ -206,9 +195,8 @@
                             "'target='_blank'> WolframAlpha API</a></p>"
                     });
                     marker.addListener('click', function (data) {
-                        infowindow.open(map,
-                            marker); // Open the Google maps marker infoWindow
-                        pie();
+                        infowindow.open(map, marker); // Open the Google maps marker infoWindow
+                        
                     });
                 });
                 var markerCluster = new MarkerClusterer(mymap, markers, {
