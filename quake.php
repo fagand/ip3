@@ -136,6 +136,24 @@
         }
         return childProps;
     }
+
+    function getWolframCoords(val) {
+        let coords = val.geometry.coordinates;
+        if (coords[1] > 0) {
+            rhs = coords[1] + "N";
+        } else {
+            rhs = coords[1] * -1;
+            rhs = rhs + "S";
+        }
+        if (coords[0] > 0) {
+            lhs = coords[0] + "E";
+        } else {
+            lhs = coords[0] * -1;
+            lhs = lhs + "W";
+        }
+        let wolframcoords = lhs + rhs;
+        return wolframcoords;
+    }
     /* construct the buttons (that include the geojson URL properties) */
     for (var prop in quakeFeeds) {
         if (!quakeFeeds.hasOwnProperty(prop)) {
@@ -157,26 +175,13 @@
                 var places = []; // We store the names of earthquake locations in this array
                 //iterate over each key value pair                     
                 $.each(data.features, function (key, val) { // Just get a single value ('place') and save it in an array
-                    var coords = val.geometry.coordinates;
+                    //var coords = val.geometry.coordinates;
                     places.push("\n");
                     places.push(val.properties.place); // Add a new earthquake location to the array.
-                    places.push(coords); // Add a new earthquake location to the array.
-                    var latLng = new google.maps.LatLng(coords[1], coords[0]);
-                    if (coords[1] > 0) {
-                        rhs = coords[1] + "N";
-                    } else {
-                        rhs = coords[1] * -1;
-                        rhs = rhs + "S";
-                    }
-                    if (coords[0] > 0) {
-                        lhs = coords[0] + "E";
-                    } else {
-                        lhs = coords[0] * -1;
-                        lhs = lhs + "W";
-                    }
-                    var wolframcoords = lhs + rhs;
+                    places.push(val.geometry.coordinates); // Add a new earthquake location to the array.
+                    var latLng = new google.maps.LatLng(val.geometry.coordinates[1], val.geometry.coordinates[0]);
 
-                    let InforWindowURL = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + wolframcoords;
+                    let InforWindowURL = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + getWolframCoords(val);
                     let InfoWindowString = " <h3>" + val.properties.title + "</h3><p><a href='" + InforWindowURL + "'target='_blank'> WolframAlpha API</a></p>";
                     var infowindow = new google.maps.InfoWindow({
                         // Form a string that holds desired marker infoWindow content. The infoWindow will pop up when you click on a marker on the map                                                            
