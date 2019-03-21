@@ -170,15 +170,12 @@
             setInterval(oneSecondFunction, 1000);
         });
 
-
-
-
         function oneSecondFunction() {
             adddata();
-            console.log(mydata[i][0]); //time
-            console.log(mydata[i][1]); //z.y
-            console.log(mydata[i][2]); //z.x
-            console.log(" "); //z.x
+        ///    console.log(mydata[i][0]); //time
+         //   console.log(mydata[i][1]); //z.y
+        //    console.log(mydata[i][2]); //z.x
+        //    console.log(" "); //z.x
             i++;
 
         }
