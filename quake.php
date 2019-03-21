@@ -137,6 +137,10 @@
         return childProps;
     }
 
+    function getWolframURL(val) {
+        let url = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + getWolframCoords(val);
+        return url;
+    }
     function getWolframCoords(val) {
         let coords = val.geometry.coordinates;
         if (coords[1] > 0) {
@@ -154,6 +158,32 @@
         let wolframcoords = lhs + rhs;
         return wolframcoords;
     }
+
+
+    // Deletes all markers in the array by removing references to them.
+    function deleteMarkers() {
+        try {
+            markerCluster.clearMarkers();
+
+        } catch (error) {
+            console.log("nothing to clear on map");
+        }
+        clearMarkers();
+        markers = [];
+    }
+    // Removes the markers from the map, but keeps them in the array.
+    function clearMarkers() {
+        setMapOnAll(null);
+    }
+
+    // Sets the map on all markers in the array.
+    function setMapOnAll(map) {
+        for (var i = 0; i < markers.length; i++) {
+            markers[i].setMap(map);
+        }
+    }
+
+
     /* construct the buttons (that include the geojson URL properties) */
     for (var prop in quakeFeeds) {
         if (!quakeFeeds.hasOwnProperty(prop)) {
@@ -163,52 +193,50 @@
     }
     /* end construction of buttons */
     var markers = []; // keep an array of Google Maps markers, to be used by the Google Maps clusterer
+    var markerCluster;
     /* respond to a button press of any button of 'feed-name' class */
     $('.feed-name').click(function (e) {
         // We fetch the earthquake feed associated with the actual button that has been pressed. 
+        deleteMarkers();
         $.ajax({
             url: $(e.target).data(
                 'feedurl'
             ), // The GeoJSON URL associated with a specific button was stored in the button's properties when the button was created
             success: function (data) { // We've received the GeoJSON data
-                i = 0;
-                var places = []; // We store the names of earthquake locations in this array
-                //iterate over each key value pair                     
-                $.each(data.features, function (key, val) { // Just get a single value ('place') and save it in an array
-                    //var coords = val.geometry.coordinates;
-                    places.push("\n");
-                    places.push(val.properties.place); // Add a new earthquake location to the array.
-                    places.push(val.geometry.coordinates); // Add a new earthquake location to the array.
-                    var latLng = new google.maps.LatLng(val.geometry.coordinates[1], val.geometry.coordinates[0]);
 
-                    let InforWindowURL = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + getWolframCoords(val);
-                    let InfoWindowString = " <h3>" + val.properties.title + "</h3><p><a href='" + InforWindowURL + "'target='_blank'> WolframAlpha API</a></p>";
+                $.each(data.features, function (key, val) {
+
+                    let InfoWindowString = " <h3>" + val.properties.title + "</h3><p><a href='" + getWolframURL(val) + "'target='_blank'> WolframAlpha API</a></p>";
+                    // Form a string that holds desired marker infoWindow content. The infoWindow will pop up when you click on a marker on the map                                                            
                     var infowindow = new google.maps.InfoWindow({
-                        // Form a string that holds desired marker infoWindow content. The infoWindow will pop up when you click on a marker on the map                                                            
                         content: InfoWindowString
                     });
-
                     // Now create a new marker on the map
-                    let marker = new google.maps.Marker({
-                        position: latLng,
-                        map: mymap,
-                        label: val.properties.mag.toString() // Whatever label you like. This one is the magnitude of the earthquake
-                    });
+                    if (val.properties.mag === null) {
+                        //do nothing
+                    }
+                    else { //not null branch
+                        let marker = new google.maps.Marker({
+                            position: new google.maps.LatLng(val.geometry.coordinates[1], val.geometry.coordinates[0]),
+                            map: mymap,
+                            label: val.properties.mag.toString() // Whatever label you like. This one is the magnitude of the earthquake
+                        });
 
-                    marker.addListener('click', function (data) {
-                        infowindow.open(map, marker); // Open the Google maps marker infoWindow
-                    });
+                        marker.addListener('click', function (data) {
+                            infowindow.open(map, marker); // Open the Google maps marker infoWindow
+                        });
 
-                    // Add the marker to array to be used by clusterer
-                    markers.push(marker);
+                        // Add the marker to array to be used by clusterer
+                        markers.push(marker);
+                    }
+
+
+
                 });
 
-                var markerCluster = new MarkerClusterer(mymap, markers, {
+                markerCluster = new MarkerClusterer(mymap, markers, {
                     imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
                 });
-                if (!places || !places.length) { //check if the data is empty
-                    alert("No data");
-                }
             }
         });
     });
