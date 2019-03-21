@@ -58,7 +58,7 @@
             <div class="col-sm-8">
                 <h1>Oil Rig Valve Data</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
-                    <canvas id="myChart" width="600px" height="400"></canvas>
+                    <canvas id="myChart" width="600px" height="400px"></canvas>
                 </div>
             </div>
             <!-- end main column content-->
@@ -131,7 +131,8 @@
         };
 
         var option = {
-            responsive: false,
+            maintainAspectRatio: false,
+           // responsive: false,
             showLines: true,
             scales: {
                 xAxes: [{
