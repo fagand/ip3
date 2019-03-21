@@ -70,7 +70,7 @@
                 <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and
                     following commissioning of the new PH platform in 2013 the field now has the potential to
                     continue producing for several decades.</p>
-                <p>Displaying inlet temperature to a 1stage comparessor showing the temperature at the suction side
+                <p>2018-07-01 23:00:00 2018-07-02 08:21:17 Displaying inlet temperature to a 1stage comparessor showing the temperature at the suction side
                     (38-40) DegC cool and the outlet (cool side 35 DegC)</p>
                 <p>This chart updates in real time representing the data as and when it is received. <br>The chart can be interacted with allowing you to show only one dataset. Clicking the values at the top hides the selected source from the chart. <br>Hovering your cursor over the line will also give more detailed information about that point.</p>
             </div>
