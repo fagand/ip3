@@ -82,14 +82,17 @@
                 </div>
 
             </div>
-            <div class="chart-container" max-height:"600px" id="view">
+            <div id="view">
                 <h4>View</h4>
-                <canvas id="myChart" height="600"></canvas>
+                <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                    <canvas id="myChart"></canvas>
+                </div>
             </div>
         </div>
-        <!-- end main column content-->
+    </div>
+    <!-- end main column content-->
 
-        <?php include 'includes/footer.php' ?>
+    <?php include 'includes/footer.php' ?>
     </div>
     <!-- end content-->
     <script>
@@ -100,8 +103,6 @@
                 getPossibleStocks();
             }
         }
-
-
         var data_points_arr = [];
         var dates = [];
         var apikey = "0F1ISWGUHZYUTIRI";
@@ -125,7 +126,7 @@
             });
         }
 
-        function getData(clicked_symbol) {            
+        function getData(clicked_symbol) {
             $("#refine").fadeOut();
             var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + clicked_symbol + "&apikey=" + apikey + "&datatype=json";
             $.getJSON(query_url, function (json) {
@@ -173,8 +174,8 @@
         function drawChart(chartTitle) {
             // OHLC
             var ctx1 = document.getElementById("myChart").getContext("2d");
-            ctx1.canvas.width = 1000;
-            ctx1.canvas.height = 600;
+            // ctx1.canvas.width = 1000;
+            // ctx1.canvas.height = 600;
             new Chart(ctx1, {
                 type: 'ohlc',
                 data: {
@@ -185,6 +186,7 @@
                     }]
                 },
                 options: {
+                    maintainAspectRatio: false,
                     tooltips: {
                         position: 'nearest',
                         mode: 'index',
@@ -196,9 +198,9 @@
         function showResetButton() {
             $("#reset").show();
         }
-        
+
         var first_launch = false; //global flag
-        function start() {            
+        function start() {
             if (first_launch == false) {
                 first_launch = true;
                 $("#view").hide();
