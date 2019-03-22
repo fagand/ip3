@@ -57,20 +57,27 @@
             <!-- end left sidebar content-->
 
             <!-- main column content -->
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <div id="map"></div>
             </div>
             <!-- end main column content-->
 
-            <!-- sidebar column content-->
-            <div class="col-lg-3">
-
+            <!-- twitter column content-->
+            <div class="col-lg-2">
                 <a class="twitter-timeline" data-lang="en" data-width="max-width" data-height="100%" data-theme="light"
                     href="https://twitter.com/USGSted?ref_src=twsrc%5Etfw">Tweets by USGSted</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
             </div>
-            <!-- end sidebar column content -->
+
+            <div class="col-lg-2">
+                <div id='infomapwindow'> </div>
+
+            </div>
+
+
+            <!-- end twitter column content -->
+
         </div>
 
         <?php include 'includes/footer.php' ?>
@@ -139,6 +146,8 @@
 
     function getWolframURL(val) {
         let url = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + getWolframCoords(val);
+        //&includepodid=Result
+        url = "http://api.wolframalpha.com/v2/query?appid=VEUWJE-29Y9QPY4T3&input=" + getWolframCoords(val) + "&includepodid=Nerby Services&output=xml";
         return url;
     }
     function getWolframCoords(val) {
@@ -183,6 +192,30 @@
         }
     }
 
+    function getExternalData() {
+      $('#bt').click(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://api.wolframalpha.com/v2/query?appid=VEUWJE-29Y9QPY4T3&input=51.8772E40.7434N&includepodid=CartographicServices&includepodid=CartographicCities&includepodid=Coordinates&includepodid=CartographicWeather',
+                dataType: 'xml',
+                success: function (xml) {
+                    $(xml).find('plaintext').each(function () {
+
+                        $('#infomapwindow').append(
+                            '<div>' +
+                            '<div><b>Name of Book: </b>' +
+                            $(this).find('BookName').text() + '</div> ' +
+                            '<div><b>Category: </b>' +
+                            $(this).find('Category').text() + '</div> ' +
+                            '<div><b>Price: </b>' +
+                            $(this).find('Price').text() + '</div> ' +
+                            '</div>');
+                    });
+                }
+            });
+        });
+    }
+
 
     /* construct the buttons (that include the geojson URL properties) */
     for (var prop in quakeFeeds) {
@@ -206,10 +239,11 @@
 
                 $.each(data.features, function (key, val) {
 
-                    let InfoWindowString = " <h3>" + val.properties.title + "</h3><p><a href='" + getWolframURL(val) + "'target='_blank'> WolframAlpha API</a></p>";
+                    let InfoWindowString = "<h3>" + val.properties.title + "</h3><p><a href='" + getWolframURL(val) + "'target='_blank'> WolframAlpha API</a></p>";
                     // Form a string that holds desired marker infoWindow content. The infoWindow will pop up when you click on a marker on the map                                                            
                     var infowindow = new google.maps.InfoWindow({
                         content: InfoWindowString
+
                     });
                     // Now create a new marker on the map
                     if (val.properties.mag === null) {
@@ -224,6 +258,7 @@
 
                         marker.addListener('click', function (data) {
                             infowindow.open(map, marker); // Open the Google maps marker infoWindow
+
                         });
 
                         // Add the marker to array to be used by clusterer
