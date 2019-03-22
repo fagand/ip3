@@ -134,9 +134,15 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1824614 | MALSTO200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Project Manager</b> & <b>Software Test Analyst</b></p>
-                        <p>As Project Manager I am responsible for developing and managing the projects cost, time and scope. Responsibilities include: project plan, communication plan, allocating tasks and setting milestone</p>
-                        <p>As test analyst I am responsible for initially identifying and subsequently defining the required tests, monitoring the test coverage and evaluating the overall quality experienced when testing the Target Test Items. This role also involves specifying the required Test Data and evaluating the outcome of the testing conducted in each test cycle.</p>
+                        <p>I have undertaken the roles of Project Manager and Software Test Analyst. during the creation of the locate-a-quake website. As a PM I am responsible for the scheduling and allocation of work between the team and to make sure locate-a-quake progresses towards a successful conclusion.</p>
+                        <p>
+                            As the Software Test Analyst, I am tasked with the creation of the overall test strategy in order to minimise risks and prevent problems that could cause delays to the project. Also, I will be testing the website throughout with other members of the team making sure the services it provides are streamlined and bug free.
+                        </p>
                         <br>
+                        <span style="font-size: 2em;">
+                            <a href="http://linkedin.com/in/matthew-alston-79a284183" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/mattahu" target="blank"><i class="fab fa-github"></i></a>
+                        </span>
                     </div>
                 </div>
 
