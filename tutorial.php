@@ -86,7 +86,7 @@
                         <h2>GeoJSON</h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on GeoJSON</h6>
-                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to return to find out more info about GeoJSON" class="img-fluid"></a></div>
+                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to find out more info about GeoJSON" class="img-fluid"></a></div>
                         <p>GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes. It is based on JSON, the JavaScript Object Notation.
 
                             The features include points (therefore addresses and locations), line strings (therefore streets, highways and boundaries), polygons (countries, provinces, tracts of land), and multi-part collections of these types. GeoJSON features need not represent entities of the physical world only; mobile routing and navigation apps, for example, might describe their service coverage using GeoJSON.
@@ -94,7 +94,7 @@
                             The GeoJSON format differs from other GIS standards in that it was written and is maintained not by a formal standards organization, but by an Internet working group of developers.
 
                             A notable offspring of GeoJSON is TopoJSON, an extension of GeoJSON that encodes geospatial topology and that typically provides smaller file sizes.</p>
-                        <p>Source: <a href="https://en.wikipedia.org/wiki/GeoJSON" target="_blank">Wikipedia</a><br>More detailed information: <a href="https://macwright.org/2015/03/23/geojson-second-bite.html" target="_blank">Via MarcWright.org</a>
+                        <p>Source: <a href="https://en.wikipedia.org/wiki/GeoJSON" target="_blank">Wikipedia</a><br><br>More detailed information: <a href="https://macwright.org/2015/03/23/geojson-second-bite.html" target="_blank">Via MarcWright.org</a>
                         </p>
                         <p>Locate-A-Quake has used GeoJSON within our site to plot the location of earthquakes and represent them using the data within a map provided by Google.</p>
                     </div>
@@ -105,8 +105,27 @@
                         <h2>JavaScript Tutorial</h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on JavaScript</h6>
-                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to return to find out more info about GeoJSON" class="img-fluid"></a></div>
-                        <p>JAVASCRIPT</p>
+                        <div class="text-center"><a href="http://chartjs.org/" target="_blank"><img src="img/tutChartjs.png" alt="Chart.js image" title="Click to find out more info about Chart.js" class="img-fluid"></a></div><br>
+                        <p>For Locate-A-Quake we have opted to use the javascript charting library, chart.js. We have chosen to use this library as we believe it is more than capbale of representing our data in a manner which our users could find beneficial. </p>
+                        <p>View more information regarding JavaScript <a href="https://techterms.com/definition/javascript" target="_blank">here</a></p>
+                        <p>Advantages and Disadvantages of JavaScript
+                            Like all computer languages, JavaScript has certain advantages and disadvantages. Many of the pros and cons are related to JavaScript executing often in a client’s browser, but there are other ways to use JavaScript now that allow it to have the same benefits of server-side languages.</p>
+
+                        <h4>Advantages of JavaScript</h4>
+                            <ul>
+                                <li>Speed. Client-side JavaScript is very fast because it can be run immediately within the client-side browser. Unless outside resources are required, JavaScript is unhindered by network calls to a backend server. It also has no need to be compiled on the client side which gives it certain speed advantages (granted, adding some risk dependent on that quality of the code developed).</li>
+                                <li>Simplicity. JavaScript is relatively simple to learn and implement.</li>
+                                <li>Popularity. JavaScript is used everywhere in the web. The resources to learn JavaScript are numerous. StackOverflow and GitHub have many projects that are using Javascript and the language as a whole has gained a lot of traction in the industry in recent years especially.</li>
+                                <li>Interoperability. JavaScript plays nicely with other languages and can be used in a huge variety of applications. Unlike PHP or SSI scripts, JavaScript can be inserted into any web page regardless of the file extension. JavaScript can also be used inside scripts written in other languages such as Perl and PHP.</li>
+                                <li>Server Load. Being client-side reduces the demand on the website server.</li>
+                                <li>Rich interfaces. Drag and drop components or slider may give a rich interface to your website.</li>
+                            </ul>
+                        <h4>Disadvantages of JavaScript</h4>
+                        <ul>
+                            <li>Client-Side Security. Because the code executes on the users’ computer, in some cases it can be exploited for malicious purposes. This is one reason some people choose to disable Javascript.</li>
+                            <li>Browser Support. JavaScript is sometimes interpreted differently by different browsers. Whereas server-side scripts will always produce the same output, client-side scripts can be a little unpredictable. Don’t be overly concerned by this though - as long as you test your script in all the major browsers you should be safe. Also, there are services out there that will allow you to test your code automatically on check in of an update to make sure all browsers support your code.</li>
+                        </ul>
+                        <p>Source: <a href="https://guide.freecodecamp.org/javascript/advantages-and-disadvantages-of-javascript/">freeCodeCamp</a></p>
                     </div>
                 </div>
 
@@ -115,7 +134,7 @@
                         <h2>Earthquakes Tutorial</h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on Earthquakes</h6>
-                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to return to find out more info about GeoJSON" class="img-fluid"></a></div>
+                        <div class="text-center"><a href="https://developers.google.com/maps/documentation/javascript/earthquakes" target="_blank"><img src="img/tutMaps.png" alt="Google Maps API image" title="Click to find out more info about Google Maps API" class="img-fluid"></a></div>
                         <p>EARTHQUAKES</p>
                     </div>
                 </div>
