@@ -9,8 +9,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css\bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- jquery,popper,bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -42,28 +41,22 @@
                 <h1>Authors</h1>
                 <small class="text-muted">Click each team member's name to view his profile.</small>
                 <div class="btn-group-vertical btn-block">
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#andrewInfo"
-                        aria-expanded="false" aria-controls="andrewInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#andrewInfo" aria-expanded="false" aria-controls="andrewInfo">
                         Andrew
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#alexInfo"
-                        aria-expanded="false" aria-controls="alexInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#alexInfo" aria-expanded="false" aria-controls="alexInfo">
                         Alex
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#davidInfo"
-                        aria-expanded="false" aria-controls="davidInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#davidInfo" aria-expanded="false" aria-controls="davidInfo">
                         David
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#mattInfo"
-                        aria-expanded="false" aria-controls="mattInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#mattInfo" aria-expanded="false" aria-controls="mattInfo">
                         Matt
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#afaqInfo"
-                        aria-expanded="false" aria-controls="afaqInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#afaqInfo" aria-expanded="false" aria-controls="afaqInfo">
                         Afaq
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#jackInfo"
-                        aria-expanded="false" aria-controls="jackInfo">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#jackInfo" aria-expanded="false" aria-controls="jackInfo">
                         Jack
                     </button>
                 </div>
@@ -87,8 +80,7 @@
                             deliverables are fit for purpose and meet the project specifications.</p>
                         <br>
                         <span style="font-size: 2em;">
-                            <a href="https://linkedin.com/in/andmca" target="blank"><i
-                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://linkedin.com/in/andmca" target="blank"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://github.com/andmca" target="blank"><i class="fab fa-github"></i></a>
                         </span>
                     </div>
@@ -107,10 +99,8 @@
                         </p>
                         <br>
                         <span style="font-size: 2em;">
-                            <a href="https://www.linkedin.com/in/alexander-carruthers-2018/" target="blank"><i
-                                    class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/alexandercarruthers" target="blank"><i
-                                    class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/alexander-carruthers-2018/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/alexandercarruthers" target="blank"><i class="fab fa-github"></i></a>
                         </span>
                     </div>
                 </div>
@@ -132,7 +122,7 @@
                             above. </p>
                         <br>
                         <span style="font-size: 2em;">
-                            <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="http://linkedin.com/in/iamfagan" target="blank"><i class="fab fa-linkedin-in"></i></a>
                             <a href="https://github.com/fagand" target="blank"><i class="fab fa-github"></i></a>
                         </span>
                     </div>
@@ -143,14 +133,15 @@
                         <h2>Matt Alston <img src="authorimg\matt.png" width="100px" height="100px" alt=""></h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1824614 | MALSTO200@caledonian.ac.uk</h6>
-                        <p>Project roles: <b>Project Manager</b> & <b>Software Tester Test Analyst</b></p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero
-                            suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque
-                            cupiditate aut totam ducimus minima veritatis.</p>
+                        <p>Project roles: <b>Project Manager</b> & <b>Software Test Analyst</b></p>
+                        <p>I have undertaken the roles of Project Manager and Software Test Analyst. during the creation of the locate-a-quake website. As a PM I am responsible for the scheduling and allocation of work between the team and to make sure locate-a-quake progresses towards a successful conclusion.</p>
+                        <p>
+                            As the Software Test Analyst, I am tasked with the creation of the overall test strategy in order to minimise risks and prevent problems that could cause delays to the project. Also, I will be testing the website throughout with other members of the team making sure the services it provides are streamlined and bug free.
+                        </p>
                         <br>
                         <span style="font-size: 2em;">
-                            <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" target="blank"><i class="fab fa-github"></i></a>
+                            <a href="http://linkedin.com/in/matthew-alston-79a284183" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/mattahu" target="blank"><i class="fab fa-github"></i></a>
                         </span>
                     </div>
                 </div>
@@ -161,14 +152,9 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1625481 | AAHMAD204@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Software Architect</b> & <b>Process Analyst</b></p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero
-                            suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque
-                            cupiditate aut totam ducimus minima veritatis.</p>
+                        <p>My roles in this project will be to play my part as a software architect and process analyst. As a software architect I was responsible for making the high level designs choices and dictate technical standards. I was responsible for deciding on the software pattern that would best suit Locate-A-Quake. The pattern decided was event based and MVC for the user to manipulate the view without changing the underlying data. </p>
+                        <p>As a process analyst I worked with my team members to decide on the best way to undertake the project and break down the work into smaller tasks as this will help everyone improve their understanding of the project.</p>
                         <br>
-                        <span style="font-size: 2em;">
-                            <a href="#" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" target="blank"><i class="fab fa-github"></i></a>
-                        </span>
                     </div>
                 </div>
 
@@ -178,14 +164,9 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1628300 | JMOORE200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>SCRUM Master</b> & <b>Software Tester</b></p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, possimus? Nisi quae vero
-                            suscipit architecto corrupti repudiandae maiores, dolorem tempora assumenda hic quos itaque
-                            cupiditate aut totam ducimus minima veritatis.</p>
+                        <p>As scrum master I am responsible for ensuring the team lives agile values and principles and follows the processes and practices that the team agreed they would use. The responsibilities of this role include: ... Ensuring a good relationship between the team and project manager as well as others outside the team.</p>
+                        <p>I am also responsible for designing testing scenarios for usability testing. He is responsible for conducting the testing, thereafter analyze the results and then submit his observations to the development team.</p>
                         <br>
-                        <span style="font-size: 2em;">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                        </span>
                     </div>
                 </div>
             </div>
