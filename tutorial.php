@@ -48,9 +48,12 @@
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#javaScript" aria-expanded="false" aria-controls="javaScript" onclick="clearInfo()">
                         JavaScript
                     </button>
+<!-- Removed becuase the information would be very similar to the GeoJSON info
+
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#earthQuakes" aria-expanded="false" aria-controls="earthQuakes" onclick="clearInfo()">
                         Earthquakes
                     </button>
+-->
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#weather" aria-expanded="false" aria-controls="weather" onclick="clearInfo()">
                         Weather
                     </button>
@@ -96,7 +99,7 @@
                             A notable offspring of GeoJSON is TopoJSON, an extension of GeoJSON that encodes geospatial topology and that typically provides smaller file sizes.</p>
                         <p>Source: <a href="https://en.wikipedia.org/wiki/GeoJSON" target="_blank">Wikipedia</a><br><br>More detailed information: <a href="https://macwright.org/2015/03/23/geojson-second-bite.html" target="_blank">Via MarcWright.org</a>
                         </p>
-                        <p>Locate-A-Quake has used GeoJSON within our site to plot the location of earthquakes and represent them using the data within a map provided by Google.</p>
+                        <p>Locate-A-Quake has used GeoJSON within our site to plot the location of earthquakes and represent them using the data within a map provided by Google. This was done using JavaScript (<a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">Ajax</a>) calls made to the USGS website seeking data earthquakes. We were able to use the dataset received by USGS to plot locations onto our map by using the co-ordinates gathered from USGS. </p>
                     </div>
                 </div>
 
@@ -106,20 +109,20 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on JavaScript</h6>
                         <div class="text-center"><a href="http://chartjs.org/" target="_blank"><img src="img/tutChartjs.png" alt="Chart.js image" title="Click to find out more info about Chart.js" class="img-fluid"></a></div><br>
-                        <p>For Locate-A-Quake we have opted to use the javascript charting library, chart.js. We have chosen to use this library as we believe it is more than capbale of representing our data in a manner which our users could find beneficial. </p>
+                        <p>For Locate-A-Quake we have opted to use the JavaScript charting library, chart.js to display our charts. We have chosen to use this library as we believe it is more than capbale of representing our data in a manner which our users could find beneficial. Chart.js gives also gives us additional functionality such as the ability to hover over teh chart elements to see more data and the ability to zoom in and out of the chart using the scroll wheel on the mouse to localize data sets.</p>
                         <p>View more information regarding JavaScript <a href="https://techterms.com/definition/javascript" target="_blank">here</a></p>
                         <p>Advantages and Disadvantages of JavaScript
                             Like all computer languages, JavaScript has certain advantages and disadvantages. Many of the pros and cons are related to JavaScript executing often in a client’s browser, but there are other ways to use JavaScript now that allow it to have the same benefits of server-side languages.</p>
 
                         <h4>Advantages of JavaScript</h4>
-                            <ul>
-                                <li>Speed. Client-side JavaScript is very fast because it can be run immediately within the client-side browser. Unless outside resources are required, JavaScript is unhindered by network calls to a backend server. It also has no need to be compiled on the client side which gives it certain speed advantages (granted, adding some risk dependent on that quality of the code developed).</li>
-                                <li>Simplicity. JavaScript is relatively simple to learn and implement.</li>
-                                <li>Popularity. JavaScript is used everywhere in the web. The resources to learn JavaScript are numerous. StackOverflow and GitHub have many projects that are using Javascript and the language as a whole has gained a lot of traction in the industry in recent years especially.</li>
-                                <li>Interoperability. JavaScript plays nicely with other languages and can be used in a huge variety of applications. Unlike PHP or SSI scripts, JavaScript can be inserted into any web page regardless of the file extension. JavaScript can also be used inside scripts written in other languages such as Perl and PHP.</li>
-                                <li>Server Load. Being client-side reduces the demand on the website server.</li>
-                                <li>Rich interfaces. Drag and drop components or slider may give a rich interface to your website.</li>
-                            </ul>
+                        <ul>
+                            <li>Speed. Client-side JavaScript is very fast because it can be run immediately within the client-side browser. Unless outside resources are required, JavaScript is unhindered by network calls to a backend server. It also has no need to be compiled on the client side which gives it certain speed advantages (granted, adding some risk dependent on that quality of the code developed).</li>
+                            <li>Simplicity. JavaScript is relatively simple to learn and implement.</li>
+                            <li>Popularity. JavaScript is used everywhere in the web. The resources to learn JavaScript are numerous. StackOverflow and GitHub have many projects that are using Javascript and the language as a whole has gained a lot of traction in the industry in recent years especially.</li>
+                            <li>Interoperability. JavaScript plays nicely with other languages and can be used in a huge variety of applications. Unlike PHP or SSI scripts, JavaScript can be inserted into any web page regardless of the file extension. JavaScript can also be used inside scripts written in other languages such as Perl and PHP.</li>
+                            <li>Server Load. Being client-side reduces the demand on the website server.</li>
+                            <li>Rich interfaces. Drag and drop components or slider may give a rich interface to your website.</li>
+                        </ul>
                         <h4>Disadvantages of JavaScript</h4>
                         <ul>
                             <li>Client-Side Security. Because the code executes on the users’ computer, in some cases it can be exploited for malicious purposes. This is one reason some people choose to disable Javascript.</li>
@@ -144,8 +147,13 @@
                         <h2>Weather Tutorial</h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on Weather page</h6>
-                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to return to find out more info about GeoJSON" class="img-fluid"></a></div>
-                        <p>Weather</p>
+                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutWeatherAPIXU.png" alt="APIXU image" title="Click to find out more info about APIXU" class="img-fluid"></a></div>
+                        <p>To allow us to display weather information on our site we used the APIXU API dataset. APIXU provides current and 10 day weather data in JSON format. We used this data to display information along side our world map.</p>
+                        <p>When a user clicks a location on the map the are presented with the current weather for that location. Our talented developers also managed to implement a feature that displays the recommended skin protection as recommmended by <a href="https://www.cbc.ca/news/canada/kitchener-waterloo/high-uv-index-here-s-what-to-wear-to-protect-yourself-from-the-sun-1.3607369" target="_blank">CBC</a> and <a href="https://www.aimatmelanoma.org/prevention/uv-index/" target="_blank">others. </a><i>For fun click Scotland on the <a href="weather.php">map</a> to be told that you should be wearing Sunglasses and Sunscreen. Presuming you're Scottish, you'll understand why this is funny, but who are we to argue with the experts </i>🤷🏻‍♂️</p>
+                        <p>Apixu.com is owned and managed by Mzemo (http://mzemo.com), a Dubai based mobile and app development company.
+                            Apixu.com provides current and 10 day weather data and geo data via. REST API in JSON format.
+                            The API will also provide time zone information, astronomy data and geo location data. The weather data is provided in partnership with World Weather Online. We also get our data from different government and metreological agencies.</p>
+                        <p>Source: <a href="https://www.apixu.com/about.aspx" target="_blank">apixu.com</a> </p>
                     </div>
                 </div>
 
@@ -154,8 +162,11 @@
                         <h2>Stocks data Tutorial</h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on Stocks data</h6>
-                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to return to find out more info about GeoJSON" class="img-fluid"></a></div>
-                        <p>stocks</p>
+                        <div class="text-center"><a href="https://www.alphavantage.co/#about" target="_blank"><img src="img/tutStocks.jpg" alt="Stock Market image" title="Click to find out more info about Alpha Vantage" class="img-fluid"></a></div>
+                        <p>To display our data on the <a href="data1.php">stocks</a> page, we used data provided by Alpha Vantage. This data was brought in via an Ajax call to get a JSON data set which we then used to display the information the chart.</p>
+                        <p>About Alpha Vantage
+                            Composed of a tight-knit community of researchers, engineers, and business professionals, Alpha Vantage Inc. is a leading provider of free APIs for realtime and historical data on stocks, forex (FX), and digital/crypto currencies. Our success is driven by rigorous research, cutting edge technology, and a disciplined focus on democratizing access to data.</p>
+                        <p>Source: <a href="https://www.alphavantage.co/#about" target="_blank">Alpha Vantage</a> </p>
                     </div>
                 </div>
 
@@ -166,11 +177,11 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on oil rig page</h6>
                         <div class="text-center"><a href="data2.php"><img src="img/tutOilRig.png" alt="Oil rig image" title="Click to return to oil rig data page" class="img-fluid"></a></div>
+                        <p>To display data on the oil rig we sourced data via Ajax again, this time we saved the data locally in a .csv file. We done this to allow us to present the data in a decorative fashion without dispalying any delay to the user. </p>
                         <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and following commissioning of the new PH platform in 2013 the field now has the potential to continue producing for several decades.
 
-                            Displaying inlet temperature to a 1stage comparessor showing the temperature at the suction side (38-40) DegC cool and the outlet (cool side 35 DegC)
-
-                            This chart updates in real time representing the data as and when it is received.
+                            Displaying inlet temperature to a 1stage comparessor showing the temperature at the suction side (38-40) DegC cool and the outlet (cool side 35 DegC).</p>
+                        <p> This chart updates in real time representing the data as and when it is received.
                             The chart can be interacted with allowing you to show only one dataset. Clicking the values at the top hides the selected source from the chart.
                             Hovering your cursor over the line will also give more detailed information about that point.</p>
                     </div>
@@ -181,8 +192,16 @@
                         <h2>Air Traffic data Tutorial</h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on Air Traffic</h6>
-                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to return to find out more info about GeoJSON" class="img-fluid"></a></div>
-                        <p>air traffic</p>
+                        <div class="text-center"><img src="img/tutAirTraffic.png" alt="Air traffic image" title="Air traffic image" class="img-fluid"></div>
+                        <p>
+                            <p>To display data on the Air traffic map we sourced data via Ajax again, this time we saved the data locally to allow us to present the data without any delay. </p>
+                            <p>The air traffic page shows data regarding flight information of selected flights flying in and around the UK Ilse.
+
+                                The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g.
+                                [Chart 1] Clicking/highlighting the plottings on the map displays the infomration of the selection.
+                                [Chart 2] Clicking the plottings on the map displays the infomration of the selection.
+                                Clicking the flight icon displays information for that selected flight.
+                            </p>
                     </div>
                 </div>
 
@@ -191,8 +210,11 @@
                         <h2>Wine production data Tutorial</h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">tutorial on wine production</h6>
-                        <div class="text-center"><a href="http://geojson.org/" target="_blank"><img src="img/tutGeoJSON.png" alt="GeoJSON image" title="Click to return to find out more info about GeoJSON" class="img-fluid"></a></div>
-                        <p>wine production</p>
+                        <div class="text-center"><img src="img/tutWine.png" alt="Wine Production image" title="Wine production image" class="img-fluid"></div>
+                        <p>To display data on the wine production page we sourced data via Ajax. This data was stored locally to allow us to present the data without any delay.</p>
+                        <p>The wine production chart shows the wine-grower holdings by degree of specialisation based on regions across Europe.</p>
+                        <p>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. Clicking the years at the top hides them from the chart / reclicking them unhides them.
+                            Highlighting your cursor over the bar displays the hectares for that country/year.</p>
                     </div>
                 </div>
 
@@ -210,23 +232,9 @@
         document.getElementById("information").hidden = true;
     }
 
-    // changed this to the clearBtns method as this wasn't closing open tutorial cards
-    function clearButtons() {
-        document.getElementById("information").hidden = false;
-    }
-
-    function clearBtns(){
+    function clearBtns() {
         location.reload(); // this reloads the page to initial state (eg. when all tutorial cards were not expanded)
     }
-        /*        Doesn't work...
-
-        document.getElementById("buttons").getElementsByClassName("btn btn-secondary")["aria-expanded"] = "false";
-                //document.getElementsByTagName("aria-expanded").innerHTML = "false";
-                $('.btn.btn-secondary').attr('aria-expanded', 'false');
-                $('.btn.btn-secondary').attr('class', 'btn btn-secondary collapsed');
-                
-        */
-    
 
 </script>
 
