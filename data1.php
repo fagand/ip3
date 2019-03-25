@@ -80,12 +80,12 @@
                 <div id="reset">
                     <button class="btn btn-info my-2 my-sm-0" id="reset" type="button" onclick="start()">Reset</button>
                 </div>
-
-            </div>
-            <div id="view">
-                <h4>View</h4>
-                <div class="chart-container" style="position: relative; height:40vh; width:80vw">
-                    <canvas id="myChart"></canvas>
+                <br>
+                <div id="view">
+                    <h4>View</h4>
+                    <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
