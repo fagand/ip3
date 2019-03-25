@@ -122,18 +122,30 @@
                     $('#myTable > tbody:last-child').append('<tr><td><button class="btn btn-info my-2 my-sm-0" id="' + symbol + '"type="button" onclick="getData(this.id)">' + symbol + '</button ></td> <td>' + company_name + '</td><td>' + type + '</td><td>' + region + '</td></tr>'); //add new row to table
                     $("#refine").fadeIn();
                 }
+                console.log(json);
             });
         }
 
         function getData(clicked_symbol) {
             $("#refine").fadeOut();
+            
             var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + clicked_symbol + "&apikey=" + apikey + "&datatype=json";
+            
             $.getJSON(query_url, function (json) {
                 $("#view").fadeIn();
-                let chartTitle = getLabel(json["Meta Data"]);
+                console.log(Object.keys(json)[0]);
+                if(Object.keys(json)[0] == "Meta Data"){
+                    console.log("working");
+                                    let chartTitle = getLabel(json["Meta Data"]);
                 createDataPoints(json["Time Series (Daily)"]);
                 drawChart(chartTitle);
                 showResetButton();
+                }else if (Object.keys(json)[0] == "Error Message"){
+                    alert("error");
+                }else if (Object.keys(json)[0] == "Note"){
+                    alert("too many api calls")
+                }
+
             });
         }
 
