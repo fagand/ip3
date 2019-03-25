@@ -66,7 +66,7 @@
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#wineProduction" aria-expanded="false" aria-controls="wineProduction" onclick="clearInfo()">
                         Wine Production
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="#" onclick="clearButtons()">
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="#" onclick="clearBtns()">
                         Close all tutorials
                     </button>
                 </div>
@@ -210,10 +210,14 @@
         document.getElementById("information").hidden = true;
     }
 
-</script>
-<script>
+    // changed this to the clearBtns method as this wasn't closing open tutorial cards
     function clearButtons() {
         document.getElementById("information").hidden = false;
+    }
+
+    function clearBtns(){
+        location.reload(); // this reloads the page to initial state (eg. when all tutorial cards were not expanded)
+    }
         /*        Doesn't work...
 
         document.getElementById("buttons").getElementsByClassName("btn btn-secondary")["aria-expanded"] = "false";
@@ -222,7 +226,7 @@
                 $('.btn.btn-secondary').attr('class', 'btn btn-secondary collapsed');
                 
         */
-    }
+    
 
 </script>
 
