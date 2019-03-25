@@ -133,18 +133,28 @@
             var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + clicked_symbol + "&apikey=" + apikey + "&datatype=json";
             
             $.getJSON(query_url, function (json) {
-                $("#view").fadeIn();
+                
                 console.log(Object.keys(json)[0]);
                 if(Object.keys(json)[0] == "Meta Data"){
                     console.log("working");
-                                    let chartTitle = getLabel(json["Meta Data"]);
+                    $("#view").fadeIn();
+                let chartTitle = getLabel(json["Meta Data"]);
                 createDataPoints(json["Time Series (Daily)"]);
                 drawChart(chartTitle);
                 showResetButton();
                 }else if (Object.keys(json)[0] == "Error Message"){
                     alert("error");
+                    $("#stockname").prop('value', ''); //remove previous text            
+            $("#refine").hide();         
+            $("#search").show();
+            
                 }else if (Object.keys(json)[0] == "Note"){
                     alert("too many api calls")
+                    $("#stockname").prop('value', ''); //remove previous text
+            
+            $("#refine").hide();
+            $("#search").show();
+            
                 }
 
             });
