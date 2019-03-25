@@ -164,8 +164,7 @@
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1628300 | JMOORE200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>SCRUM Master</b> & <b>Software Tester</b></p>
-                        <p>As scrum master I am responsible for ensuring the team lives agile values and principles and follows the processes and practices that the team agreed they would use. The responsibilities of this role include: ... Ensuring a good relationship between the team and project manager as well as others outside the team.</p>
-                        <p>I am also responsible for designing testing scenarios for usability testing. He is responsible for conducting the testing, thereafter analyze the results and then submit his observations to the development team.</p>
+                        <p>As a Scrum Master I was required to ensure the team followed an agile methodology when implementing new features to the site and to regularly update the next goal in the development of the locate-a-quake site. By using Scrum we aimed to regularly update the site with new functionality. As a software tester my role involved navigating the site and evaluating the user experience and looking for any errors or broken features that need to be repaired. This role exists to ensure that the site is working properly and gives users the experience we intended.</p>
                         <br>
                     </div>
                 </div>
