@@ -54,25 +54,22 @@
 
     <div class="row">
         <!-- main column content -->
-        <div class="col-sm-8">
+        <div class="col-sm-9">
             <h1>Air Traffic Visualisation</h1>
             <div id="map"></div>
-            <div class="chart-container">
-                <canvas id="myChart" width="400" height="400"></canvas>
-            </div>
         </div>
         <!-- end main column content-->
 
         <!-- sidebar column content-->
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <h4>Chart showing Air Traffic data</h4>
             <p>This page shows data regarding flight information of selected flights flying in and around the UK Ilse.
                 <br><br>There are two maps on this page, the top map shows all flights currently in air. <br>The bottom
-                map shows the airports represented as *TBC* and the current flights represented as a small
+                map shows the airports and the current flights represented as a small
                 aeroplane.<br><br>The chart can be zoomed in using your mouse and the data within the chart is
-                clickable; e.g. <br>[Chart 1] Clicking/highlighting the plottings on the map displays the infomration of
-                the selection.<br>[Chart 2] Clicking the plottings on the map displays the infomration of the selection.<br>Clicking
+                clickable; e.g.<br>Clicking the plottings on the map displays the infomration of the selection.<br>Clicking
                 the flight icon displays information for that selected flight. </p>
+            <img src=airport_icon >
         </div>
         <!-- end sidebar column content -->
     </div>
@@ -93,17 +90,19 @@
 </script>
 <!-- end gmaps-->
 <script>
+    const glasgow_airport_latitude = 55.8691;
+    const glasgow_airport_longitude = -4.4351;
+    const airport_icon = "img/airport.png";
+    const plane_icon = "img/plane.png"; //plane image icon https://www.shareicon.net/airline-plane-fly-airplane-882177
+
     var airport_latlongs = [];
-    var names = [];
-    var points = [];
-    var mymap;
-    var glasgow_airport_lat = 55.8691; //lat1
-    var glasgow_airport_long = -4.4351; //long1
+    var mymap; //the google maps object
+
 
     var distances_from_GLA = [];
-    var json_flights = []; //global var banter
-    var json_airports = []; //global var banter
-    var airport_names = []; //global var banter
+    var json_flights = [];
+    var json_airports = [];
+    var airport_names = [];
 
 
     // Extend Number object with methods to convert between degrees & radians
@@ -117,7 +116,6 @@
 
     function run() {
         getDistancesFromGla();
-        create_titles_points();
         getAirportLatLong();
         plotAirports();
         plotFlights();
@@ -127,8 +125,7 @@
     function initMap() {
         mymap = new google.maps.Map(document.getElementById('map'), {
             zoom: 4,
-            center: new google.maps.LatLng(55.86515, -
-                4.25763), // Center Map. Set this to any location that you like
+            center: new google.maps.LatLng(glasgow_airport_latitude, glasgow_airport_longitude), // Center Map. Set this to any location that you like
             mapTypeId: 'terrain' // can be any valid type
         });
         google.maps.event.trigger(mymap, 'resize');
@@ -136,25 +133,35 @@
 
 
     function plotAirports() {
-        var infoWindow = new google.maps.InfoWindow(), marker, i;
-        var image = "img/airport.png";
-        for (i = 0; i < json_airports.length; i++) {
-            if (json_airports[i].nameAirport.includes("Bus") === false && json_airports[i].nameAirport.includes(
-                "train") === false && json_airports[i].nameAirport.includes("Railway") === false) {
+        let infoWindow = new google.maps.InfoWindow(), marker, i;
 
-                var position = new google.maps.LatLng(parseFloat(json_airports[i].latitudeAirport), parseFloat(json_airports[i].longitudeAirport));
+
+        for (let i = 0; i < json_airports.length; i++) {
+            let airport_name = json_airports[i].nameAirport;
+
+            let station_name_includes_bus = json_airports[i].nameAirport.includes("Bus");
+            let station_name_include_train = json_airports[i].nameAirport.includes("train");
+            let station_name_include_railway = json_airports[i].nameAirport.includes("Railway");
+
+            if (station_name_includes_bus === false &&
+                station_name_include_train === false &&
+                station_name_include_railway === false) {
+
+                let float_airport_latitude = parseFloat(json_airports[i].latitudeAirport);
+                let float_airport_longitude = parseFloat(json_airports[i].longitudeAirport);
+                let position = new google.maps.LatLng(float_airport_latitude, float_airport_longitude);
 
                 marker = new google.maps.Marker({
                     position: position,
                     map: mymap,
-                    icon: image,
-                    title: json_airports[i].nameAirport
+                    icon: airport_icon,
+                    title: airport_name
                 });
 
                 // Add info window to marker
                 google.maps.event.addListener(marker, 'click', (function (marker, i) {
                     return function () {
-                        infoWindow.setContent(json_airports[i].nameAirport);
+                        infoWindow.setContent(airport_name);
                         infoWindow.open(map, marker);
                     }
                 })(marker, i));
@@ -165,11 +172,11 @@
 
     function plotFlights() {
         let infoWindow = new google.maps.InfoWindow(), marker, i;
-        const plane_icon = "img/plane.png";
-        //plane image icon
-        //https://www.shareicon.net/airline-plane-fly-airplane-882177
-        for (i = 0; i < json_flights.length; i++) {
-            let position = new google.maps.LatLng(parseFloat(json_flights[i]["geography"]["latitude"]), parseFloat(json_flights[i]["geography"]["longitude"]));
+
+        for (let i = 0; i < json_flights.length; i++) {
+            let float_plane_latitude = parseFloat(json_flights[i]["geography"]["latitude"]);
+            let float_plane_longitude = parseFloat(json_flights[i]["geography"]["longitude"]);
+            let position = new google.maps.LatLng(float_plane_latitude, float_plane_longitude);
 
             marker = new google.maps.Marker({
                 position: position,
@@ -181,15 +188,20 @@
             // Add info window to marker
             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                 return function () {
-
-                    infoWindow.setContent(json_flights[i]["aircraft"]["regNumber"] + " " + json_flights[i]["aircraft"][
-                            "icaoCode"
-                            ] +
-                        " " + json_flights[i]["geography"]["altitude"].toFixed(0) + "ft " + json_flights[i]["speed"]
-                            [
-                            "horizontal"
-                            ]
-                            .toFixed(0) + "kts " + distances_from_GLA[i] + "km");
+                    let string_builder = [
+                        json_flights[i]["aircraft"]["regNumber"],
+                        " ",
+                        json_flights[i]["aircraft"]["icaoCode"],
+                        " ",
+                        json_flights[i]["geography"]["altitude"].toFixed(0),
+                        "ft ",
+                        json_flights[i]["speed"]["horizontal"].toFixed(0),
+                        "kts ",
+                        distances_from_GLA[i],
+                        "km"
+                    ];
+                    let display_string = string_builder.join('');
+                    infoWindow.setContent(display_string);
                     infoWindow.open(map, marker);
                 }
             })(marker, i));
@@ -197,12 +209,11 @@
     }
 
     function getDistancesFromGla() {
-        for (i = 0; i < json_flights.length; i++) {
-            distances_from_GLA.push(getDistance(json_flights[i]["geography"]["latitude"], json_flights[i][
-                "geography"
-                ][
-                "longitude"
-                ], glasgow_airport_lat, glasgow_airport_long));
+        for (let i = 0; i < json_flights.length; i++) {
+            let plane_latitude = json_flights[i]["geography"]["latitude"];
+            let plane_longitude = json_flights[i]["geography"]["longitude"];
+            let dist = getDistance(plane_latitude, plane_longitude, glasgow_airport_latitude, glasgow_airport_longitude);
+            distances_from_GLA.push(dist);
         }
     }
 
@@ -224,38 +235,15 @@
 
         return ((d / 1000).toFixed(0));
     }
-
-    function create_titles_points() {
-        let string_builder;
-        for (i = 0; i < json_flights.length; i++) {
-            string_builder = [];
-            string_builder = [
-                "\n\n",
-                json_flights[i]["aircraft"]["regNumber"],
-                " ",
-                json_flights[i]["aircraft"]["icaoCode"],
-                " ",
-                json_flights[i]["geography"]["altitude"].toFixed(0),
-                "ft ",
-                json_flights[i]["speed"]["horizontal"].toFixed(0),
-                "kts ",
-                distances_from_GLA[i],
-                "km"
-            ];
-
-            names.push(string_builder.join(''));
-
-            points.push({
-                x: json_flights[i]["geography"]["longitude"],
-                y: json_flights[i]["geography"]["latitude"]
-            });
-        }
-    }
-
     function getAirportLatLong() {
         for (i = 0; i < json_airports.length; i++) {
-            if (json_airports[i].nameAirport.includes("Bus") === false && json_airports[i].nameAirport.includes(
-                "train") === false && json_airports[i].nameAirport.includes("Railway") === false) {
+            let station_name_includes_bus = json_airports[i].nameAirport.includes("Bus");
+            let station_name_include_train = json_airports[i].nameAirport.includes("train");
+            let station_name_include_railway = json_airports[i].nameAirport.includes("Railway");
+
+            if (station_name_includes_bus === false &&
+                station_name_include_train === false &&
+                station_name_include_railway === false) {
                 airport_latlongs.push({
                     x: json_airports[i].longitudeAirport,
                     y: json_airports[i].latitudeAirport
@@ -266,8 +254,8 @@
     }
 
     function getJSON() {
-        var flights_url = "data/flights.txt";
-        var airports_url = "data/airports.txt";
+        const flights_url = "data/flights.txt";
+        const airports_url = "data/airports.txt";
         $.when($.getJSON(flights_url), $.getJSON(airports_url)).then(function (flights, airports) {
             json_flights = flights[0];
             json_airports = airports[0];

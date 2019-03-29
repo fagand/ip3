@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5737db5b-db91-48e3-917a-e36c3df16dcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data3.php" beforeDir="false" afterPath="$PROJECT_DIR$/data3.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data3.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="168" column="26" selection-start-line="168" selection-start-column="26" selection-end-line="168" selection-end-column="26" />
+            <state relative-caret-position="419">
+              <caret line="95" column="118" selection-start-line="95" selection-start-column="118" selection-end-line="95" selection-end-column="118" />
             </state>
           </provider>
         </entry>
@@ -87,7 +86,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553867047293" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553877406165" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -115,12 +114,12 @@
       <updated>1553858765644</updated>
       <workItem from="1553858771337" duration="722000" />
       <workItem from="1553864514512" duration="72000" />
-      <workItem from="1553864606725" duration="2384000" />
+      <workItem from="1553864606725" duration="7407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3178000" />
+    <option name="totallyTimeSpent" value="8201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
@@ -166,8 +165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data3.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="168" column="26" selection-start-line="168" selection-start-column="26" selection-end-line="168" selection-end-column="26" />
+        <state relative-caret-position="419">
+          <caret line="95" column="118" selection-start-line="95" selection-start-column="118" selection-end-line="95" selection-end-column="118" />
         </state>
       </provider>
     </entry>
