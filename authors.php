@@ -39,25 +39,32 @@
             <!-- main column content -->
             <div class="col-sm-3">
                 <h1>Authors</h1>
-                <small class="text-muted">Click each team member's name to view his profile.</small>
+                <small class="text-muted">Click each team member's name to view his profile.<br>
+                    <i>When an author is selected their respective button will be highlighted grey; authors will display on the page in alphabetical order.</i></small>
                 <div class="btn-group-vertical btn-block">
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#andrewInfo" aria-expanded="false" aria-controls="andrewInfo">
-                        Andrew
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#afaqInfo" aria-expanded="false" aria-controls="afaqInfo">
+                        Afaq
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#alexInfo" aria-expanded="false" aria-controls="alexInfo">
                         Alex
                     </button>
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#andrewInfo" aria-expanded="false" aria-controls="andrewInfo">
+                        Andrew
+                    </button>
+
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#davidInfo" aria-expanded="false" aria-controls="davidInfo">
                         David
+                    </button>
+
+
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#jackInfo" aria-expanded="false" aria-controls="jackInfo">
+                        Jack
                     </button>
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#mattInfo" aria-expanded="false" aria-controls="mattInfo">
                         Matt
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#afaqInfo" aria-expanded="false" aria-controls="afaqInfo">
-                        Afaq
-                    </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#jackInfo" aria-expanded="false" aria-controls="jackInfo">
-                        Jack
+                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="#" onclick="clearBtns()">
+                        Close all buttons
                     </button>
                 </div>
             </div>
@@ -65,6 +72,42 @@
 
             <!-- sidebar column content-->
             <div class="col-sm-9">
+                <div class="collapse" id="afaqInfo">
+                    <div class="card card-body">
+                        <h2>Afaq Ahmad <img src="authorimg\afaq.png" width="100px" height="100px" alt=""></h2>
+                        <br>
+                        <h6 class="card-subtitle mb-2 text-muted">S1625481 | AAHMAD204@caledonian.ac.uk</h6>
+                        <p>Project roles: <b>Software Architect</b> & <b>Process Analyst</b></p>
+                        <p>My roles in this project will be to play my part as a software architect and process analyst. As a software architect I was responsible for making the high level designs choices and dictate technical standards. I was responsible for deciding on the software pattern that would best suit Locate-A-Quake. The pattern decided was event based and MVC for the user to manipulate the view without changing the underlying data. </p>
+                        <p>As a process analyst I worked with my team members to decide on the best way to undertake the project and break down the work into smaller tasks as this will help everyone improve their understanding of the project.</p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-github"></i>
+                        </span>
+                    </div>
+                </div>
+
+
+                <div class="collapse" id="alexInfo">
+                    <div class="card card-body">
+                        <h2>Alex Carruthers <img src="authorimg\alex.png" width="100px" height="100px" alt=""></h2>
+                        <br>
+                        <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | ACARRU203@caledonian.ac.uk</h6>
+                        <p>Project roles: <b>Backend Developer</b> & <b>Data Engineer</b></p>
+                        <p>As a back end developer I am responsible for the server, application and database.
+                            I build and maintain the technology that enables all those components to come together.
+                            As a back end developer I will meet with the business stakeholders then translate those into
+                            technical requirements and come up with the best solutions for architecting the technology.
+                        </p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <a href="https://www.linkedin.com/in/alexander-carruthers-2018/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://github.com/alexandercarruthers" target="blank"><i class="fab fa-github"></i></a>
+                        </span>
+                    </div>
+                </div>
+
                 <div class="collapse" id="andrewInfo">
                     <div class="card card-body">
                         <h2>Andrew McAvoy <img src="authorimg\andrew.png" width="100px" height="100px" alt=""></h2>
@@ -86,24 +129,7 @@
                     </div>
                 </div>
 
-                <div class="collapse" id="alexInfo">
-                    <div class="card card-body">
-                        <h2>Alex Carruthers <img src="authorimg\alex.png" width="100px" height="100px" alt=""></h2>
-                        <br>
-                        <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | ACARRU203@caledonian.ac.uk</h6>
-                        <p>Project roles: <b>Backend Developer</b> & <b>Data Engineer</b></p>
-                        <p>As a back end developer I am responsible for the server, application and database.
-                            I build and maintain the technology that enables all those components to come together.
-                            As a back end developer I will meet with the business stakeholders then translate those into
-                            technical requirements and come up with the best solutions for architecting the technology.
-                        </p>
-                        <br>
-                        <span style="font-size: 2em;">
-                            <a href="https://www.linkedin.com/in/alexander-carruthers-2018/" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://github.com/alexandercarruthers" target="blank"><i class="fab fa-github"></i></a>
-                        </span>
-                    </div>
-                </div>
+
 
                 <div class="collapse" id="davidInfo">
                     <div class="card card-body">
@@ -128,6 +154,21 @@
                     </div>
                 </div>
 
+                <div class="collapse" id="jackInfo">
+                    <div class="card card-body">
+                        <h2>Jack Moore <img src="authorimg\jack.png" width="100px" height="100px" alt=""></h2>
+                        <br>
+                        <h6 class="card-subtitle mb-2 text-muted">S1628300 | JMOORE200@caledonian.ac.uk</h6>
+                        <p>Project roles: <b>SCRUM Master</b> & <b>Software Tester</b></p>
+                        <p>As a Scrum Master I was required to ensure the team followed an agile methodology when implementing new features to the site and to regularly update the next goal in the development of the locate-a-quake site. By using Scrum we aimed to regularly update the site with new functionality. As a software tester my role involved navigating the site and evaluating the user experience and looking for any errors or broken features that need to be repaired. This role exists to ensure that the site is working properly and gives users the experience we intended.</p>
+                        <br>
+                        <span style="font-size: 2em;">
+                            <i class="fab fa-linkedin-in"></i>
+                            <i class="fab fa-github"></i>
+                        </span>
+                    </div>
+                </div>
+
                 <div class="collapse" id="mattInfo">
                     <div class="card card-body">
                         <h2>Matt Alston <img src="authorimg\matt.png" width="100px" height="100px" alt=""></h2>
@@ -146,28 +187,9 @@
                     </div>
                 </div>
 
-                <div class="collapse" id="afaqInfo">
-                    <div class="card card-body">
-                        <h2>Afaq Ahmad <img src="authorimg\afaq.png" width="100px" height="100px" alt=""></h2>
-                        <br>
-                        <h6 class="card-subtitle mb-2 text-muted">S1625481 | AAHMAD204@caledonian.ac.uk</h6>
-                        <p>Project roles: <b>Software Architect</b> & <b>Process Analyst</b></p>
-                        <p>My roles in this project will be to play my part as a software architect and process analyst. As a software architect I was responsible for making the high level designs choices and dictate technical standards. I was responsible for deciding on the software pattern that would best suit Locate-A-Quake. The pattern decided was event based and MVC for the user to manipulate the view without changing the underlying data. </p>
-                        <p>As a process analyst I worked with my team members to decide on the best way to undertake the project and break down the work into smaller tasks as this will help everyone improve their understanding of the project.</p>
-                        <br>
-                    </div>
-                </div>
 
-                <div class="collapse" id="jackInfo">
-                    <div class="card card-body">
-                        <h2>Jack Moore <img src="authorimg\jack.png" width="100px" height="100px" alt=""></h2>
-                        <br>
-                        <h6 class="card-subtitle mb-2 text-muted">S1628300 | JMOORE200@caledonian.ac.uk</h6>
-                        <p>Project roles: <b>SCRUM Master</b> & <b>Software Tester</b></p>
-                        <p>As a Scrum Master I was required to ensure the team followed an agile methodology when implementing new features to the site and to regularly update the next goal in the development of the locate-a-quake site. By using Scrum we aimed to regularly update the site with new functionality. As a software tester my role involved navigating the site and evaluating the user experience and looking for any errors or broken features that need to be repaired. This role exists to ensure that the site is working properly and gives users the experience we intended.</p>
-                        <br>
-                    </div>
-                </div>
+
+
             </div>
             <!-- end sidebar column content -->
         </div>
@@ -176,5 +198,11 @@
     </div>
     <!-- end content-->
 </body>
+<script>
+    function clearBtns() {
+        location.reload(); // this reloads the page to initial state (eg. when all tutorial cards were not expanded)
+    }
+
+</script>
 
 </html>
