@@ -17,15 +17,11 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- jquery,popper,bootstrap end -->
 
-
-
     <!-- charting functions -->
-    <script src="chartjs-chart-financial-master/docs/moment.js" ></script>
-    <script src="chartjs-chart-financial-master/docs/Chart.js" ></script>
-    <script src="chartjs-chart-financial-master/docs/Chart.Financial.js" ></script>
-    <script src="chartjs-chart-financial-master/docs/utils.js" ></script>
-
-
+    <script src="chartjs-chart-financial-master/docs/moment.js"></script>
+    <script src="chartjs-chart-financial-master/docs/Chart.js"></script>
+    <script src="chartjs-chart-financial-master/docs/Chart.Financial.js"></script>
+    <script src="chartjs-chart-financial-master/docs/utils.js"></script>
 </head>
 
 <body>
@@ -89,10 +85,10 @@
                 </div>
             </div>
         </div>
+        <?php include 'includes/footer.php' ?>
     </div>
     <!-- end main column content-->
 
-    <?php include 'includes/footer.php' ?>
 
 
     <!-- end content-->
@@ -130,21 +126,21 @@
 
         function getData(clicked_symbol) {
             $("#refine").fadeOut();
-            
+
             var query_url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&outputsize=compact&symbol=" + clicked_symbol + "&apikey=" + apikey + "&datatype=json";
-            
+
             $.getJSON(query_url, function (json) {
                 $("#view").fadeIn();
                 console.log(Object.keys(json)[0]);
-                if(Object.keys(json)[0] == "Meta Data"){
+                if (Object.keys(json)[0] == "Meta Data") {
                     console.log("working");
-                                    let chartTitle = getLabel(json["Meta Data"]);
-                createDataPoints(json["Time Series (Daily)"]);
-                drawChart(chartTitle);
-                showResetButton();
-                }else if (Object.keys(json)[0] == "Error Message"){
+                    let chartTitle = getLabel(json["Meta Data"]);
+                    createDataPoints(json["Time Series (Daily)"]);
+                    drawChart(chartTitle);
+                    showResetButton();
+                } else if (Object.keys(json)[0] == "Error Message") {
                     alert("error");
-                }else if (Object.keys(json)[0] == "Note"){
+                } else if (Object.keys(json)[0] == "Note") {
                     alert("too many api calls")
                 }
 

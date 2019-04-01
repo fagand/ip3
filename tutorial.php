@@ -69,8 +69,8 @@
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#wineProduction" aria-expanded="false" aria-controls="wineProduction" onclick="clearInfo()">
                         Wine Production
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="#" onclick="clearBtns()">
-                        Close all tutorials
+                    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="#" onclick="clearBtns()">
+                        Close All Tutorials
                     </button>
                 </div>
             </div>

@@ -61,7 +61,7 @@
                     <button class="btn btn-info my-2 my-sm-0" type="button" onclick="getWeather()">Get Weather
                         Data</button>
                 </form>
-
+                <small><strong>Drop a pin on the map to display weather data for that location. Alternatively, input a place name or latitude/longitude and click Get Weather Data.</strong></small>
                 <br>
                 <div id="map"></div>
             </div>

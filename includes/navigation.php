@@ -13,7 +13,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="nav-link" href="index.php">Overview</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="authors.php">Authors</a>
