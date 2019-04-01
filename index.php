@@ -8,14 +8,20 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
 
         <!-- jquery,popper,bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="js\bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- jquery,popper,bootstrap end -->
+    <style>
+        .pdf-container {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
 
 </head>
 
@@ -56,7 +62,7 @@
                                 <p class="card-text">Embedded below is the project specification document. Alternatively, <a href="other/spec.pdf" target="blank">click here.</a></p>
                             </div>
                         </div>
-                <embed src="other/spec.pdf" width="100%" height="500px" type="application/pdf">
+                <embed src="other/spec.pdf" class="pdf-container"  type="application/pdf">
             </div>
             <!-- end sidebar column content -->
         </div>

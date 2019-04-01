@@ -8,14 +8,21 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- jquery,popper,bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="js\bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- jquery,popper,bootstrap end -->
+    <style>
+        .author-img-profile {
+            height: 100px;
+            width: 100px;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -67,7 +74,7 @@
             <div class="col-sm-9">
                 <div class="collapse" id="andrewInfo">
                     <div class="card card-body">
-                        <h2>Andrew McAvoy <img src="authorimg\andrew.png" width="100px" height="100px" alt=""></h2>
+                        <h2>Andrew McAvoy <img src="authorimg/andrew.png" class="author-img-profile" alt=""></h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1316078 | AMCAVO201@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Frontend Developer</b> & <b>Tester</b></p>
@@ -88,7 +95,7 @@
 
                 <div class="collapse" id="alexInfo">
                     <div class="card card-body">
-                        <h2>Alex Carruthers <img src="authorimg\alex.png" width="100px" height="100px" alt=""></h2>
+                        <h2>Alex Carruthers <img src="authorimg/alex.png" class="author-img-profile" alt=""></h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">STUDENT NO | ACARRU203@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Backend Developer</b> & <b>Data Engineer</b></p>
@@ -107,7 +114,7 @@
 
                 <div class="collapse" id="davidInfo">
                     <div class="card card-body">
-                        <h2>David Fagan <img src="authorimg\david.png" width="100px" height="100px" alt=""></h2>
+                        <h2>David Fagan <img src="authorimg/david.png" class="author-img-profile" alt=""></h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1825830 | DFAGAN200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>UI Designer</b> & <b>Frontend Developer.</b></p>
@@ -130,7 +137,7 @@
 
                 <div class="collapse" id="mattInfo">
                     <div class="card card-body">
-                        <h2>Matt Alston <img src="authorimg\matt.png" width="100px" height="100px" alt=""></h2>
+                        <h2>Matt Alston <img src="authorimg/matt.png" class="author-img-profile" alt=""></h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1824614 | MALSTO200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Project Manager</b> & <b>Software Test Analyst</b></p>
@@ -148,7 +155,7 @@
 
                 <div class="collapse" id="afaqInfo">
                     <div class="card card-body">
-                        <h2>Afaq Ahmad <img src="authorimg\afaq.png" width="100px" height="100px" alt=""></h2>
+                        <h2>Afaq Ahmad <img src="authorimg/afaq.png" class="author-img-profile" alt=""></h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1625481 | AAHMAD204@caledonian.ac.uk</h6>
                         <p>Project roles: <b>Software Architect</b> & <b>Process Analyst</b></p>
@@ -160,7 +167,7 @@
 
                 <div class="collapse" id="jackInfo">
                     <div class="card card-body">
-                        <h2>Jack Moore <img src="authorimg\jack.png" width="100px" height="100px" alt=""></h2>
+                        <h2>Jack Moore <img src="authorimg/jack.png" class="author-img-profile" alt=""></h2>
                         <br>
                         <h6 class="card-subtitle mb-2 text-muted">S1628300 | JMOORE200@caledonian.ac.uk</h6>
                         <p>Project roles: <b>SCRUM Master</b> & <b>Software Tester</b></p>

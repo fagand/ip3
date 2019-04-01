@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,19 +8,19 @@
 
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- jquery,popper,bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="js\bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- jquery,popper,bootstrap end -->
 
 
-    <script src="chartjs-chart-financial-master\docs\moment.js" type="text/javascript"></script>
-    <script src="chartjs-chart-financial-master\docs\Chart.js" type="text/javascript"></script>
-    <script src="chartjs-chart-financial-master\docs\Chart.Financial.js" type="text/javascript"></script>
-    <script src="chartjs-chart-financial-master\docs\utils.js" type="text/javascript"></script>
+    <script src="chartjs-chart-financial-master/docs/moment.js"></script>
+    <script src="chartjs-chart-financial-master/docs/Chart.js"></script>
+    <script src="chartjs-chart-financial-master/docs/Chart.Financial.js"></script>
+    <script src="chartjs-chart-financial-master/docs/utils.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
 
 
@@ -27,6 +28,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script> <!-- js chart -->
 
     <style>
+        .colimg {
+            width: 100%;
+        }
         .chart-container {
             position: relative;
             margin: auto;
@@ -58,7 +62,7 @@
             <div class="col-sm-8">
                 <h1>Oil Rig Valve Data</h1>
                 <div class="chart-container" style="max-width:8000px; max-height:400px">
-                    <canvas id="myChart" width="600px" height="400px"></canvas>
+                    <canvas id="myChart" width="600" height="400"></canvas>
                 </div>
             </div>
             <!-- end main column content-->
@@ -66,7 +70,7 @@
             <!-- sidebar column content-->
             <div class="col-sm-4">
                 <h4>Valhall</h4>
-                <img src="img\valhall-platform.jpg" width="100%" alt="Valhall Platform photo">
+                <img src="img/valhall-platform.jpg" class="colimg" alt="Valhall Platform photo">
                 <p>Valhall is a giant oilfield in the southern Norwegian North Sea. Production started in 1982 and
                     following commissioning of the new PH platform in 2013 the field now has the potential to
                     continue producing for several decades.</p>
@@ -132,7 +136,6 @@
 
         var option = {
             maintainAspectRatio: false,
-           // responsive: false,
             showLines: true,
             scales: {
                 xAxes: [{
