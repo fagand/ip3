@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5737db5b-db91-48e3-917a-e36c3df16dcc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/authors.php" beforeDir="false" afterPath="$PROJECT_DIR$/authors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,11 +33,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/authors.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="381">
-              <caret line="116" column="71" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="71" />
+              <caret line="116" column="71" selection-end-line="187" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="21" column="26" selection-end-line="74" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -54,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
-              <caret line="64" column="48" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="48" />
+            <state relative-caret-position="189">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="32" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -69,6 +78,7 @@
       <find>px</find>
       <find>100</find>
       <find>script</find>
+      <find>david.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,10 +89,11 @@
       <list>
         <option value="$PROJECT_DIR$/data1.php" />
         <option value="$PROJECT_DIR$/includes/navigation.php" />
-        <option value="$PROJECT_DIR$/data2.php" />
         <option value="$PROJECT_DIR$/data3.php" />
         <option value="$PROJECT_DIR$/data4.php" />
         <option value="$PROJECT_DIR$/authors.php" />
+        <option value="$PROJECT_DIR$/data2.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -98,8 +109,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="580" />
-    <option name="y" value="200" />
+    <option name="x" value="1000" />
+    <option name="y" value="326" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -161,12 +172,12 @@
       <workItem from="1553864514512" duration="72000" />
       <workItem from="1553864606725" duration="7407000" />
       <workItem from="1554109460552" duration="23000" />
-      <workItem from="1554109519519" duration="5502000" />
+      <workItem from="1554109519519" duration="6282000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13726000" />
+    <option name="totallyTimeSpent" value="14506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="2578" height="1410" extended-state="6" />
@@ -228,13 +239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
-          <caret line="64" column="48" selection-start-line="64" selection-start-column="47" selection-end-line="64" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="868">
@@ -245,7 +249,21 @@
     <entry file="file://$PROJECT_DIR$/authors.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
-          <caret line="116" column="71" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="71" />
+          <caret line="116" column="71" selection-end-line="187" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="32" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="21" column="26" selection-end-line="74" selection-end-column="7" />
         </state>
       </provider>
     </entry>
