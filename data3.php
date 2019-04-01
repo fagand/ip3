@@ -69,7 +69,7 @@
                 aeroplane.<br><br>The chart can be zoomed in using your mouse and the data within the chart is
                 clickable; e.g.<br>Clicking the plottings on the map displays the infomration of the selection.<br>Clicking
                 the flight icon displays information for that selected flight. </p>
-            <img src=airport_icon >
+            <img src="img/airport.png" >
         </div>
         <!-- end sidebar column content -->
     </div>
