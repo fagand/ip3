@@ -63,7 +63,7 @@
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#mattInfo" aria-expanded="false" aria-controls="mattInfo">
                         Matt
                     </button>
-                    <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="#" onclick="clearBtns()">
+                    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#" aria-expanded="false" aria-controls="#" onclick="clearBtns()">
                         Close all buttons
                     </button>
                 </div>
