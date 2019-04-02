@@ -166,7 +166,11 @@
                         <p>To display our data on the <a href="data1.php">stocks</a> page, we used data provided by Alpha Vantage. This data was brought in via an Ajax call to get a JSON data set which we then used to display the information the chart.</p>
                         <p>About Alpha Vantage
                             Composed of a tight-knit community of researchers, engineers, and business professionals, Alpha Vantage Inc. is a leading provider of free APIs for realtime and historical data on stocks, forex (FX), and digital/crypto currencies. Our success is driven by rigorous research, cutting edge technology, and a disciplined focus on democratizing access to data.</p>
+                        <p>Chart.js was used to model financial data from AlphaVantage. AlphaVantage also provide search functions based on the user input.</p>
                         <p>Source: <a href="https://www.alphavantage.co/#about" target="_blank">Alpha Vantage</a> </p>
+                        <p>Source: <a href="https://www.chartjs.org/chartjs-chart-financial/" target="_blank">Chart.js - OHLC Example</a> </p>
+                        <p>Source: <a href="https://en.wikipedia.org/wiki/Open-high-low-close_chart" target="_blank">OHLC Chart Description</a> </p>
+
                     </div>
                 </div>
 
