@@ -225,6 +225,8 @@
                         <p>The wine production chart shows the wine-grower holdings by degree of specialisation based on regions across Europe.</p>
                         <p>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. Clicking the years at the top hides them from the chart / reclicking them unhides them.
                             Highlighting your cursor over the bar displays the hectares for that country/year.</p>
+                        <p>The haversine formula was used to calculate the great-circle distance between two points. More information is cited below</p>
+                        <p>Source: <a href="https://www.movable-type.co.uk/scripts/latlong.html" target="_blank">JavaScript distance library</a> </p>
                     </div>
                 </div>
 
