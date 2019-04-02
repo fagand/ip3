@@ -184,6 +184,12 @@
                         <p> This chart updates in real time representing the data as and when it is received.
                             The chart can be interacted with allowing you to show only one dataset. Clicking the values at the top hides the selected source from the chart.
                             Hovering your cursor over the line will also give more detailed information about that point.</p>
+
+                        <p>Google Cloud is the platform for the IIoT (Industrial Internet of Things) data. This can deliver real time sensor changes with 200 to 300 millisecond response times for data access.</p>
+                        <p>Source: <a href="https://cloud.google.com/customers/cognite/" target="_blank">Google Cloud with Cognite</a> </p>
+                        <p>Source: <a href="https://openindustrialdata.com/" target="_blank">Open Industrial Data</a> </p>
+                        <p>Source: <a href="https://www.cognite.com/" target="_blank">Cognite</a> </p>
+                        <p>Source: <a href="https://doc.cognitedata.com/guides/" target="_blank">Cognite Docs</a> </p>
                     </div>
                 </div>
 
