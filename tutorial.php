@@ -153,6 +153,8 @@
                         <p>Apixu.com is owned and managed by Mzemo (http://mzemo.com), a Dubai based mobile and app development company.
                             Apixu.com provides current and 10 day weather data and geo data via. REST API in JSON format.
                             The API will also provide time zone information, astronomy data and geo location data. The weather data is provided in partnership with World Weather Online. We also get our data from different government and metreological agencies.</p>
+                        <p>Depending on the UV rating returnign form the API, different guidance is offered the user.</p>
+                        <img src="img/dynamic_weather_uv.png" alt="dynamic uv example" class="img-fluid">
                         <p>Source: <a href="https://www.apixu.com/about.aspx" target="_blank">apixu.com</a> </p>
                     </div>
                 </div>
