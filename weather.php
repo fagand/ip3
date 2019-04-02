@@ -170,9 +170,8 @@
                     $('#defaultText').empty(); // remove the info text from sidebar before weather data is displayed
                     $('#uvInfo').html(''); // remove previous UV index info card
                     image.src = "http:" + json.current.condition.icon; // icon is specified within the data
-                    $('#weatherInfo').html('<p>Currently: ' + json.current.condition.text +
-                        '</p>'); // current weather in text format
-                    $('#weatherInfo').append('<p>Name: ' + json.location.name + '</p>');
+                    $('#weatherInfo').html('<p>Name: ' + json.location.name + '</p>'); // current weather in text format
+                    $('#weatherInfo').append('<p>Currently: ' + json.current.condition.text + '</p>');
                     $('#weatherInfo').append('<p>Region: ' + json.location.region + '</p>');
                     $('#weatherInfo').append('<p>Current temp: ' + json.current.temp_c + ' C</p>');
                     $('#weatherInfo').append('<p>Feels like: ' + json.current.feelslike_c + ' C</p>');
