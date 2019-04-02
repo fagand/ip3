@@ -1,0 +1,2861 @@
+[
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 51.2228,
+
+
+
+"longitude": -0.023041,
+
+
+
+"altitude": 1791.16,
+
+
+
+"direction": 253.1
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 507.174,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -0.32512
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "LGW",
+
+
+
+"icaoCode": "EGKK"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GEZGE",
+
+
+
+"icaoCode": "A319",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A319"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "U2",
+
+
+
+"icaoCode": "EZY"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "U261GU",
+
+
+
+"icaoNumber": "EZY61GU",
+
+
+
+"number": "61GU"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948762",
+
+
+
+"squawk": "1441"
+
+
+},
+
+
+"status": "crashed"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 48.232,
+
+
+
+"longitude": -0.8545,
+
+
+
+"altitude": 11582.4,
+
+
+
+"direction": 345.25
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 829.26,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 0
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "PMI",
+
+
+
+"icaoCode": "LEPA"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GTCDX",
+
+
+
+"icaoCode": "A321",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A321"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "MT",
+
+
+
+"icaoCode": "TCX"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "MT39HA",
+
+
+
+"icaoNumber": "TCX39HA",
+
+
+
+"number": "39HA"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948639",
+
+
+
+"squawk": "5344"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 45.025,
+
+
+
+"longitude": -3.60539,
+
+
+
+"altitude": 11211.9,
+
+
+
+"direction": 257.6
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 829.248,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -8.128
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "LTN",
+
+
+
+"icaoCode": "EGGW"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GEZWP",
+
+
+
+"icaoCode": "A320",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A320"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "U2",
+
+
+
+"icaoCode": "EZY"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "U229DV",
+
+
+
+"icaoNumber": "EZY29DV",
+
+
+
+"number": "29DV"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948639",
+
+
+
+"squawk": "7470"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 50.8756,
+
+
+
+"longitude": -3.391,
+
+
+
+"altitude": 6370.32,
+
+
+
+"direction": 3.83
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 638.496,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -36.288
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "CDG",
+
+
+
+"icaoCode": "LFPG"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GUZHB",
+
+
+
+"icaoCode": "A20N",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A20N"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "U2",
+
+
+
+"icaoCode": "EZY"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "U278UT",
+
+
+
+"icaoNumber": "EZY78UT",
+
+
+
+"number": "78UT"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948639",
+
+
+
+"squawk": "7452"
+
+
+},
+
+
+"status": "unknown"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 51.2775,
+
+
+
+"longitude": 5.435,
+
+
+
+"altitude": 11574.8,
+
+
+
+"direction": 325.05
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 817.92,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -1.188
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "VCE",
+
+
+
+"icaoCode": "LIPZ"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GEZRV",
+
+
+
+"icaoCode": "A320",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A320"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "U2",
+
+
+
+"icaoCode": "EZY"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "U242MY",
+
+
+
+"icaoNumber": "EZY42MY",
+
+
+
+"number": "42MY"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948639",
+
+
+
+"squawk": "6603"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 50.4513,
+
+
+
+"longitude": 1.9181,
+
+
+
+"altitude": 10972.8,
+
+
+
+"direction": 319.04
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 799.524,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 0
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GNB",
+
+
+
+"icaoCode": "GNB"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "GLA"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GJZHT",
+
+
+
+"icaoCode": "B738",
+
+
+
+"icao24": "4070E7",
+
+
+
+"iataCode": "B738"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "LS",
+
+
+
+"icaoCode": "EXS"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "LS162",
+
+
+
+"icaoNumber": "EXS162",
+
+
+
+"number": "162"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948519",
+
+
+
+"squawk": "5226"
+
+
+},
+
+
+"status": "landed"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 54.172,
+
+
+
+"longitude": -5.61886,
+
+
+
+"altitude": 4710.37,
+
+
+
+"direction": 157
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 523.278,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 0
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "DUB",
+
+
+
+"icaoCode": "EIDW"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "EIFAS",
+
+
+
+"icaoCode": "AT76",
+
+
+
+"icao24": "4CAAD7",
+
+
+
+"iataCode": "AT76"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "",
+
+
+
+"icaoCode": "STK"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "",
+
+
+
+"icaoNumber": "STK24UB",
+
+
+
+"number": ""
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948517",
+
+
+
+"squawk": "5666"
+
+
+},
+
+
+"status": "started"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 44.0115,
+
+
+
+"longitude": -3.93075,
+
+
+
+"altitude": 11585.4,
+
+
+
+"direction": 101.3
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 825.546,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -0.65024
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "AGP",
+
+
+
+"icaoCode": "LEMG"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GJZBC",
+
+
+
+"icaoCode": "B738",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "B738"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "LS",
+
+
+
+"icaoCode": "EXS"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "LS13LM",
+
+
+
+"icaoNumber": "EXS13LM",
+
+
+
+"number": "13LM"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948161",
+
+
+
+"squawk": "4514"
+
+
+},
+
+
+"status": "unknown"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 55.906,
+
+
+
+"longitude": -4.369,
+
+
+
+"altitude": 182.88,
+
+
+
+"direction": 226.31
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 286.884,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -18.72
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "ALC",
+
+
+
+"icaoCode": "LEAL"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GJZBO",
+
+
+
+"icaoCode": "B738",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "B738"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "LS",
+
+
+
+"icaoCode": "EXS"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "LS8HQ",
+
+
+
+"icaoNumber": "EXS8HQ",
+
+
+
+"number": "8HQ"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948131",
+
+
+
+"squawk": "1060"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 27.7776,
+
+
+
+"longitude": 49.6668,
+
+
+
+"altitude": 10363.2,
+
+
+
+"direction": 321.65
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 814.788,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 0
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "DXB",
+
+
+
+"icaoCode": "DXB"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "GLA"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "A6EPZ",
+
+
+
+"icaoCode": "B77W",
+
+
+
+"icao24": "89644F",
+
+
+
+"iataCode": "B77W"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "EK",
+
+
+
+"icaoCode": "UAE"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "EK25",
+
+
+
+"icaoNumber": "UAE25",
+
+
+
+"number": "25"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553947786",
+
+
+
+"squawk": "6226"
+
+
+},
+
+
+"status": "landed"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 43.8679,
+
+
+
+"longitude": -8.85066,
+
+
+
+"altitude": 11280.5,
+
+
+
+"direction": 194.1
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 799.632,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -0.65024
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "FAO",
+
+
+
+"icaoCode": "LPFR"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GJZHT",
+
+
+
+"icaoCode": "B738",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "B738"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "LS",
+
+
+
+"icaoCode": "EXS"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "LS3CN",
+
+
+
+"icaoNumber": "EXS3CN",
+
+
+
+"number": "3CN"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553947723",
+
+
+
+"squawk": "5451"
+
+
+},
+
+
+"status": "unknown"
+
+},
+{
+
+
+"geography": {
+
+
+
+"latitude": 55.3609,
+
+
+
+"longitude": -4.22874,
+
+
+
+"altitude": 5419.21,
+
+
+
+"direction": 213
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 703.38,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -5.20192
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "ALC",
+
+
+
+"icaoCode": "LEAL"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GEZEY",
+
+
+
+"icaoCode": "A319",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A319"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "U2",
+
+
+
+"icaoCode": "EZY"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "U248MF",
+
+
+
+"icaoNumber": "EZY48MF",
+
+
+
+"number": "48MF"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948880",
+
+
+
+"squawk": "1165"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 55.5176,
+
+
+
+"longitude": -4.33462,
+
+
+
+"altitude": 4847.56,
+
+
+
+"direction": 227.3
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 675.985,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 0.32512
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "STN",
+
+
+
+"icaoCode": "EGSS"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GEZUR",
+
+
+
+"icaoCode": "A320",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A320"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "U2",
+
+
+
+"icaoCode": "EZY"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "U238MU",
+
+
+
+"icaoNumber": "EZY38MU",
+
+
+
+"number": "38MU"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948880",
+
+
+
+"squawk": "4246"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 46.6487,
+
+
+
+"longitude": 5.3138,
+
+
+
+"altitude": 6964.68,
+
+
+
+"direction": 101.91
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 762.768,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -18.72
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "GVA",
+
+
+
+"icaoCode": "LSGG"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GUZHL",
+
+
+
+"icaoCode": "A20N",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A20N"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "U2",
+
+
+
+"icaoCode": "EZY"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "U258GD",
+
+
+
+"icaoNumber": "EZY58GD",
+
+
+
+"number": "58GD"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948819",
+
+
+
+"squawk": "2052"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 32.8898,
+
+
+
+"longitude": -16.3756,
+
+
+
+"altitude": 10975.6,
+
+
+
+"direction": 330
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 853.311,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 0
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "TFS",
+
+
+
+"icaoCode": "GCTS"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GJZBP",
+
+
+
+"icaoCode": "",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": ""
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "LS",
+
+
+
+"icaoCode": "EXS"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "LS155",
+
+
+
+"icaoNumber": "EXS155",
+
+
+
+"number": "155"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948762",
+
+
+
+"squawk": "3354"
+
+
+},
+
+
+"status": "landed"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 50.8297,
+
+
+
+"longitude": 7.8757,
+
+
+
+"altitude": 10660.4,
+
+
+
+"direction": 96.17
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 843.84,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 1.188
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "OTP",
+
+
+
+"icaoCode": "LROP"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "HALWP",
+
+
+
+"icaoCode": "A320",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "A320"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "W6",
+
+
+
+"icaoCode": "WZZ"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "W6460",
+
+
+
+"icaoNumber": "WZZ460",
+
+
+
+"number": "460"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948639",
+
+
+
+"squawk": "3467"
+
+
+},
+
+
+"status": "crashed"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 54.0081,
+
+
+
+"longitude": -5.7167,
+
+
+
+"altitude": 4175.76,
+
+
+
+"direction": 199.19
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 535.32,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -21.06
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "DUB",
+
+
+
+"icaoCode": "EIDW"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "EIFCY",
+
+
+
+"icaoCode": "AT76",
+
+
+
+"icao24": "4CAB17",
+
+
+
+"iataCode": "AT76"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "",
+
+
+
+"icaoCode": "STK"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "",
+
+
+
+"icaoNumber": "STK25GL",
+
+
+
+"number": ""
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948639",
+
+
+
+"squawk": "5666"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 53.3063,
+
+
+
+"longitude": -2.0061,
+
+
+
+"altitude": 3352.8,
+
+
+
+"direction": 74.17
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 502.416,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 0
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "TFS",
+
+
+
+"icaoCode": "GCTS"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GOOBN",
+
+
+
+"icaoCode": "B752",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "B752"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "BY",
+
+
+
+"icaoCode": "TOM"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "BY4BD",
+
+
+
+"icaoNumber": "TOM4BD",
+
+
+
+"number": "4BD"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948639",
+
+
+
+"squawk": "2764"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 52.3853,
+
+
+
+"longitude": 4.71415,
+
+
+
+"altitude": 91.4634,
+
+
+
+"direction": 58
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 277.65,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": -4.22656
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "AMS",
+
+
+
+"icaoCode": "EHAM"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "PHBXK",
+
+
+
+"icaoCode": "B738",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "B738"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "KL",
+
+
+
+"icaoCode": "KLM"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "KL34M",
+
+
+
+"icaoNumber": "KLM34M",
+
+
+
+"number": "34M"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948479",
+
+
+
+"squawk": "6340"
+
+
+},
+
+
+"status": "en-route"
+
+},
+
+{
+
+
+"geography": {
+
+
+
+"latitude": 54.0012,
+
+
+
+"longitude": -15.0561,
+
+
+
+"altitude": 10668,
+
+
+
+"direction": 268.92
+
+
+},
+
+
+"speed": {
+
+
+
+"horizontal": 785.376,
+
+
+
+"isGround": 0,
+
+
+
+"vertical": 1.188
+
+
+},
+
+
+"departure": {
+
+
+
+"iataCode": "GLA",
+
+
+
+"icaoCode": "EGPF"
+
+
+},
+
+
+"arrival": {
+
+
+
+"iataCode": "MCO",
+
+
+
+"icaoCode": "KMCO"
+
+
+},
+
+
+"aircraft": {
+
+
+
+"regNumber": "GVLIP",
+
+
+
+"icaoCode": "B744",
+
+
+
+"icao24": "",
+
+
+
+"iataCode": "B744"
+
+
+},
+
+
+"airline": {
+
+
+
+"iataCode": "VS",
+
+
+
+"icaoCode": "VIR"
+
+
+},
+
+
+"flight": {
+
+
+
+"iataNumber": "VS71E",
+
+
+
+"icaoNumber": "VIR71E",
+
+
+
+"number": "71E"
+
+
+},
+
+
+"system": {
+
+
+
+"updated": "1553948350",
+
+
+
+"squawk": "7661"
+
+
+},
+
+
+"status": "en-route"
+
+}
+]

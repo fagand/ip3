@@ -69,7 +69,10 @@
                 aeroplane.<br><br>The chart can be zoomed in using your mouse and the data within the chart is
                 clickable; e.g.<br>Clicking the plottings on the map displays the infomration of the selection.<br>Clicking
                 the flight icon displays information for that selected flight. </p>
-            <img src="img/airport.png" >
+            <p> Legend</p>
+            <img src="img/airport.png"; > Airports
+        <br/>
+            <img src="img/plane.png"; > Aircraft
         </div>
         <!-- end sidebar column content -->
     </div>
@@ -189,16 +192,27 @@
             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                 return function () {
                     let string_builder = [
+                        "tail number: ",
+
                         json_flights[i]["aircraft"]["regNumber"],
-                        " ",
-                        json_flights[i]["aircraft"]["icaoCode"],
-                        " ",
+                        "<br>",
+                        "depature airport: ",
+                        json_flights[i]["departure"]["iataCode"],
+                        "<br>",
+                        "destination airport: ",
+                        json_flights[i]["arrival"]["iataCode"],
+                        "<br>",
+                        " altitude: ",
                         json_flights[i]["geography"]["altitude"].toFixed(0),
                         "ft ",
+                        "<br>",
+                        "speed:  ",
                         json_flights[i]["speed"]["horizontal"].toFixed(0),
-                        "kts ",
+                        " kts ",
+                        "<br>",
+                        "distance from Glasgow Airport: ",
                         distances_from_GLA[i],
-                        "km"
+                        " km"
                     ];
                     let display_string = string_builder.join('');
                     infoWindow.setContent(display_string);
@@ -254,7 +268,7 @@
     }
 
     function getJSON() {
-        const flights_url = "data/flights.txt";
+        const flights_url = "data/flights2.txt";
         const airports_url = "data/airports.txt";
         $.when($.getJSON(flights_url), $.getJSON(airports_url)).then(function (flights, airports) {
             json_flights = flights[0];
