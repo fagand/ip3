@@ -206,7 +206,7 @@
 
                 $.each(data.features, function (key, val) {
 
-                    let InfoWindowString = " <h3>" + val.properties.title + "</h3><p><a href='" + getWolframURL(val) + "'target='_blank'> WolframAlpha API</a></p>";
+                    let InfoWindowString = " <h3>" + val.properties.title + "</h3><p><a href='" + getWolframURL(val) + "'target='_blank'> Click for area information (may take up to 30 seconds)</a></p>";
                     // Form a string that holds desired marker infoWindow content. The infoWindow will pop up when you click on a marker on the map                                                            
                     var infowindow = new google.maps.InfoWindow({
                         content: InfoWindowString

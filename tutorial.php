@@ -203,10 +203,17 @@
                         <p> This chart updates in real time representing the data as and when it is received.
                             The chart can be interacted with allowing you to show only one dataset. Clicking the values at the top hides the selected source from the chart.
                             Hovering your cursor over the line will also give more detailed information about that point.</p>
+
                         <h5>benefit to us</h5>
                         <p>To display data on the oil rig we sourced data via <a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">Ajax</a> again, this time we saved the data locally in a .csv file. We done this to allow us to present the data in a decorative fashion without dispalying any delay to the user. </p>
                         <h5>Sources</h5>
                         <p><a href="http://chartjs.org/" target="_blank">chart.js</a><br><a href="https://www.akerbp.com/en/our-assets/production/valhall/" target="_blank">AkerBP</a></p>
+                        <p>Google Cloud is the platform for the IIoT (Industrial Internet of Things) data. This can deliver real time sensor changes with 200 to 300 millisecond response times for data access.</p>
+                        <p>Source: <a href="https://cloud.google.com/customers/cognite/" target="_blank">Google Cloud with Cognite</a> </p>
+                        <p>Source: <a href="https://openindustrialdata.com/" target="_blank">Open Industrial Data</a> </p>
+                        <p>Source: <a href="https://www.cognite.com/" target="_blank">Cognite</a> </p>
+                        <p>Source: <a href="https://doc.cognitedata.com/guides/" target="_blank">Cognite Docs</a> </p>
+
                     </div>
                 </div>
 
