@@ -63,16 +63,16 @@
         <!-- sidebar column content-->
         <div class="col-sm-3">
             <h4>Chart showing Air Traffic data</h4>
-            <p>This page shows data regarding flight information of selected flights flying in and around the UK Ilse.
-                <br><br>There are two maps on this page, the top map shows all flights currently in air. <br>The bottom
-                map shows the airports and the current flights represented as a small
+            <p>This page shows data regarding flight information of selected flights flying in and around the UK Isles.
+                <br><br>The map shows the airports and the current flights represented as a small
                 aeroplane.<br><br>The chart can be zoomed in using your mouse and the data within the chart is
-                clickable; e.g.<br>Clicking the plottings on the map displays the infomration of the selection.<br>Clicking
-                the flight icon displays information for that selected flight. </p>
-            <p> Legend</p>
-            <img src="img/airport.png"; > Airports
+                clickable.<br>
+                Clicking the plottings on the map displays the information of the selection.<br>Clicking
+                the flight icon displays information for that selected flight.</p>
+            <h5>Legend</h5>
+            <img src="img/airport.png";> Airports
         <br/>
-            <img src="img/plane.png"; > Aircraft
+            <img src="img/plane.png";> Aircraft
         </div>
         <!-- end sidebar column content -->
     </div>
