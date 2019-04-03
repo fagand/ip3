@@ -169,6 +169,9 @@
                         <p><a href="https://developers.google.com/maps/documentation/" target="_blank">Google Maps</a><br>
                             <a href="https://www.apixu.com/about.aspx" target="_blank">apixu.com</a><br>
                             <a href="http://w3schools.com" target="_blank">w3schools</a></p>
+                        <p>Depending on the UV rating returnign form the API, different guidance is offered the user.</p>
+                        <img src="img/dynamic_weather_uv.png" alt="dynamic uv example" class="img-fluid">
+                        <p>Source: <a href="https://www.apixu.com/about.aspx" target="_blank">apixu.com</a> </p>
                     </div>
                 </div>
 
@@ -185,6 +188,11 @@
                         <p>To display our data on the <a href="data1.php">stocks</a> page, we used data provided by Alpha Vantage. This data was brought in via an Ajax call to get a JSON data set which we then used to display the information the chart.</p>
                         <h5>Sources</h5>
                         <p><a href="http://chartjs.org/" target="_blank">chart.js</a><br><a href="https://www.alphavantage.co/#about" target="_blank">Alpha Vantage</a></p>
+                        <p>Chart.js was used to model financial data from AlphaVantage. AlphaVantage also provide search functions based on the user input.</p>
+                        <p>Source: <a href="https://www.alphavantage.co/#about" target="_blank">Alpha Vantage</a> </p>
+                        <p>Source: <a href="https://www.chartjs.org/chartjs-chart-financial/" target="_blank">Chart.js - OHLC Example</a> </p>
+                        <p>Source: <a href="https://en.wikipedia.org/wiki/Open-high-low-close_chart" target="_blank">OHLC Chart Description</a> </p>
+
                     </div>
                 </div>
 
@@ -257,6 +265,8 @@
                         <h5>Sources</h5>
                         <p><a href="http://chartjs.org/" target="_blank">chart.js</a><br>
                         <a href="http://w3schools.com" target="_blank">w3schools</a></p>
+                        <p>The haversine formula was used to calculate the great-circle distance between two points. More information is cited below</p>
+                        <p>Source: <a href="https://www.movable-type.co.uk/scripts/latlong.html" target="_blank">JavaScript distance library</a> </p>
                     </div>
                 </div>
 
