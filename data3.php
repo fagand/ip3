@@ -63,12 +63,12 @@
         <!-- sidebar column content-->
         <div class="col-sm-3">
             <h4>Chart showing Air Traffic data</h4>
-            <p>This page shows data regarding flight information of selected flights flying in and around the UK Isles.
+            <p>This page shows data regarding flight information of selected flights flying in and out of Glasgow Airport.
                 <br><br>The map shows the airports and the current flights represented as a small
                 aeroplane.<br><br>The chart can be zoomed in using your mouse and the data within the chart is
                 clickable.<br>
-                Clicking the plottings on the map displays the information of the selection.<br>Clicking
-                the flight icon displays information for that selected flight.</p>
+                Clicking the <img src="img/plane.png"; title="Plane Icon"> on the map displays the flight information of the selection.<br>Clicking
+                the <img src="img/airport.png"; title="Tower Icon"> displays the name of that air tower.</p>
             <h5>Legend</h5>
             <img src="img/airport.png";> Airports
         <br/>

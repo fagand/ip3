@@ -164,14 +164,13 @@
                         <h5>Benefit to us</h5>
                         <p>To allow us to display weather information on our site we used the APIXU API dataset. APIXU provides current and 10 day weather data in JSON format. We used this data to display information within our Google map. We retrieved the data using <a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">Ajax</a>, then it is displayed using <a href="https://www.w3schools.com/jquery/default.asp" target="_blank">jQuery</a>.</p>
                         <p>When a user clicks a location on the map the are presented with the current weather for that location. Our talented developers also managed to implement a UV Index feature that displays the recommended skin protection as recommmended by <a href="https://www.cbc.ca/news/canada/kitchener-waterloo/high-uv-index-here-s-what-to-wear-to-protect-yourself-from-the-sun-1.3607369" target="_blank">CBC</a> and <a href="https://www.aimatmelanoma.org/prevention/uv-index/" target="_blank">others.</a></p>
+                        <p>Depending on the UV rating returnign form the API, different guidance is offered the user.</p>
+                        <div><img src="img/dynamic_weather_uv.png" alt="dynamic uv example" class="img-fluid"></div>
                         <p><small><i>For fun click Scotland on the <a href="weather.php">map</a> to be told that you should be wearing Sunglasses and Sunscreen. Presuming you're Scottish, you'll understand why this is funny, but who are we to argue with the experts </i>🤷🏻‍♂️</small></p>
                         <h5>Sources</h5>
                         <p><a href="https://developers.google.com/maps/documentation/" target="_blank">Google Maps</a><br>
                             <a href="https://www.apixu.com/about.aspx" target="_blank">apixu.com</a><br>
                             <a href="http://w3schools.com" target="_blank">w3schools</a></p>
-                        <p>Depending on the UV rating returnign form the API, different guidance is offered the user.</p>
-                        <img src="img/dynamic_weather_uv.png" alt="dynamic uv example" class="img-fluid">
-                        <p>Source: <a href="https://www.apixu.com/about.aspx" target="_blank">apixu.com</a> </p>
                     </div>
                 </div>
 
@@ -186,13 +185,11 @@
                             Composed of a tight-knit community of researchers, engineers, and business professionals, Alpha Vantage Inc. is a leading provider of free APIs for realtime and historical data on stocks, forex (FX), and digital/crypto currencies. Our success is driven by rigorous research, cutting edge technology, and a disciplined focus on democratizing access to data.</p>
                         <h5>benefit to us</h5>
                         <p>To display our data on the <a href="data1.php">stocks</a> page, we used data provided by Alpha Vantage. This data was brought in via an Ajax call to get a JSON data set which we then used to display the information the chart.</p>
-                        <h5>Sources</h5>
-                        <p><a href="http://chartjs.org/" target="_blank">chart.js</a><br><a href="https://www.alphavantage.co/#about" target="_blank">Alpha Vantage</a></p>
                         <p>Chart.js was used to model financial data from AlphaVantage. AlphaVantage also provide search functions based on the user input.</p>
-                        <p>Source: <a href="https://www.alphavantage.co/#about" target="_blank">Alpha Vantage</a> </p>
-                        <p>Source: <a href="https://www.chartjs.org/chartjs-chart-financial/" target="_blank">Chart.js - OHLC Example</a> </p>
-                        <p>Source: <a href="https://en.wikipedia.org/wiki/Open-high-low-close_chart" target="_blank">OHLC Chart Description</a> </p>
-
+                        <h5>Sources</h5>
+                        <p><a href="http://chartjs.org/" target="_blank">chart.js</a><br><a href="https://www.alphavantage.co/#about" target="_blank">Alpha Vantage</a><br>
+                            <a href="https://www.chartjs.org/chartjs-chart-financial/" target="_blank">Chart.js - OHLC Example</a><br>
+                            <a href="https://en.wikipedia.org/wiki/Open-high-low-close_chart" target="_blank">OHLC Chart Description</a></p>
                     </div>
                 </div>
 
@@ -214,14 +211,14 @@
 
                         <h5>benefit to us</h5>
                         <p>To display data on the oil rig we sourced data via <a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">Ajax</a> again, this time we saved the data locally in a .csv file. We done this to allow us to present the data in a decorative fashion without dispalying any delay to the user. </p>
-                        <h5>Sources</h5>
-                        <p><a href="http://chartjs.org/" target="_blank">chart.js</a><br><a href="https://www.akerbp.com/en/our-assets/production/valhall/" target="_blank">AkerBP</a></p>
                         <p>Google Cloud is the platform for the IIoT (Industrial Internet of Things) data. This can deliver real time sensor changes with 200 to 300 millisecond response times for data access.</p>
-                        <p>Source: <a href="https://cloud.google.com/customers/cognite/" target="_blank">Google Cloud with Cognite</a> </p>
-                        <p>Source: <a href="https://openindustrialdata.com/" target="_blank">Open Industrial Data</a> </p>
-                        <p>Source: <a href="https://www.cognite.com/" target="_blank">Cognite</a> </p>
-                        <p>Source: <a href="https://doc.cognitedata.com/guides/" target="_blank">Cognite Docs</a> </p>
-
+                        <h5>Sources</h5>
+                        <p><a href="http://chartjs.org/" target="_blank">chart.js</a><br><a href="https://www.akerbp.com/en/our-assets/production/valhall/" target="_blank">AkerBP</a>
+                            <a href="https://cloud.google.com/customers/cognite/" target="_blank">Google Cloud with Cognite</a><br>
+                            <a href="https://openindustrialdata.com/" target="_blank">Open Industrial Data</a><br>
+                            <a href="https://www.cognite.com/" target="_blank">Cognite</a><br>
+                            <a href="https://doc.cognitedata.com/guides/" target="_blank">Cognite Docs</a>
+                        </p>
                     </div>
                 </div>
 
@@ -235,7 +232,8 @@
                         <p>Need some info on the source etc?</p>
                         <h5>Benefit to us</h5>
                         <p>To display data on the Air traffic map we sourced data via <a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">Ajax</a> again, this time we saved the data locally to allow us to present the data without any delay. Displaying the data within a map provided by Google.</p>
-                        <p>The air traffic page shows data regarding flight information of flights in and out of Glasgow Airport. Within the information is distance of each journey, this distance is calculated using...</p><p>
+                        <p>The air traffic page shows data regarding flight information of flights in and out of Glasgow Airport. Within the information is distance of each journey, this distance is calculated using...</p>
+                        <p>
 
                             The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g.
                             [Chart 1] Clicking/highlighting the plottings on the map displays the infomration of the selection.
@@ -243,7 +241,7 @@
                             Clicking the flight icon displays information for that selected flight.</p>
                         <h5>Sources</h5>
                         <p><a href="https://developers.google.com/maps/documentation/" target="_blank">Google Maps</a><br>
-                        <a href="http://w3schools.com" target="_blank">w3schools</a>
+                            <a href="http://w3schools.com" target="_blank">w3schools</a>
                         </p>
                     </div>
                 </div>
@@ -262,11 +260,11 @@
                         <p>The wine production chart shows the wine-grower holdings by degree of specialisation based on regions across Europe.</p>
                         <p>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. Clicking the years at the top hides them from the chart / reclicking them unhides them.
                             Highlighting your cursor over the bar displays the hectares for that country/year.</p>
+                        <p>The haversine formula was used to calculate the great-circle distance between two points. More information is cited below</p>
                         <h5>Sources</h5>
                         <p><a href="http://chartjs.org/" target="_blank">chart.js</a><br>
-                        <a href="http://w3schools.com" target="_blank">w3schools</a></p>
-                        <p>The haversine formula was used to calculate the great-circle distance between two points. More information is cited below</p>
-                        <p>Source: <a href="https://www.movable-type.co.uk/scripts/latlong.html" target="_blank">JavaScript distance library</a> </p>
+                            <a href="http://w3schools.com" target="_blank">w3schools</a><br>
+                            <a href="https://www.movable-type.co.uk/scripts/latlong.html" target="_blank">JavaScript distance library</a> </p>
                     </div>
                 </div>
 
