@@ -79,6 +79,7 @@
                 <br>
                 <div id="view">
                     <h4>View</h4>
+                    <p>This chart is a OHLC (Open-High-Low-Close), this is a type of bar chart showing the open, high, low and closing prices for your specified company. This chart enables you to evaluate intraday volatility and see where prices opened and closed. <a href="https://www.investopedia.com/terms/o/ohlcchart.asp" target="_blank">Source</a></p>
                     <div class="chart-container" style="position: relative; height:40vh; width:80vw">
                         <canvas id="myChart"></canvas>
                     </div>

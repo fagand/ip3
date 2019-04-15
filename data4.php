@@ -33,6 +33,7 @@
             height: 80vh;
             width: 100%;
         }
+
     </style>
 
 </head>
@@ -68,7 +69,9 @@
             <!-- sidebar column content-->
             <div class="col-sm-4">
                 <h4>EU Wine Grouping Countries data</h4>
-                This chart shows the wine-grower holdings by degree of specialisation based on regions across Europe. <br><br>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. <br>Clicking the years at the top hides them from the chart / reclicking them unhides them.<br>Highlighting your cursor over the bar displays the hectares for that country/year.
+                <p>
+                    This chart shows the wine-grower holdings by degree of specialisation based on regions across Europe. </p>
+                <p>The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g. <br>Clicking the years at the top hides them from the chart / reclicking them unhides them.<br>Highlighting your cursor over the bar displays the hectares for that country/year.</p>
             </div>
             <!-- end sidebar column content -->
         </div>
@@ -89,24 +92,24 @@
         var countries_data = [];
 
         var mydatasets = [{
-            label: '1999',
-            data: year_1999_dataset,
-            yAxisID: 'y-axis-1',
-            backgroundColor: "red"
+                label: '1999',
+                data: year_1999_dataset,
+                yAxisID: 'y-axis-1',
+                backgroundColor: "red"
 
-        },
-        {
-            label: '2009',
-            data: year_2009_dataset,
-            yAxisID: 'y-axis-1',
-            backgroundColor: "green"
-        },
-        {
-            label: '2015',
-            data: year_2015_dataset,
-            yAxisID: 'y-axis-1',
-            backgroundColor: "blue"
-        }
+            },
+            {
+                label: '2009',
+                data: year_2009_dataset,
+                yAxisID: 'y-axis-1',
+                backgroundColor: "green"
+            },
+            {
+                label: '2015',
+                data: year_2015_dataset,
+                yAxisID: 'y-axis-1',
+                backgroundColor: "blue"
+            }
         ]
 
 
@@ -147,8 +150,7 @@
                                 beginAtZero: true,
                                 autoSkip: false
                             }
-                        }
-                        ]
+                        }]
                     },
 
                     //
@@ -179,7 +181,7 @@
             type: "GET",
             url: "data/winedata.csv",
             dataType: "text",
-            success: function (response) {
+            success: function(response) {
                 mydata = $.csv.toArrays(response);
 
                 console.log(mydata);
@@ -238,15 +240,15 @@
             var url;
             for (i = 0; i < countries.length; i++) {
                 url = "https://restcountries.eu/rest/v2/name/" + countries[i] + "?fields=alpha3Code;name";
-                $.getJSON(url, function (json) { })
-                    .done(function (json) {
+                $.getJSON(url, function(json) {})
+                    .done(function(json) {
                         //console.log(json);
 
 
                         var url2 = "http://climatedataapi.worldbank.org/climateweb/rest/v1/country/cru/tas/year/" +
                             json[0].alpha3Code + ".json";
-                        $.getJSON(url2, function (json2) { })
-                            .done(function (json2) {
+                        $.getJSON(url2, function(json2) {})
+                            .done(function(json2) {
                                 //console.log(json2);
                                 k = 0;
                                 var data = [];
@@ -294,6 +296,7 @@
         function removeCommas(str) {
             return (str.replace(/,/g, ''));
         }
+
     </script>
 </body>
 
