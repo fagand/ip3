@@ -48,8 +48,7 @@
             <div class="col-sm-3">
                 <h1>Authors</h1>
                 <small class="text-muted">Click each team member's name to view his profile.<br>
-                    <i>When an author is selected their respective button will be highlighted grey; authors will display
-                        on the page in alphabetical order.</i></small>
+                    <i>When an author is selected their respective button will be highlighted grey; authors content will display on the page in alphabetical order.</i></small>
                 <div class="btn-group-vertical btn-block">
                     <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#afaqInfo"
                         aria-expanded="false" aria-controls="afaqInfo">
