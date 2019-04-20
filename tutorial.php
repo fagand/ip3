@@ -133,11 +133,21 @@
                             <li>Client-Side Security. Because the code executes on the users’ computer, in some cases it can be exploited for malicious purposes. This is one reason some people choose to disable Javascript.</li>
                             <li>Browser Support. JavaScript is sometimes interpreted differently by different browsers. Whereas server-side scripts will always produce the same output, client-side scripts can be a little unpredictable. Don’t be overly concerned by this though - as long as you test your script in all the major browsers you should be safe. Also, there are services out there that will allow you to test your code automatically on check in of an update to make sure all browsers support your code.</li>
                         </ul>
+                        <h6>AJAX</h6>
+                        <p><a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">Ajax</a> represents Asynchronous Javascript and XML. XML is a report organizing language. It's fundamental advantage is that it stores information so that the people and computers can without much of a stretch read it. Javascript is a web scripting language used to give some dimension of rationale to a HTML page (HTML itself is just a design language for showing static information). Asynchronous is the essential piece of <a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">Ajax</a>. It lets developers make "asynchronous" requests to a server. This ultimately means that the website will not be "waiting" for the request to finish. If it wasn't asynchronous, every time you wanted to refresh something, the site would sort of freeze and nothing would work until the response came back from the server. Asynchronous means things will work while the request is happening and the user doesn't even know about it.</p>
+                        <code>$.ajax({<br>
+                            type: "GET",<br>
+                            url: "data/winedata.csv",<br>
+                            dataType: "text",<br>
+                            success: function(response) {<br>
+                            mydata = $.csv.toArrays(response);</code><br>
+                        <p>In the above code we are making use of an <a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank">Ajax</a> call to bring in our data for the wine chart, the data is received and then converted into an array allowing us to use it within our <a href="http://chartjs.org/" target="_blank">chart</a>.</p>
                         <h5>Benefit to us</h5>
                         <p>JavaScript has been a key element in developing our site. We have used JavaScript across all pages to perform functions within Bootstrap. Ås well as using it to implement Chart.js, Google Maps and also our own user defined functions. For Locate-A-Quake we have opted to use the JavaScript charting library, <a href="http://chartjs.org/" target="_blank">chart.js</a> to display our charts. We have chosen to use this library as we believe it is more than capbale of representing our data in a manner which our users could find beneficial. Chart.js gives also gives us additional functionality such as the ability to hover over teh chart elements to see more data and the ability to zoom in and out of the chart using the scroll wheel on the mouse to localize data sets.</p>
                         <h5>Sources</h5>
                         <p><a href="https://guide.freecodecamp.org/javascript/advantages-and-disadvantages-of-javascript/" target="_blank">Freecodecamp</a><br>
-                            <a href="https://techterms.com/definition/javascript" target="_blank">Techterms</a></p>
+                            <a href="https://techterms.com/definition/javascript" target="_blank">Techterms</a><br>
+                        <a href="https://www.w3schools.com/" target="_blank">w3schools</a></p>
                     </div>
                 </div>
 
