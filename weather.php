@@ -150,7 +150,7 @@
 
 
         function pie(searchterm) {
-            var url = "http://api.apixu.com/v1/current.json?key=3b4f627ba14c47d5a8103303191502&q=";
+            var url = "https://api.apixu.com/v1/current.json?key=3b4f627ba14c47d5a8103303191502&q=";
             var query_url = url + searchterm;
             $.getJSON(query_url, function (json) {
 
