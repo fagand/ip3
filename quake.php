@@ -50,7 +50,7 @@
             <!-- left sidebar content-->
             <div class="col-lg-2">
                 <div class="card card-body" style="max-width: 100%;">
-                    <button type="button" class="btn btn-success btn-md" onclick="deleteMarkers()">Clear Map</button>
+                    <button type="button" class="btn btn-success btn-md" onclick="deleteMarkers(); initMap()">Clear Map</button>
                     <div style="max-width: 100%" id="feedSelector"></div>
                 </div>
             </div>
