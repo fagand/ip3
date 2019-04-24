@@ -246,8 +246,7 @@
                         <p>
 
                             The chart can be zoomed in using your mouse and the data within the chart is clickable; e.g.
-                            [Chart 1] Clicking/highlighting the plottings on the map displays the infomration of the selection.
-                            [Chart 2] Clicking the plottings on the map displays the infomration of the selection.
+                            Clicking/highlighting the plottings on the map displays the information of that selected airport.
                             Clicking the flight icon displays information for that selected flight.</p>
                         <h5>Sources</h5>
                         <p><a href="https://developers.google.com/maps/documentation/" target="_blank">Google Maps</a><br>

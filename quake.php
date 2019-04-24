@@ -101,8 +101,8 @@
             "Significant Earthquakes": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_hour.geojson",
             "M4.5+": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_hour.geojson",
             "M2.5+": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_hour.geojson",
-            "M1.0+": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_hour.geojson",
-            "All Earthquakes": "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
+            "M1.0+": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_hour.geojson",
+            "All Earthquakes": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson"
         },
         "past day": {
             "Significant Earthquakes": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_day.geojson",
@@ -139,7 +139,7 @@
     }
 
     function getWolframURL(val) {
-        let url = "http://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + getWolframCoords(val);
+        let url = "https://api.wolframalpha.com/v1/simple?appid=VEUWJE-29Y9QPY4T3&i=" + getWolframCoords(val);
         return url;
     }
     function getWolframCoords(val) {
