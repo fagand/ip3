@@ -42,6 +42,7 @@
                     <li class="breadcrumb-item"><a href="index.php">Locate-a-Quake</a></li>
                     <li class="breadcrumb-item active">Earthquakes</li>
                 </ol>
+                <p>If you are viewing on a smaller screened device (e.g. mobile), the map is displayed below the buttons. This allows for a increased size of map.</p>
             </div>
         </div>
         <!-- breadcrumb end -->
