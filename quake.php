@@ -239,6 +239,7 @@
                 });
             }
         });
+        mymap.setZoom(2);
     });
 </script>
 <!-- Need the following code for clustering Google maps markers-->
